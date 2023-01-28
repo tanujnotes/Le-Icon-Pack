@@ -10,6 +10,7 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.selection.selectableGroup
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
@@ -29,8 +30,11 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            LeIconPackTheme {
-                LeIconPackApp()
+
+            val viewModel = MainViewModel()
+
+            LeIconPackTheme() {
+                LeIconPackApp(viewModel)
             }
         }
     }
@@ -38,9 +42,7 @@ class MainActivity : ComponentActivity() {
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun LeIconPackApp() {
-
-    val viewModel = MainViewModel()
+fun LeIconPackApp(viewModel: MainViewModel) {
 
     Scaffold(
         topBar = { TopAppBar(title = { Text(text = stringResource(id = R.string.app_name)) }) }
@@ -60,7 +62,11 @@ fun LeIconPackApp() {
                     userScrollEnabled = false
                 ) {
                     items(viewModel.lettersList) { letters ->
-                        CustomIcon(letters = letters, RoundedCornerShape(12.dp))
+                        if (viewModel.rectangularIconsShape.value) {
+                            CustomIcon(letters = letters, RoundedCornerShape(12.dp))
+                        } else {
+                            CustomIcon(letters = letters, cornerShape = CircleShape)
+                        }
                     }
                 }
 
@@ -71,19 +77,20 @@ fun LeIconPackApp() {
                 ) {
 
                     // THEME
-                    Text(text = stringResource(R.string.theme))
+                    Text(text = stringResource(R.string.icons_theme))
                     Row(
                         modifier = Modifier
                             .fillMaxWidth()
                             .selectableGroup()
                     ) {
                         viewModel.themeRadioOptions.forEach { theme ->
-                            Selectable(
+                            SelectableGroup(
                                 selectableOption = theme,
-                                selected = (theme == viewModel.themeSelectedOption.value)
-                            ) {
-                                viewModel.onThemeOptionSelected(theme)
-                            }
+                                selected = (theme == viewModel.themeSelectedOption.value),
+                                onClick = {
+                                    viewModel.onThemeOptionSelected(theme)
+                                }
+                            )
                             Spacer(modifier = Modifier.weight(1f))
                         }
                     }
@@ -98,12 +105,18 @@ fun LeIconPackApp() {
                             .selectableGroup()
                     ) {
                         viewModel.shapeRadioOptions.forEach { shape ->
-                            Selectable(
+                            SelectableGroup(
                                 selectableOption = shape,
-                                selected = (shape == viewModel.shapeSelectedOption.value)
-                            ) {
-                                viewModel.onShapeOptionSelected(shape)
-                            }
+                                selected = (shape == viewModel.shapeSelectedOption.value),
+                                onClick = {
+                                    viewModel.onShapeOptionSelected(shape)
+                                    if (shape == "Circle") {
+                                        viewModel.onCircleShapeIconsSelected()
+                                    } else {
+                                        viewModel.onRectangularShapeIconsSelected()
+                                    }
+                                }
+                            )
                             Spacer(modifier = Modifier.weight(1f))
                         }
                         Spacer(modifier = Modifier.weight(1f))
@@ -125,15 +138,16 @@ fun LeIconPackApp() {
 }
 
 @Composable
-private fun Selectable(
+private fun SelectableGroup(
     selectableOption: String,
     selected: Boolean,
-    onClick: () -> Unit
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier
 ) {
     Row(
-        Modifier.selectable(
+        modifier.selectable(
             selected = selected,
-            onClick = onClick, // TODO: Change Theme and Shape of icons
+            onClick = onClick,
             role = Role.RadioButton
         ),
         verticalAlignment = Alignment.CenterVertically
@@ -147,9 +161,9 @@ private fun Selectable(
 }
 
 @Composable
-fun CustomIcon(letters: String, cornerShape: RoundedCornerShape) {
+fun CustomIcon(letters: String, cornerShape: RoundedCornerShape, modifier: Modifier = Modifier) {
     Box(
-        modifier = Modifier
+        modifier = modifier
             .size(72.dp)
             .clip(cornerShape)
             .background(color = Color.Black),
@@ -163,6 +177,6 @@ fun CustomIcon(letters: String, cornerShape: RoundedCornerShape) {
 @Composable
 fun DefaultPreview() {
     LeIconPackTheme {
-        LeIconPackApp()
+        LeIconPackApp(viewModel = MainViewModel())
     }
 }

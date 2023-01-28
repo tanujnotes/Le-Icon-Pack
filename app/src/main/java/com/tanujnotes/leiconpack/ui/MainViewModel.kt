@@ -5,14 +5,22 @@ import androidx.lifecycle.ViewModel
 
 class MainViewModel : ViewModel() {
 
+    val rectangularIconsShape = mutableStateOf(true)
     val lettersList = listOf("Aa", "Bb", "Cc", "Dd")
+
     val themeRadioOptions = listOf("Dark", "Light")
     val shapeRadioOptions = listOf("Rectangular", "Circle")
 
-    var themeSelectedOption = mutableStateOf(themeRadioOptions[0])
-        private set
-    var shapeSelectedOption = mutableStateOf(shapeRadioOptions[0])
-        private set
+    val themeSelectedOption = mutableStateOf(themeRadioOptions[0])
+    val shapeSelectedOption = mutableStateOf(shapeRadioOptions[0])
+
+    fun onCircleShapeIconsSelected() {
+        rectangularIconsShape.value = false
+    }
+
+    fun onRectangularShapeIconsSelected() {
+        rectangularIconsShape.value = true
+    }
 
     fun onThemeOptionSelected(newValue: String) {
         themeSelectedOption.value = newValue
