@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Le Icon Pack</string>
+    <string name="theme">Theme</string>
+    <string name="dark">Dark</string>
+    <string name="light">Light</string>
+    <string name="rectangular">Rectangular</string>
+    <string name="circle">Circle</string>
+    <string name="apply_icons">Apply Icons</string>
+    <string name="shape">Shape</string>
 </resources>
