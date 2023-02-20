@@ -1,6 +1,9 @@
 package com.tanujnotes.leiconpack
 
+import android.content.ActivityNotFoundException
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
@@ -19,10 +22,12 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.core.content.ContextCompat.startActivity
 import com.tanujnotes.leiconpack.ui.MainViewModel
 import com.tanujnotes.leiconpack.ui.theme.LeIconPackTheme
 
@@ -44,6 +49,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun LeIconPackApp(viewModel: MainViewModel) {
 
+    val context = LocalContext.current
     Scaffold(
         topBar = { TopAppBar(title = { Text(text = stringResource(id = R.string.app_name)) }) }
     ) { paddingValues ->
@@ -126,7 +132,36 @@ fun LeIconPackApp(viewModel: MainViewModel) {
 
                     Button(
                         modifier = Modifier.fillMaxWidth(),
-                        onClick = { /*TODO*/ }
+                        onClick = {
+                            // Apply for Nova Launcher
+                            val novaIntent = Intent("com.teslacoilsw.launcher.APPLY_ICON_THEME")
+                            novaIntent.apply {
+                                setPackage("com.teslacoilsw.launcher")
+                                putExtra(
+                                    "com.teslacoilsw.launcher.extra.ICON_THEME_PACKAGE",
+                                    context.packageName
+                                )
+                            }
+                            try {
+                                context.startActivity(novaIntent)
+                            }catch (e: ActivityNotFoundException){
+                                Toast.makeText(context, e.message, Toast.LENGTH_LONG).show()
+                            }
+
+
+                            // Apply for Niagara Launcher-- not configured yet
+                            /*val niagaraIntent = Intent("bitpit.launcher.APPLY_ICONS").apply {
+                                setPackage("bitpit.launcher")
+                                putExtra("package", packageName)
+                                flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                            }
+                            try {
+                                startActivity(niagaraIntent)
+                            }catch (e:ActivityNotFoundException){
+                                Toast.makeText(this, e.message, Toast.LENGTH_SHORT).show()
+                            }*/
+
+                        }
                     ) {
                         Text(stringResource(R.string.apply_icons))
                     }
