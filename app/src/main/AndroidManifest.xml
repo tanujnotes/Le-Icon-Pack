@@ -21,6 +21,37 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+            <!--Nova Launcher-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="com.teslacoilsw.launcher.THEME"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.novalauncher.THEME"/>
+                <category android:name="com.novalauncher.category.CUSTOM_ICON_PICKER"/>
+            </intent-filter>
+            <!--Random launchers-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="org.adw.launcher.THEMES"/>
+                <action android:name="obi.bbase.ahome.THEME"/>
+                <action android:name="com.rogro.GDE.THEME.1"/>
+                <action android:name="com.android.dxtop.launch.THEME"/>
+                <category android:name="com.fede.launcher.THEME_ICONPACK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="org.adw.launcher.icons.ACTION_PICK_ICON"/>
+                <action android:name="mobi.bbase.ahome.THEME"/>
+                <action android:name="com.rogro.GDE.THEME.1"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
         </activity>
     </application>
 
