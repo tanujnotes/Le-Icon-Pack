@@ -1,0 +1,2252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <iconback img1="iconback" />
+    <item
+        component=":LAUNCHER_ACTION_APP_DRAWER"
+        drawable="app" />
+    <item
+        component=":BROWSER"
+        drawable="le_icon" />
+    <item
+        component=":CALCULATOR"
+        drawable="le_icon" />
+    <item
+        component=":CAMERA"
+        drawable="le_icon" />
+    <item
+        component=":CLOCK"
+        drawable="le_icon" />
+    <item
+        component=":CONTACTS"
+        drawable="le_icon" />
+    <item
+        component=":PHONE"
+        drawable="le_icon" />
+    <item
+        component=":EMAIL"
+        drawable="le_icon" />
+    <item
+        component=":GMAIL"
+        drawable="le_icon" />
+    <item
+        component=":SMS"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.chrome/com.google.android.apps.chrome.Main}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.settings/com.android.settings.Settings}"
+        drawable="le_icon" />
+    <!---settings-->
+    <item
+        component="ComponentInfo{com.android.settings/com.android.settings.GridSettings}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.settings/com.android.settings.HWSettings}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.settings/com.android.settings.MainSettings}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.settings/com.android.settings.MiuiSettings}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.settings/com.android.settings.Settings}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.settings/com.oppo.settings.SettingsActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.settings/com.android.settings.Settings$WifiApSettingsActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.settings/com.android.settings.Settings$StorageSettingsActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.settings/com.android.settings.TetherSettings}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.settings/com.android.settings.Settings$SprdManageTasksActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.settings/com.android.settings.OntimSettingsActivity}"
+        drawable="le_icon" />
+
+    <item
+        component="ComponentInfo{com.android.chrome/com.google.android.apps.chrome.Main}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.activities.PeopleActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.activities.PeopleActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.settings/com.android.settings.Settings}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.vending/com.android.vending.AssetBrowserActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.apps.messaging/com.google.android.apps.messaging.ui.ConversationListActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.home.HomeActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.apps.tachyon/com.google.android.apps.tachyon.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.calendar/com.android.calendar.AllInOneActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.gm.lite/com.google.android.gm.ConversationListActivityGmail}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.music/com.google.android.music.tombstone.LauncherActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sh.smart.caller/com.android.dialer.main.impl.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.transsion.camera/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.transsion.deskclock/com.transsion.deskclock.DeskClock}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.transsion.hilauncher/com.android.launcher3.DynamicVirtualEntryActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.transsion.soundrecorder/com.transsion.soundrecorder.SoundRecorder}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{app.olauncher/app.olauncher.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{bitpit.launcher/bitpit.launcher.ui.HomeActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.Slack/slack.features.home.HomeActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.apps.docs/com.google.android.apps.docs.app.NewMainProxyActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.spotify.music/com.spotify.music.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.teslacoilsw.launcher/com.teslacoilsw.launcher.NovaShortcutHandler}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.stk/com.android.stk.StkMain}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.apps.mapslite/com.google.maps.lite.twa.MapsLiteTwaLauncherActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.apps.nbu.files/com.google.android.apps.nbu.files.home.HomeActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.apps.searchlite/com.google.android.apps.searchlite.ui.SearchActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.transsion.calculator/com.transsion.calculator.Calculator}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.transsion.faceid/com.transsion.faceid.FaceManagerActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.transsion.fmradio/com.transsion.fmradio.FmMainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.adguard.android/com.adguard.android.ui.SplashActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.app.yacinetv.v4/com.app.yacinetv.activities.ActivitySplash}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.buildwithsiele.recipesapi/com.buildwithsiele.recipesapi.ui.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.codehub.finmanager/com.codehub.finmanager.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.developerkim.mytodo/com.developerkim.mytodo.ui.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.gear.weathery/com.gear.weathery.SplashActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.earth/com.google.android.apps.earth.EarthActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.hecorat.screenrecorder.free/com.hecorat.screenrecorder.free.ui.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.linkedin.android/com.linkedin.android.authenticator.LaunchActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.livefootball.mrsports.tvhd/com.livefootball.mrsports.tvhd.ui.SplashActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.melon.appstract.dark/com.candybar.sample.activities.SplashActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.pl.premierleague/com.pl.premierleague.LaunchActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.siele/com.siele.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.siele.audiorec/com.siele.audiorec.ui.main.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.siele.countries/com.siele.countries.ui.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.siele.debthunter/com.siele.debthunter.views.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.siele.fintrace/com.siele.fintrace.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.siele.iconslauncher/com.siele.iconslauncher.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.siele.matchstats/com.siele.matchstats.ui.screens.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.siele.myresume/com.siele.myresume.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.siele.quotes/com.siele.quotes.ui.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.siele.sheriamashinani/com.siele.sheriamashinani.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.siele.unitconverter/com.siele.unitconverter.ui.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.simplemobiletools.applauncher/com.simplemobiletools.applauncher.activities.SplashActivity.Orange}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.simplemobiletools.filemanager/com.simplemobiletools.filemanager.activities.SplashActivity.Orange}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.simplemobiletools.gallery/com.simplemobiletools.gallery.activities.SplashActivity.Orange}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.tanujnotes.leiconpack/com.tanujnotes.leiconpack.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.togtog.io/com.togtog.io.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.topjohnwu.magisk/com.topjohnwu.magisk.ui.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.twitter.android/com.twitter.android.StartActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.x1unix.s60icons/com.x1unix.s60icons.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{english.premierleaguelivehd/english.premierleaguelivehd.preinicio}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{ginlemon.iconpackstudio/ginlemon.iconpackstudio.editor.homeActivity.HomeActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{ginlemon.iconpackstudio.exported/ginlemon.iconpackstudio.exported.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{homeworkout.homeworkouts.noequipment/homeworkout.homeworkouts.noequipment.SplashActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{net.kilimall.shop/net.kilimall.shop.WelcomeActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{org.fdroid.fdroid/org.fdroid.fdroid.views.main.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.DefaultIcon}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{radio.kenya.fm.stations.online/com.appmind.countryradios.screens.splash.SplashActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{twimate.tweetdownloader.savetwittergif.twittervideodownloader/polaris.downloader.twitter.ui.activity.MainActivity}"
+        drawable="le_icon" />
+
+
+    <!-- Telegram -->
+    <item
+        component="ComponentInfo{org.telegram.messenger/org.telegram.ui.LaunchActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{org.telegram.android/org.telegram.android.StartActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.ApplicationLoaderImpl}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{radio.kenya.fm.stations.online/com.appmind.countryradios.CountryRadiosApplication}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{twimate.tweetdownloader.savetwittergif.twittervideodownloader/polaris.downloader.twitter.App}"
+        drawable="le_icon" />
+
+    <!---youtube-->
+    <item
+        component="ComponentInfo{com.google.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.vanced.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity}"
+        drawable="le_icon" />
+
+    <!---google_earth-->
+    <item
+        component="ComponentInfo{com.google.earth/com.google.android.apps.earth.EarthActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.earth/com.google.earth.EarthActivity}"
+        drawable="le_icon" />
+
+    <!---google_photos-->
+    <item
+        component="ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.home.HomeActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.apps.plus/com.google.android.apps.plus.phone.ConversationListActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.apps.plus/com.google.android.apps.plus.phone.PhotosLegacyLauncherActivity}"
+        drawable="le_icon" />
+
+    <!---google_docs-->
+    <item
+        component="ComponentInfo{com.google.android.apps.docs.editors.docs/com.google.android.apps.docs.app.NewMainProxyActivity}"
+        drawable="le_icon" />
+
+    <!---whatsapp-->
+    <item
+        component="ComponentInfo{com.gbwhatsapp/com.gbwhatsapp.Main4}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.gbwhatsapp/com.gbwhatsapp.Main0}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main12}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main3}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.gbwhatsapp/com.gbwhatsapp.0}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.whatsapp/com.whatsapp.68}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.aero/com.aero.3}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.whatsapp/com.whatsapp.29}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.gbwhatsapp/com.gbwhatsapp.50}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.gbwhatsapp3/com.gbwhatsapp3.0}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.whatsapp/com.whatsapp.2}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.whatsapp/com.whatsapp.46}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.whatsapp/com.whatsapp.22}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.gbwhatsapp/com.gbwhatsapp.24}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main0}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.fwhatsapp/com.whatsapp.Main}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.gbwhatsapp/com.gbwhatsapp.Main9}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.gbwhatsapp3/com.gbwhatsapp3.Main0}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.gbwhatsapp3/com.gbwhatsapp3.Main22}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.aero/com.aero.0}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.whatsapp/com.whatsapp.8}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.whatsapp/com.whatsapp.64}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.whatsapp/com.whatsapp.4}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.whatsapp/com.whatsapp.37}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.whatsapp/com.whatsapp.7}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.gbwhatsapp/com.gbwhatsapp.29}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.aero/com.aero.24}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.whatsapp/com.whatsapp.23}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.whatsapp/com.whatsapp.1}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.whatsapp/com.whatsapp.32}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.whatsapp/com.whatsapp.0}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.gbwhatsapp/com.gbwhatsapp.70}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.WhatsApp2Plus/com.WhatsApp2Plus.0}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.whatsapp/com.whatsapp.24}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.whatsapp/com.whatsapp.73}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.whatsapp/com.whatsapp.6}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.gbwhatsapp/com.gbwhatsapp.Main}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.gbwhatsapp/com.gbwhatsapp.52}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.gbwhatsapp/com.gbwhatsapp.1}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.gbwhatsapp/com.gbwhatsapp.49}"
+        drawable="le_icon" />
+
+    <!--whatsapp_business-->
+    <item
+        component="ComponentInfo{com.whatsapp.w4b/com.whatsapp.Main}"
+        drawable="le_icon" />
+
+    <!---play_store-->
+    <item
+        component="ComponentInfo{com.android.vending/com.android.vending.AssetBrowserActivity}"
+        drawable="le_icon" />
+
+    <!---sound_recorder-->
+    <item
+        component="ComponentInfo{shadrin.audiorecorder/shadrin.audiorecorder.ui.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.soundrecorder/com.android.soundrecorder.RecordListActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.htc.soundrecorder/com.htc.soundrecorder.SoundRecorderBG}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{org.lineageos.recorder/org.lineageos.recorder.RecorderActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.soundrecorder/com.android.soundrecorder.SoundRecorder}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.lge.voicerecorder/com.lge.voicerecorder.LaunchVoiceRecorder}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sec.android.app.voicenote/com.sec.android.app.voicenote.main.VNMainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sec.android.app.voicerecorder/com.sec.android.app.voicerecorder.VoiceRecorderMainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sonymobile.androidapp.audiorecorder/com.sonymobile.androidapp.audiorecorder.activity.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.splendapps.voicerec/com.splendapps.voicerec.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.oneplus.soundrecorder/com.oneplus.soundrecorder.SoundRecorder}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.bq.soundrecorder/com.bq.soundrecorder.activities.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.coloros.soundrecorder/oppo.multimedia.soundrecorder.filebrowser.BrowseFile}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{cn.nubia.soundrecorder.preset/cn.nubia.soundrecorder.ui.RecordingActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.bbksoundrecorder/com.android.activity.ReclistActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.bbksoundrecorder/com.android.bbksoundrecorder.SoundRecorder}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.zui.recorder/com.zui.recorder.SoundRecorder}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.apps.recorder/com.google.android.apps.recorder.ui.recordings.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.lenovo.recorder/com.lenovo.recorder.SoundRecorder}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{org.pixelexperience.recorder/org.pixelexperience.recorder.RecorderActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.coloros.soundrecorder/oppo.multimedia.soundrecorder.RecorderActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.oem.soundrecorder/com.oem.soundrecorder.activities.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.media.bestrecorder.audiorecorder/com.media.bestrecorder.audiorecorder.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.media.bestrecorder.audiorecorderpro/com.media.bestrecorder.audiorecorder.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.splendapps.vox/com.splendapps.vox.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{vr.audio.voicerecorder/vr.audio.voicerecorder.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.ultimate.recorder.voiceaudio/com.ultimate.recorder.voiceaudio.ActivityFake}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.lge.hifirecorder/com.lge.hifirecorder.LaunchHifiRecorder}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.rimidalv.dictaphone/com.rimidalv.dictaphone.activities.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.smartmobitools.voicerecorder/com.smartmobitools.voicerecorder.ui.SplashActivity}"
+        drawable="le_icon" />
+
+    <!---flashlight-->
+    <item
+        component="ComponentInfo{com.htc.flashlight/com.htc.flashlight.FlashlightActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.systemui/com.android.systemui.flashlight.FlashlightActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.systemui/com.android.systemui.flashlight.FlashLightActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.asus.flashlight/com.asus.flashlight.FlashLightMainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.devuni.flashlight/com.devuni.flashlight.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.intellectualflame.ledflashlight.washer/com.intellectualflame.ledflashlight.washer.FlashlightActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.surpax.ledflashlight.panel/com.surpax.ledflashlight.FlashlightActivity}"
+        drawable="le_icon" />
+
+    <!---fm_radio-->
+    <item
+        component="ComponentInfo{com.android.fmradio/com.android.fmradio.FmMainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.asus.fmradio/com.asus.fmradio.FMRadioUIv3}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.fmradio/com.google.android.fmradio.app.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.huawei.android.FMRadio/com.huawei.android.FMRadio.FMRadioMainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.lge.fmradio/com.lge.fmradio.IntroActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.mediatek.fmradio/com.mediatek.fmradio.FmRadioActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.mediatek.FMRadio/com.mediatek.FMRadio.FMRadio}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.motorola.fmplayer/com.motorola.fmplayer.FMMainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sec.android.app.fm/com.sec.android.app.fm.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sonyericsson.fmradio/com.sonyericsson.fmradio.ui.FmRadioActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.thunderst.radio/com.thunderst.radio.FMRadioMainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.motorola.fmplayer/com.motorola.fmplayer.ChangeThemeActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.vivo.FMRadio/com.vivo.FMRadio.FMRadioActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.fmradio/com.android.fmradio.InfinixFmMainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.hmdglobal.app.fmradio/com.hmdglobal.app.fmradio.FmMainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.evenwell.fmradio/com.evenwell.fmradio.FMRadioActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.motorola.fmplayer/com.motorola.fmplayer.FMPlayer}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.huawei.android.FMRadio/com.huawei.android.FMRadio.FmMainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.mediatek.FMRadio/com.mediatek.FMRadio.FMRadioActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.huaqin.FM/com.huaqin.FM.FM}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.asus.fmradio/com.asus.fmradio.FMRadio}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.hmdglobal.app.fmradio/com.hmdglobal.app.fmradio.FMRadio}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.huawei.android.FMRadio/com.huawei.android.FMRadio.FmRadioActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.transsion.fmradio/com.transsion.fmradio.FmMainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.motorola.mtkfmplayer/com.motorola.mtkfmplayer.ChangeThemeActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.vivo.FMRadio/com.vivo.FMRadio.FMRadio}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.miui.fm/com.miui.fmradio.FmActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.fmradio/com.android.fmradio.FmActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.caf.fmradio/com.caf.fmradio.FMRadio}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.miui.fm/com.miui.fmradio.FmRadioActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.ape.fmradio/com.ape.fmradio.FmMainActivity}"
+        drawable="le_icon" />
+
+    <!---music-->
+    <item
+        component="ComponentInfo{com.android.music/com.android.music.VideoBrowserActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.oppo.music/com.oppo.music.MainListActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.mediacenter/com.android.mediacenter.PageActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.music/com.android.music.MusicBrowserActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.asus.music/com.asus.music.MusicMainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.fihtdc.music/com.fihtdc.music.ui.activities.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.htc.music/com.htc.music.browserlayer.MusicBrowserTabActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.jrdcom.music/com.jrdcom.music.SplashActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.lge.music/com.lge.music.MusicBrowserActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.miui.player/com.miui.player.ui.MusicBrowserActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sec.android.app.music/com.samsung.musicplus.MusicMainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sec.android.app.music/com.sec.android.app.music.common.activity.MusicMainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sec.android.app.music/com.sec.android.app.music.MusicActionTabActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sonyericsson.music/com.sonyericsson.music.MusicActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{net.oneplus.music/net.oneplus.music.activity.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{org.lineageos.eleven/org.lineageos.eleven.ui.activities.HomeActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.oppo.music/com.oppo.music.adutils.SplashActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.bbkmusic/com.android.bbkmusic.WidgetToTrackActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.miui.playerlite/com.miui.player.ui.MusicBrowserActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.asuszenui.mp3player/com.asuszenui.mp3player.screens.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.alcatel.music5/com.alcatel.music5.activities.Music5WelcomeActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.music/com.android.music.MusicScanResultActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.music/com.transsion.music.MusicMainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{org.omnirom.gramophone/com.kabouzeid.gramophone.ui.activities.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{music.musicplayer.blue/com.android.music.ActivitySplash}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.myos.music/com.myos.music.MusicSplashActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{cn.zte.music/cn.zte.music.activity.MusicBrowserActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.miui.player/com.miui.player.component.MusicBrowserActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{ru.yandex.music/ru.yandex.music.main.MainScreenActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.heytap.music/com.nearme.music.local.ui.LocalMusicActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{org.lds.ldsmusic/org.lds.ldsmusic.ux.startup.StartupActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.bbkmusic/com.android.bbkmusic.WidgetToTrackActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{org.lineageos.eleven/org.lineageos.eleven.ui.activities.HomeActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.oppo.music/com.oppo.music.adutils.SplashActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.heytap.music/com.nearme.music.splash.SplashActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.miui.player/com.miui.player.home.LauncherActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.ape.music/com.ape.music.MusicSplashActivity}"
+        drawable="le_icon" />
+
+    <!---chrome-->
+    <item
+        component="ComponentInfo{com.android.chrome/com.google.android.apps.chrome.Main}"
+        drawable="le_icon" />
+
+    <!---dev_tools-->
+    <item
+        component="ComponentInfo{com.android.development/com.android.development.Development}"
+        drawable="le_icon" />
+
+    <!---documents-->
+    <item
+        component="ComponentInfo{com.android.documentsui/com.android.documentsui.DocumentsActivity}"
+        drawable="le_icon" />
+
+    <!---downloads-->
+    <item
+        component="ComponentInfo{com.android.documentsui/com.android.documentsui.LauncherActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.providers.downloads.ui/com.android.providers.downloads.ui.DownloadList}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.providers.downloads.ui/com.android.providers.downloads.ui.DownloadsListTab}"
+        drawable="le_icon" />
+
+    <!---sim_toolkit-->
+    <item
+        component="ComponentInfo{com.android.dualliststk/com.android.dualliststk.StkToolkitActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.stk/com.android.stk.StkLauncherActivity2}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.stk/com.android.stk.StkLauncherActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.stk/com.android.stk.StkLauncherListActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.stk/com.android.stk.StkMain}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.stk2/com.android.stk2.StkLauncherActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.stklct/com.android.stklct.StkMain}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.example.stklauncher/com.example.stklauncher.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.huawei.android.StkLauncher/com.huawei.android.StkLauncher.StkLauncher2}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.lenovo.StkSelection/com.lenovo.StkSelection.StkSelection}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.lge.stkfake/com.lge.stkfake.StkFake}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.mediatek.StkSelection/com.mediatek.StkSelection.StkSelection}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.qualcomm.stk/com.qualcomm.stk.StkLauncherActivity2}"
+        drawable="le_icon" />
+
+
+    <!---messages-->
+    <item
+        component=":SMS"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.messaging/com.android.messaging.ui.conversationlist.ConversationListActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.samsung.android.messaging/com.android.mms.ui.ConversationComposer}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.mms/com.android.mms.ui.BootActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.mms/com.android.mms.ui.ConversationComposer}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.mms/com.android.mms.ui.ConversationList}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.mms/com.android.mms.ui.MmsTabActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.asus.message/com.android.mms.ui.ConversationList}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.apps.messaging/com.google.android.apps.messaging.ui.ConversationListActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.htc.sense.mms/com.htc.sense.mms.ui.ConversationList}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sonyericsson.conversations/com.sonyericsson.conversations.ui.ConversationListActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.oneplus.mms/com.android.mms.ui.ConversationList}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.vinsmart.messaging/com.vinsmart.messaging.ui.conversationlist.ConversationListActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.samsung.android.messaging/com.samsung.android.messaging.ui.ConversationList}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.messages.sms.manager/com.moez.QKSMS.feature.main.SplashActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.oneplus.mms/com.android.mms.ui.ConversationList}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.motorola.messaging/com.android.messaging.ui.conversationlist.ConversationListActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sms.messageapp.direct.messages/com.sms.messageapp.direct.messages.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{smart.messages.message.sms.mms/smart.messages.message.sms.mms.feature.main.MainActivity}"
+        drawable="le_icon" />
+
+    <!---phone-->
+    <item
+        component=":PHONE"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.dialer/com.android.dialer.Contacts}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.incallui/com.android.incallui.DialerLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.samsung.android.dialer/com.samsung.android.dialer.DialtactsActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.activities.DialtactsActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.activities.TwelveKeyDialer}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.BbDialtactsMainFrameActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.DialtactsActivityAlias}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.DialtactsCallListEntryActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.DialtactsCallLogActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.DialtactsCallLogEntryActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.DialtactsCallsEntryActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.DialtactsEntryActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.DialtactsPhoneEntryActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.DialtactsRecentCallEntryActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.DialtactsRecentCallsEntryActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.DialtactsRecentEntryActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.PhoneDialtactsActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.SmartDialerActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.dialer.DialtactsActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.dialer/com.android.dialer.dialpad}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.dialer/com.android.dialer.DialtactsActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.dialer/com.oneplus.contacts.activities.OPDialtactsActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.htccontacts/com.android.htccontacts.DialerTabActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.phone/com.android.phone.AutoForwarding}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.phone/com.android.phone.DialtactsCallLogActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.dialer/com.android.dialer.app.DialtactsActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.phone/com.android.phone.DialtactsContactsEntryActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.phone/com.android.phone.dualsim.SmartCallActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.phone/com.android.phone.lct.HtcCallForwardSettings}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.asus.contacts/com.android.contacts.activities.DialtactsActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.cyngn.dialer/com.android.dialer.DialtactsActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.dialer/com.google.android.dialer.extensions.GoogleDialtactsActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.htc.contacts/com.htc.contacts.DialerTabActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.huawei.android.dialer/com.huawei.android.dialer.TwelveKeyDialer}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.lenovo.ideafriend/com.lenovo.ideafriend.alias.DialtactsActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.samsung.android.contacts/com.android.dialer.DialtactsActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sec.android.app.dialertab/com.sec.android.app.dialertab.DialerTabActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sonyericsson.android.socialphonebook/com.sonyericsson.android.socialphonebook.DialerEntryActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sonymobile.android.dialer/com.android.dialer.DialtactsActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.oneplus.dialer/com.android.dialer.oneplus.activity.OPDialtactsActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.asus.dialer/com.android.contacts.activities.DialtactsActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.dialer/com.android.dialer.main.impl.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.dialer/com.android.dialer.activities.DialtactsActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sh.smart.caller/com.android.dialer.main.impl.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.orange.phone/com.orange.phone.DialtactsActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sonymobile.android.dialer/com.android.dialer.app.DialtactsActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.oneplus.contacts.activities.OPDialtactsActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.dialer/com.ontim.dialer.DialtactsActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.dialer/com.android.dialer.PeopleActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.dialer/com.android.dialer.TwelveKeyDialer}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.tct.dialer/com.android.dialer.app.DialtactsActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.oneplus.dialer/com.android.dialer.oneplus.activity.OPDialtactsActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.asus.dialer/com.android.contacts.activities.DialtactsActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.dialer/com.android.dialer.main.impl.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{v.d.d.answercall/v.d.d.answercall.MainFrActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sonymobile.android.dialer/com.android.dialer.main.impl.MainActivity}"
+        drawable="le_icon" />
+
+    <!---wps_office-->
+    <item
+        component="ComponentInfo{cn.wps.moffice_eng/cn.wps.moffice.documentmanager.PreStartActivity}"
+        drawable="le_icon" />
+
+    <!---xender-->
+    <item
+        component="ComponentInfo{cn.xender/cn.xender.ui.activity.SplashActivity}"
+        drawable="le_icon" />
+
+    <!---gallery-->
+    <item
+        component=":GALLERY"
+        drawable="gallery" />
+    <item
+        component="ComponentInfo{com.simplemobiletools.gallery.pro/com.simplemobiletools.gallery.pro.activities.SplashActivity.Grey_black}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.coloros.gallery3d/com.oppo.gallery3d.app.Gallery}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.gallery3d/com.android.gallery3d.app.Gallery}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.gallery3d/com.huawei.gallery.app.GalleryMain}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.asus.gallery/com.asus.gallery.app.EPhotoActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.cyngn.gallerynext/com.cyngn.gallerynext.app.GalleryActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.flayvr.flayvr/com.flayvr.screens.folders.FolderSelectionActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.gallery3d/com.android.gallery3d.app.GalleryActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.htc.album/com.htc.album.AlbumMain.ActivityMainTabHost}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.htc.albumgp/com.htc.album.AlbumMain.ActivityMainTabHost}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.jrdcom.android.gallery3d/com.jrdcom.android.gallery3d.app.Gallery}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.lenovo.gallery/com.lenovo.gallery.app.GalleryActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.meizu.media.gallery/com.meizu.media.gallery.GalleryActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.miui.gallery/com.miui.gallery.activity.HomePageActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.motorola.MotGallery2/com.android.gallery3d.app.GalleryActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.oneplus.gallery/com.oneplus.gallery.OPGalleryActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sec.android.gallery3d/com.sec.android.gallery3d.app.GalleryOpaqueActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sec.android.gallery3d/com.sec.android.gallery3d.app.Gallery}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sonyericsson.album/com.sonyericsson.album.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.oneplus.gallery/com.oneplus.gallery.OPGalleryActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.gallery3d/com.android.newgallery.NewGallery}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{org.codeaurora.gallery/com.android.gallery3d.app.GalleryActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.vivo.gallery/com.android.gallery3d.vivo.GalleryTabActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{gallery.photomanager.picturegalleryapp.imagegallery/gallery.photomanager.picturegalleryapp.imagegallery.activity.LaunchAcr}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.tclhz.gallery/com.tcl.gallery.app.GalleryActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.simplemobiletools.gallery/com.simplemobiletools.gallery.activities.SplashActivity.Orange}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{cn.nubia.gallery3d/cn.nubia.gallery3d.app.Gallery}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.tct.gallery3d/com.tct.gallery3d.app.PermissionActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{photo.gallery.apps/photo.gallery.apps.activities.StartActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{photo.view.hd.gallery/photo.view.hd.gallery.activity.WelcomeActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.zui.gallery/com.zui.gallery.app.GalleryActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.simplemobiletools.gallery/com.simplemobiletools.gallery.activities.SplashActivity.Grey_black}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.beresnevgames.gallerycoloringbook/com.unity3d.player.UnityPlayerActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.gionee.gallery/com.gionee.gallery.sb.app.GnGallery}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.simplemobiletools.gallery/com.simplemobiletools.gallery.activities.SplashActivity.Yellow}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.gallery3d/com.android.gallery3d.VideoPlayerLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.simplemobiletools.gallery.pro/com.simplemobiletools.gallery.pro.activities.SplashActivity.Blue}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{cm.gallery.gallerypro/org.horaapps.leafpic.activities.SplashScreen}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.gallery3d/com.sprd.gallery3d.app.VideoActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.ak.galleryadfree.video.photo.gallery/com.simplemobiletools.gallery.activities.SplashActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.mobsnake.verticalgallery/com.android.gallery3d.app.GalleryActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.nomotorola.MotGallery2/com.android.gallery3d.app.GalleryActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.gallery3d/com.sprd.gallery3d.app.NewVideoActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sec.android.gallery3d/com.samsung.android.gallery.app.activity.GalleryActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.gallery3d/com.android.gallery3d.app.TNGalleryActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.simplemobiletools.gallery.pro/com.simplemobiletools.gallery.pro.activities.SplashActivity.Orange}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.simplemobiletools.gallery.pro/com.simplemobiletools.gallery.pro.activities.SplashActivity.Light_blue}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{photo.album.galleryvault.photogallery/com.ijoysoft.gallery.activity.WelcomeActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.vyom.gallery/com.vyom.gallery.M}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.apps.photosgo/com.google.android.apps.photosgo.home.HomeActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{gallery.photomanager.picturegalleryapp.imagegallery/gallery.photomanager.picturegalleryapp.imagegallery.activity.LaunchAcr}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{photography.blackgallery.android/photography.blackgallery.android.SlidingDrawer}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.pics.photography.photogalleryhd.gallery/com.pics.photography.photogalleryhd.gallery.ActivityUI.SplashScreen}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.simplemobiletools.gallery/com.simplemobiletools.gallery.activities.SplashActivity.Orange}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.simplemobiletools.gallery.pro/com.simplemobiletools.gallery.pro.activities.SplashActivity.Red}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.galleryapp.gallery/com.galleryapp.gallery.Activity.SplashActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{best.gallery/best.gallery.activities.SplashActivity.Orange}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{photography.blackgallery.android/photography.blackgallery.android.activity.SplashActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.coloros.gallery3d/com.coloros.gallery3d.app.MainActivity}"
+        drawable="le_icon" />
+
+    <!---calculator-->
+    <item
+        component=":CALCULATOR"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.bbkcalculator/com.android.bbkcalculator.Calculator}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.calculator2/com.android.calculator2.Calculator}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android2.calculator3/com.android2.calculator3.Calculator}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.asus.calculator/com.asus.calculator.Calculator}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.calculator/com.android.calculator2.Calculator}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.miui.calculator/com.miui.calculator.cal.CalculatorActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sec.android.app.popupcalculator/com.sec.android.app.popupcalculator.Calculator}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.tct.calculator/com.tct.calculator.Calculator}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.tct.calculator2/com.tct.calculator2.Calculator}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.wingtech.calc/com.wingtech.calc.Calculator}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.oneplus.calculator/com.oneplus.calculator.Calculator}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{org.seniorlaguna.calculator/org.seniorlaguna.calculator.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android2.calculator3/com.xlythe.calculator.material.Theme.Orange}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.calculator2/com.android.calculator2.CalculatorSprd}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sonymobile.exactcalculator/com.sonymobile.exactcalculator.Calculator}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.hld.anzenbokusucal/com.hld.anzenbokusu.calculator}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{cn.nubia.calculator2.preset/cn.nubia.calculator2.Calculator}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.iDailyapps.gallerylock.hidevideo.privacy/com.iDailyapps.gallerylock.hidevideo.privacy.CalculatorActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{co.fira.calculator.calculator_v2/co.fira.calculator.calculator_v2.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.hld.anzenbokusufake/com.hld.anzenbokusu.calculator7}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{all.in.one.calculator/app.calculator.ui.activities.feed.FeedActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.app.calculator.vault.hider/com.apktool.app.hider.icon_tag_calculator_plus}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{secret.hide.calculator/secret.hide.calculator.CalculatorActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.transsion.calculator/com.transsion.calculator.Calculator}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.hideitpro/com.hideitpro.CalculatorDisguiseEntryDefault}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{my.android.procalc/my.android.calc.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.tcl.calculator/com.tct.calculator.Calculator}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.calculator.vault/com.calculator.vault.CalculatorActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.coloros.calculator/com.android.calculator2.Calculator}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{all.in.one.calculator/all.in.one.calculator.ui.activities.NavigationActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.tct.calculator.bb/com.tct.calculator.Calculator}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.bbkcalculator/com.android.bbkcalculator.Calculator}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.flatfish.cal.privacy/com.privacy.CalculatorG}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.vivo.calculator/com.vivo.calculator.Calculator}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.augustro.calculatorvault/com.augustro.calculatorvault.Default_Screen}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.huawei.calculator/com.huawei.calculator.Calculator}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{org.seniorlaguna.calculator/org.seniorlaguna.calculator.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android2.calculator3/com.xlythe.calculator.material.Theme.Orange}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.calculator2/com.android.calculator2.CalculatorSprd}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.tct.calculator/com.tct.calculator.activity.CalculatorActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.meizu.flyme.calculator/com.meizu.flyme.calculator.Calculator}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.flatfish.cal.privacy/com.privacy.CalculatorActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.fredericmrozinski.jadecalculator/com.fredericmrozinski.jadecalculator.gui.CalculatorActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{my.android.calc/my.android.calc.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.tplink.calculator/com.tplink.calculator.Calculator}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.grindrapp.android/com.grindrapp.android.HomeActivityCalculator}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.hld.anzenbokusu/com.hld.anzenbokusu.calculator}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.ape.calculator2/com.ape.calculator2.Calculator}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.app.calculator.vault.hider/com.android.launcher3.icon_disguise}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.hld.anzenbokusufake/com.hld.anzenbokusu.calculator}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.atnsoft.calculator/com.atnsoft.calculator.MainActivity}"
+        drawable="le_icon" />
+
+    <!---calendar-->
+    <item
+        component=":CALENDAR"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.bbk.calendar/com.bbk.calendar.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{ree.calendar.schedule.reminder.todo.agenda.note.reminder.alarm/com.android.calendar.AllInOneActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{cn.nubia.calendar.preset/cn.nubia.calendar.CTAStartActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.calendar/com.android.calendar.AgendaActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.samsung.android.calendar/com.android.calendar.AllInOneActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.calendar/com.android.calendar.AllInOneActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.calendar/com.android.calendar.CalendarTabActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.calendar/com.android.calendar.ChooserActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.calendar/com.android.calendar.EditEventActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.calendar/com.android.calendar.EventInfoActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.calendar/com.android.calendar.homepage.AllInOneActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.calendar/com.android.calendar.LaunchActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.calendar/com.android.calendar.MonthActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.calendar/com.android.calendar.timeline.EventListWithStartTime}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.asus.calendar/com.android.calendar.AllInOneActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.boxer.calendar/com.android.calendar.AllInOneActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.codesector.calendar/com.codesector.calendar.CalendarActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.calendar/com.android.calendar.AllInOneActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.calendar/com.android.calendar.HtcCalendarProvider}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.calendar/com.android.calendar.LaunchActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.htc.calendar/com.htc.calendar.CalendarCarouselActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.htc.calendar/com.htc.calendar.LaunchActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.htc.calendar/com.htc.calendar.MonthActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.kfactormedia.mycalendarmobile/com.kfactormedia.mycalendarmobile.MyCalendarActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.lenovo.app.Calendar/com.lenovo.app.Calendar.MonthActivityNew}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.lenovo.calendar/com.lenovo.calendar.AllInOneActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.motorola.calendar/com.android.calendar.AllInOneActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.motorola.calendar/com.motorola.calendar.LaunchActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.popularapp.periodcalendar/com.popularapp.periodcalendar.AdActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.calendar/com.android.calendar.homepage.AllInOneActivity}"
+        drawable="le_icon" />
+    <calendar
+        component="ComponentInfo{com.android.calendar/com.android.calendar.AllInOneActivity}"
+        prefix="calendar_" />
+    <item
+        component="ComponentInfo{com.sec.android.app.latin.launcher.calendar/com.sec.android.app.latin.launcher.calendar.Launcher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sonyericsson.calendar/com.sonyericsson.calendar.monthview.MonthViewActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sonymobile.calendar/com.sonymobile.calendar.LaunchActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{org.withouthat.acalendarplus/org.withouthat.acalendarplus.ACalendarPlus}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.oneplus.calendar/com.android.calendar.AllInOneActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.calendar/com.android.calendar.LaunchTasksActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{org.lineageos.etar/com.android.calendar.AllInOneActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.coloros.calendar/com.android.calendar.AllInOneActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.xiaomi.calendar/com.android.calendar.homepage.AllInOneActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{cn.nubia.calendar.preset/cn.nubia.calendar.AllInOneActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.periodapp.period/com.periodapp.period.SplashScreenActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.samsung.android.calendar/com.samsung.android.app.calendar.activity.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.calendar/com.meizu.flyme.calendar.AllInOneActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.skuld.calendario/com.skuld.calendario.ui.home.activity.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.bbk.calendar/com.bbk.calendar.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.simplemobiletools.calendar.pro/com.simplemobiletools.calendar.pro.activities.SplashActivity.Grey_black}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.simplemobiletools.calendar.pro/com.simplemobiletools.calendar.pro.activities.SplashActivity.Light_green}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.crdroid.etar/com.android.calendar.AllInOneActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{org.lineageos.etar/com.android.calendar.AllInOneActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.coloros.calendar/com.android.calendar.AllInOneActivity}"
+        drawable="le_icon" />
+
+    <!---camera-->
+    <item
+        component=":CAMERA"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.GoogleCameraWide/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.hmdglobal.camera2/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.Redmi4X/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{org.lineageos.snap/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.camera/com.android.camera.CameraActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.camera/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.camera/com.android.camera.Camera}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.camera2/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.gallery3d/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.asus.camera/com.asus.camera.CameraApp}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.cyngn.cameranext/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.cyngn.cameranextmod/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.htc.camera/com.htc.camera.CameraEntry}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.htc.camera2/com.htc.camera2.CameraEntry}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.huawei.camera/com.huawei.camera}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.joeware.android.gpulumera/com.joeware.android.gpulumera.activity.ActivityCamera}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.lenovo.scg/com.lenovo.scg.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.lge.camera/com.lge.camera.CameraAppLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.mediatek.camera/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.motorola.camera/com.motorola.camera.Camera}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.motorola.cameraone/com.motorola.camera.Camera}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.myos.camera/com.myos.camera.CameraLauncher2}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.oneplus.camera/com.oneplus.camera.OPCameraActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.oppo.camera/com.oppo.camera.Camera}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sec.android.app.camera/com.sec.android.app.camera.Camera}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sonyericsson.android.camera/com.sonyericsson.android.camera.CameraActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{org.codeaurora.snapcam/com.android.camera.CameraActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{org.codeaurora.snapcam/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{org.cyanogenmod.snap/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.oneplus.camera/com.oneplus.camera.OPCameraActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.zte.camera/com.zte.camera.CameraActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.essential.klik/com.essential.klik.Camera}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.blackberry.camera/com.blackberry.camera.ui.coordination.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.bq.camerabq/com.bq.camera3.common.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.motorola.camera2/com.motorola.camera.Camera}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.mediatek.camera/com.mediatek.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.GoogleCamera.Wichaya/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.hmdglobal.app.camera/com.hmdglobal.app.camera.GuideActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.evenwell.camera2/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.myos.camera/com.myos.camera.activity.CameraActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.camera.galaxyx.s10/com.camera.function.main.privacy.CameraPrivacyActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.zui.camera/com.zui.camera.CameraActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.dual.GCam/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.tcl.camera/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.zui.cameragallery/com.zui.cameragallery.camera.CameraActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.hmdglobal.app.camera/com.hmdglobal.app.camera.CameraActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.lenovo.camera/com.android.camera.Camera}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.fpcamera3/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.transsion.camera/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.GoogleCamerb/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.tplink.camera/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.nextbit.camera/com.nextbit.camera.ui.CameraActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.mediatek.hz.camera/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{hd.camera.sticker.filter/com.coocent.camera10.activity.LaunchActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{e2}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{ru.ok.android/ru.ok.android.ui.activity.main.OdklActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.razerzone.camera/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.camera3/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.motorola.cameraonemtk/com.motorola.camera.Camera}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.GoogleCameraTele/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.Pixel2Mod/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.GoogleCameraArc/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{org.codeaurora.snapcam/com.android.camera.VideoCamera}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.hmdglobal.camera2lite/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{jp.kyocera.camera/jp.kyocera.camera.activity.CameraActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.meizu.media.camera/com.meizu.media.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.GoogleCameraEng/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.selfieforphonex.oscamera/com.android.camera.activity.CameraActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.GoogleCameraP3/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.camera/com.android.camera.CameraActivityWraper}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.camerabq/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.Pixel3Mod/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.motorola.ts.camera/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.GoogleCamera.Urnyx/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.MGC/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.GoogleCameraNext/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.camera/com.android.camera.view.CameraActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.oplus.camera/com.oplus.camera.Camera}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.GoogleCamMGC/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.bq.camerabq/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.freeme.camera/com.freeme.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.MGCns/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.GoogleCamera.Burial16/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.GoogleCamera.Cameight/com.android.camera.CameraLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{jp.co.sharp.android.camera/jp.co.sharp.android.camera.stillimagecamera.Camera}"
+        drawable="le_icon" />
+
+    <!---clock-->
+    <item
+        component=":CLOCK"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.deskclock/com.android.deskclock.AlarmsMainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.deskclock/com.android.deskclock.DeskClockTabActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.deskclock/com.android.deskclock.DeskClock}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.asus.deskclock/com.asus.deskclock.DeskClock}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.deskclock/com.android.deskclock.DeskClock}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.lenovo.deskclock/com.lenovo.deskclock.DeskClock}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.lge.clock/com.lge.clock.AlarmClockActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sec.android.app.clockpackage/com.sec.android.app.clockpackage.alarm.Alarm}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sec.android.app.clockpackage/com.sec.android.app.clockpackage.ClockPackage}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sonyericsson.organizer/com.sonyericsson.organizer.Organizer}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{net.oneplus.deskclock/net.oneplus.deskclock.DeskClock}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.oneplus.deskclock/com.oneplus.deskclock.DeskClock}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{zte.com.cn.alarmclock/zte.com.cn.alarmclock.activity.AlarmClockActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{co.fira.clock/co.fira.clock.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sec.android.app.clockpackage/com.sec.android.app.clockpackage.common.activity.ClockPackage}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sec.android.app.clockpackage/com.sec.android.app.clockpackage.TabletClockPackage}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.deskclock/com.android.deskclock.AlarmClock}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.transsion.deskclock/com.transsion.deskclock.DeskClock}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.htc.android.worldclock/com.htc.android.worldclock.WorldClockTabControl}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.wearabletech.clock.iap/com.android.clock.DeskClock}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.BBKClock/com.android.BBKClock.Timer}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.coloros.alarmclock/com.coloros.alarmclock.AlarmClock}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{fr.mathis.clockdaydream/fr.mathis.clockdaydream.MainActivity}"
+        drawable="le_icon" />
+
+    <!---contacts-->
+    <item
+        component=":CONTACTS"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sonymobile.android.contacts/com.android.contacts.activities.PeopleActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.samsung.android.contacts/com.samsung.android.contacts.contactslist.PeopleActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.PeopleActivityAlias}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.activities.CallLogActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.activities.ContactsFrontDoor}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.activities.ContactTabBrowserActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.activities.PeopleActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.activities.PhoneFrontDoor}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.activities.TwelveKeyDialer}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.activities.TwelveKeyDialer}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.BaiJiaXingActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.ContactHostActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.ContactsActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.ContactsListActivityEx}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.ContactsListActivityLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.ContactsListActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.ContactsMainFromHomeActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.DialtactsContactsEntryActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.ice.IcePeopleActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.LaunchCallLogActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.RecentCallLogLaunchActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.RecentCallsEntryActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.SmartDailerActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.SmartDialerListActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.tmo.LaunchCommunityActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.contacts.TransparentActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.app.contacts.PhoneBookTopMenuActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.sec.android.app.contacts.ContactsEntryActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.sec.android.app.contacts.DialerEntryActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.sec.android.app.contacts.PhoneBookSplitTopMenuActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.sec.android.app.contacts.PhoneBookTopMenuActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.sec.android.app.contacts.RecntcallEntryActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.sec.android.app.contacts.RecntcallEntryActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.htccontacts/com.android.htccontacts.BrowseLayerCarouselActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.htccontacts/com.android.htccontacts.ContactSearchEntryActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.htccontacts/com.android.htccontacts.ContactsTabActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.asus.contacts/com.android.contacts.activities.PeopleActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.contacts/com.android.contacts.activities.PeopleActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.htc.contacts/com.htc.contacts.BrowseLayerCarouselActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.lenovo.ideafriend/com.lenovo.ideafriend.alias.PeopleActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.motorola.blur.contacts/com.motorola.blur.contacts.ViewIdentitiesFacetActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.motorola.blur.contacts/com.motorola.blur.contacts.ViewIdentitiesTabActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.samsung.android.contacts/com.android.contacts.activities.PeopleActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sonyericsson.android.socialphonebook/com.sonyericsson.android.socialphonebook.LaunchActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sonyericsson.android.socialphonebook/com.sonyericsson.android.socialphonebook.SocialPhonebookActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sonyericsson.contacts/com.sonyericsson.contacts.ContactTabActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.oneplus.contacts.activities.OPPeopleActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.blackberry.contacts/com.android.contacts.activities.PeopleDrawerActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.samsung.android.app.contacts/com.samsung.android.contacts.contactslist.PeopleActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.tct.contacts/com.android.contacts.activities.PeopleActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.contacts/com.android.dialer.app.DialtactsActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.oneplus.contacts/com.oneplus.contacts.activities.OPPeopleActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.samsung.android.app.contacts/com.samsung.android.contacts.contactslist.PeopleActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.hb.dialer.free/com.hb.dialer.ui.ShcStartActivity$Contacts}"
+        drawable="le_icon" />
+
+    <!---mail-->
+    <item
+        component=":EMAIL"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.vivo.email/com.vivo.email.activity.Welcome}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.email/com.android.email.activity.Welcome}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.email/com.android.email.activity.Welcome}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.email/com.android.email.activity.Welcome}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.htc.android.mail/com.htc.android.mail.MailListTab}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.lge.email/com.lge.email.ui.setupwizard.Welcome}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.motorola.blur.email/com.motorola.blur.email.mailbox.MailListActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.motorola.blur.email/com.motorola.blur.email.mailbox.ViewFolderActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.motorola.motoemail/com.android.email.activity.Welcome}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.samsung.android.email.provider/com.samsung.android.email.ui.activity.MessageListXL}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.samsung.android.email.ui/com.samsung.android.email.ui.activity.MessageListXL}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sonymobile.email/com.sonymobile.email.activity.Welcome}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{de.web.mobile.android.mail/com.fsck.k9.activity.Accounts}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{park.hotm.email.app/ru.mail.mailapp.SplashScreenActivity}"
+        drawable="le_icon" />
+
+    <!---linked_in-->
+    <item
+        component="ComponentInfo{com.linkedin.android/com.linkedin.android.authenticator.LaunchActivity}"
+        drawable="le_icon" />
+
+    <!---slack-->
+    <item
+        component="ComponentInfo{com.Slack/com.Slack.ui.HomeActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.Slack/slack.app.ui.HomeActivity}"
+        drawable="le_icon" />
+
+    <!---spotify-->
+    <item
+        component="ComponentInfo{com.spotify.music/com.spotify.music.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.spotify.lite/com.spotify.lite.features.launcher.LauncherActivity}"
+        drawable="le_icon" />
+
+    <!---nova_launcher_prime-->
+    <item
+        component="ComponentInfo{com.teslacoilsw.launcher.prime/com.teslacoilsw.launcher.prime.NovaLauncherPrimeActivity}"
+        drawable="le_icon" />
+
+    <!---nova_launcher-->
+    <item
+        component="ComponentInfo{com.teslacoilsw.launcher/com.android.launcher2.Launcher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.teslacoilsw.launcher/com.teslacoilsw.launcher.NovaShortcutHandler}"
+        drawable="le_icon" />
+
+    <!---nova_settings-->
+    <item
+        component="ComponentInfo{com.teslacoilsw.launcher/com.teslacoilsw.launcher.preferences.SettingsActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.teslacoilsw.launcher/preferences.SettingsActivity}"
+        drawable="le_icon" />
+
+    <!---twitter-->
+    <item
+        component="ComponentInfo{org.chromium.webapk.abb86223c0f42c4f2/org.chromium.webapk.shell_apk.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.twitter.android/com.twitter.android.StartActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{org.chromium.webapk.ad390ea703ab950bd_v2/org.chromium.webapk.shell_apk.h2o.H2OOpaqueMainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{org.chromium.webapk.a7b392fd2cee70007_v2/org.chromium.webapk.shell_apk.h2o.H2OOpaqueMainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{org.chromium.webapk.ace0b15a6ce931426/org.chromium.webapk.shell_apk.h2o.H2OOpaqueMainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{org.chromium.webapk.a09f0e199f3f8829c/org.chromium.webapk.shell_apk.h2o.H2OOpaqueMainActivity}"
+        drawable="le_icon" />
+
+    <!---file_manager-->
+    <item
+        component="ComponentInfo{com.mi.android.globalFileexplorer/com.android.fileexplorer.FileExplorerTabActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{fm.clean/fm.clean.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.coloros.filemanager/com.coloros.filemanager.Main}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.sec.android.app.myfiles/com.sec.android.app.myfiles.external.ui.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.coloros.filemanager/com.coloros.filemanager.ad.SplashActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.transsion.filemanagerx/com.transsion.filemanagerx.MainFilemanagerActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{zte.com.cn.filer/zte.com.cn.filer.FileMgrActivity}"
+        drawable="le_icon" />
+
+    <!---telegram-->
+    <item
+        component="ComponentInfo{org.telegram.messenger.beta/org.telegram.ui.LaunchActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{org.telegram.messenger/org.telegram.ui.LaunchActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{org.telegram.messenger.web/org.telegram.ui.LaunchActivity}"
+        drawable="le_icon" />
+
+</resources>
