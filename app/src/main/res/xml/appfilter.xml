@@ -67,53 +67,6 @@
         component="ComponentInfo{com.transsion.faceid/com.transsion.faceid.FaceManagerActivity}"
         drawable="le_icon" />
 
-    <!--====this not included->debug apps =====-->
-    <item
-        component="ComponentInfo{com.buildwithsiele.recipesapi/com.buildwithsiele.recipesapi.ui.MainActivity}"
-        drawable="le_icon" />
-    <item
-        component="ComponentInfo{com.codehub.finmanager/com.codehub.finmanager.MainActivity}"
-        drawable="le_icon" />
-    <item
-        component="ComponentInfo{com.developerkim.mytodo/com.developerkim.mytodo.ui.MainActivity}"
-        drawable="le_icon" />
-
-    <item
-        component="ComponentInfo{com.siele/com.siele.MainActivity}"
-        drawable="le_icon" />
-    <item
-        component="ComponentInfo{com.siele.audiorec/com.siele.audiorec.ui.main.MainActivity}"
-        drawable="le_icon" />
-    <item
-        component="ComponentInfo{com.siele.countries/com.siele.countries.ui.MainActivity}"
-        drawable="le_icon" />
-    <item
-        component="ComponentInfo{com.siele.debthunter/com.siele.debthunter.views.MainActivity}"
-        drawable="le_icon" />
-    <item
-        component="ComponentInfo{com.siele.fintrace/com.siele.fintrace.MainActivity}"
-        drawable="le_icon" />
-    <item
-        component="ComponentInfo{com.siele.iconslauncher/com.siele.iconslauncher.MainActivity}"
-        drawable="le_icon" />
-    <item
-        component="ComponentInfo{com.siele.matchstats/com.siele.matchstats.ui.screens.MainActivity}"
-        drawable="le_icon" />
-    <item
-        component="ComponentInfo{com.siele.myresume/com.siele.myresume.MainActivity}"
-        drawable="le_icon" />
-    <item
-        component="ComponentInfo{com.siele.quotes/com.siele.quotes.ui.MainActivity}"
-        drawable="le_icon" />
-    <item
-        component="ComponentInfo{com.siele.sheriamashinani/com.siele.sheriamashinani.MainActivity}"
-        drawable="le_icon" />
-    <item
-        component="ComponentInfo{com.siele.unitconverter/com.siele.unitconverter.ui.MainActivity}"
-        drawable="le_icon" />
-    <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^this not included->debug apps ^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
-
-
     <!--apps_tract_icon_pack-->
     <item
         component="ComponentInfo{com.melon.appstract.dark/com.candybar.sample.activities.SplashActivity}"
