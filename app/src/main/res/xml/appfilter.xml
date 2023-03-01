@@ -32,9 +32,24 @@
         component=":SMS"
         drawable="le_icon" />
 
+    <!--airbrush-->
+    <item
+        component="ComponentInfo{com.magicv.airbrush/com.magicv.airbrush.common.StartupActivity}"
+        drawable="le_icon" />
+
+    <!--alarmy-->
+    <item
+        component="ComponentInfo{droom.sleepIfUCan/droom.sleepIfUCan.view.activity.MainActivity}"
+        drawable="le_icon" />
+
     <!--another_widget -->
     <item
         component="ComponentInfo{com.tommasoberlose.anotherwidget/com.tommasoberlose.anotherwidget.ui.activity.MainActivity}"
+        drawable="le_icon" />
+
+    <!--asos-->
+    <item
+        component="ComponentInfo{com.asos.app/com.asos.app.ui.activities.ConfigActivity}"
         drawable="le_icon" />
 
     <!--asphalt_9-->
@@ -52,6 +67,11 @@
     <!--abc_editor-->
     <item
         component="ComponentInfo{joa.zipper.editor/joa.zipper.editor.Main}"
+        drawable="le_icon" />
+
+    <!--actions_services-->
+    <item
+        component="ComponentInfo{com.google.android.as/com.google.android.apps.miphone.aiai.allapps.main.MainDummyActivity}"
         drawable="le_icon" />
 
     <!--ac_market-->
@@ -231,6 +251,11 @@
         component="ComponentInfo{com.xrom.intl.appcenter/com.xrom.intl.appcenter.ui.main.MainActivity}"
         drawable="le_icon" />
 
+    <!--app_sales -->
+    <item
+        component="ComponentInfo{net.tsapps.appsales/net.tsapps.appsales.MainActivity}"
+        drawable="le_icon" />
+
     <!--arts_culture-->
     <item
         component="ComponentInfo{com.google.android.apps.cultural/com.google.android.apps.cultural.web.WebViewActivity}"
@@ -243,6 +268,26 @@
     <!--backdrops-->
     <item
         component="ComponentInfo{com.backdrops.wallpapers/com.backdrops.wallpapers.WelcomeActivity}"
+        drawable="le_icon" />
+
+    <!--background_eraser-->
+    <item
+        component="ComponentInfo{com.handycloset.android.eraser/com.handycloset.android.eraser.MainActivity}"
+        drawable="le_icon" />
+
+    <!--brawl_stars-->
+    <item
+        component="ComponentInfo{com.supercell.brawlstars/com.supercell.brawlstars.GameApp}"
+        drawable="le_icon" />
+
+    <!--bbc_sports-->
+    <item
+        component="ComponentInfo{uk.co.bbc.android.sportdomestic/uk.co.bbc.android.sport.SplashActivity}"
+        drawable="le_icon" />
+
+    <!--betvictor-->
+    <item
+        component="ComponentInfo{com.betvictor.bettingapp.uk/com.betvictor.bettingapp.presentation.views.activities.SplashActivity}"
         drawable="le_icon" />
 
     <!--bitly-->
@@ -436,6 +481,11 @@
         component="ComponentInfo{com.uc.browser.hd/com.ucweb.activity.MainActivity}"
         drawable="le_icon" />
 
+    <!-- kiwi_browser -->
+    <item
+        component="ComponentInfo{com.kiwibrowser.browser/com.google.android.apps.chrome.Main}"
+        drawable="le_icon" />
+
     <!-- search_lite -->
     <item
         component="ComponentInfo{com.google.android.apps.searchlite/com.google.android.apps.searchlite.ui.SearchActivity}"
@@ -462,6 +512,16 @@
         component="ComponentInfo{com.chhayaapp/com.chhayaapp.SplashScreen}"
         drawable="le_icon" />
 
+    <!--classroom-->
+    <item
+        component="ComponentInfo{com.google.android.apps.classroom/com.google.android.apps.classroom.application.launcher.LauncherActivity}"
+        drawable="classroom" />
+
+    <!--clash_of_clans-->
+    <item
+        component="ComponentInfo{com.supercell.clashofclans/com.supercell.clashofclans.GameApp}"
+        drawable="le_icon" />
+
     <!--clipboard_manager-->
     <item
         component="ComponentInfo{devdnua.clipboard.pro/devdnua.clipboard.SplashActivity}"
@@ -482,10 +542,20 @@
         component="ComponentInfo{com.adobe.cc/com.adobe.cc.SplashScreen}"
         drawable="creative_cloud" />
 
+    <!--crispy-->
+    <item
+        component="ComponentInfo{com.crispy.icons.flatedge.iconpack/com.crispy.icons.flatedge.iconpack.MainActivity}"
+        drawable="le_icon" />
+
     <!--cymera-->
     <item
         component="ComponentInfo{com.cyworld.camera/com.cyworld.cymera.CameraMain}"
         drawable="cymera" />
+
+    <!--cytoid-->
+    <item
+        component="ComponentInfo{me.tigerhix.cytoid/me.tigerhix.cytoid.CytoidPluginActivity}"
+        drawable="le_icon" />
 
     <!--cpl-->
     <item
@@ -1570,15 +1640,21 @@
         component="ComponentInfo{com.hb.dialer.free/com.hb.dialer.ui.ShcStartActivity$Contacts}"
         drawable="le_icon" />
 
+    <!--ccleaner-->
+    <item
+        component="ComponentInfo{com.piriform.ccleaner/com.piriform.ccleaner.ui.activity.MainActivity}"
+        drawable="le_icon" />
+
     <!--cell_broadcast-->
     <item
         component="ComponentInfo{com.android.cellbroadcastreceiver/com.android.cellbroadcastreceiver.CellBroadcastListActivity}"
         drawable="le_icon" />
 
-    <!--ccleaner-->
+    <!--city_mapper-->
     <item
-        component="ComponentInfo{com.piriform.ccleaner/com.piriform.ccleaner.ui.activity.MainActivity}"
+        component="ComponentInfo{com.citymapper.app.release/com.citymapper.app.MainActivity}"
         drawable="le_icon" />
+
 
     <!--cornerfly-->
     <item
@@ -1589,6 +1665,16 @@
     <!--datally-->
     <item
         component="ComponentInfo{com.google.android.apps.freighter/com.google.android.apps.nbu.freighter.splash.SplashActivity}"
+        drawable="le_icon" />
+
+    <!--db_navigator-->
+    <item
+        component="ComponentInfo{de.hafas.android.db/de.bahn.dbtickets.ui.DBNavLauncherActivity}"
+        drawable="le_icon" />
+
+    <!--designer_tools-->
+    <item
+        component="ComponentInfo{com.scheffsblend.designertools/org.cyanogenmod.designertools.ui.DesignerToolsActivity}"
         drawable="le_icon" />
 
     <!---dev_tools-->
@@ -1674,6 +1760,16 @@
         component="ComponentInfo{com.duapps.recorder/com.duapps.screen.recorder.SplashActivity}"
         drawable="le_icon" />
 
+    <!--dunkin-->
+    <item
+        component="ComponentInfo{com.dunkinbrands.otgo/com.cardfree.android.dunkindonuts.activities.SplashActivity}"
+        drawable="le_icon" />
+
+    <!--duckduckgo-->
+    <item
+        component="ComponentInfo{com.duckduckgo.mobile.android/com.duckduckgo.app.launch.LaunchActivity}"
+        drawable="le_icon" />
+
     <!--dope-->
     <item
         component="ComponentInfo{alice.project.dope/alice.project.dope.Welcome}"
@@ -1682,6 +1778,9 @@
     <!--dropbox-->
     <item
         component="ComponentInfo{com.dropbox.android/com.dropbox.android.activity.DropboxBrowser}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.dropbox.androie/com.dropbox.androie.activity.DropboxBrowser}"
         drawable="le_icon" />
 
     <!--duolingo-->
@@ -1694,9 +1793,17 @@
         component="ComponentInfo{br.com.easytaxi/br.com.easytaxi.ui.CallTaxiActivity}"
         drawable="le_icon" />
 
+    <!--e_boks_dk -->
+    <item
+        component="ComponentInfo{com.eboks.activities/dk.eboks.eboksmobile.splash.SplashActivity}"
+        drawable="le_icon" />
+
     <!--ebay-->
     <item
         component="ComponentInfo{com.ebay.mobile/com.ebay.mobile.activities.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.ebay.kleinanzeigen/ebk.ui.splash.SplashActivity}"
         drawable="le_icon" />
 
     <!--edjing-->
@@ -2040,6 +2147,10 @@
     <item
         component="ComponentInfo{org.mozilla.firefox/org.mozilla.firefox.App}"
         drawable="le_icon" />
+    <!--firefox_beta-->
+    <item
+        component="ComponentInfo{org.mozilla.firefox_beta/org.mozilla.firefox_beta.App}"
+        drawable="le_icon" />
 
     <!--fleksy-->
     <item
@@ -2122,15 +2233,17 @@
         component="ComponentInfo{com.facebook.mlite/com.facebook.mlite.coreui.view.MainActivity}"
         drawable="messenger_lite" />
 
+    <!--falling_lightblocks-->
+    <item
+        component="ComponentInfo{de.golfgl.lightblocks/de.golfgl.lightblocks.AndroidLauncher}"
+        drawable="le_icon" />
+
     <!---flashlight-->
     <item
         component="ComponentInfo{com.htc.flashlight/com.htc.flashlight.FlashlightActivity}"
         drawable="le_icon" />
     <item
         component="ComponentInfo{com.android.systemui/com.android.systemui.flashlight.FlashlightActivity}"
-        drawable="le_icon" />
-    <item
-        component="ComponentInfo{com.android.systemui/com.android.systemui.flashlight.FlashLightActivity}"
         drawable="le_icon" />
     <item
         component="ComponentInfo{com.asus.flashlight/com.asus.flashlight.FlashLightMainActivity}"
@@ -2301,6 +2414,11 @@
         component="ComponentInfo{com.xiaomi.hm.health/com.xiaomi.hm.health.activity.StartUpActivity}"
         drawable="le_icon" />
 
+    <!-- my_fitness_pal -->
+    <item
+        component="ComponentInfo{com.myfitnesspal.android/com.myfitnesspal.android.login.Welcome}"
+        drawable="le_icon" />
+
     <!--^^^^^^^^^^^^^^^^^^^^^fitness^^^^^^^^^^^^^^^^^^^^^^^^-->
 
     <!--fasthub-->
@@ -2319,6 +2437,11 @@
     <!--find_my_device-->
     <item
         component="ComponentInfo{com.google.android.apps.adm/com.google.android.apps.adm.MainActivity}"
+        drawable="le_icon" />
+
+    <!--free_agent_mobile-->
+    <item
+        component="ComponentInfo{com.freeagent.mobile/com.freeagent.mobile.MainActivity}"
         drawable="le_icon" />
 
     <!--free_flix_hq -->
@@ -2389,6 +2512,11 @@
         component="ComponentInfo{com.fb.fluid/com.fb.fluid.ActivityMain}"
         drawable="le_icon" />
 
+    <!--fdroid-->
+    <item
+        component="ComponentInfo{org.fdroid.fdroid/org.fdroid.fdroid.views.main.MainActivity}"
+        drawable="le_icon" />
+
     <!--feedback-->
     <item
         component="ComponentInfo{com.miui.bugreport/com.miui.bugreport.ui.MainTabActivity}"
@@ -2398,11 +2526,24 @@
     <item
         component="ComponentInfo{com.franco.focus.lite/com.franco.focus.lite.activities.Main}"
         drawable="le_icon" />
-    <!--fdroid-->
+
+    <!--fotmob-->
     <item
-        component="ComponentInfo{org.fdroid.fdroid/org.fdroid.fdroid.views.main.MainActivity}"
+        component="ComponentInfo{com.mobilefootie.wc2010/com.mobilefootie.fotmob.gui.v2.MainActivityWrapper}"
         drawable="le_icon" />
 
+    <!--fx-->
+    <item
+        component="ComponentInfo{nextapp.fx/nextapp.fx.ui.ExplorerActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{nextapp.fx/nextapp.fx.ui.textedit.TextEditorActivity}"
+        drawable="le_icon" />
+
+    <!--grasshopper-->
+    <item
+        component="ComponentInfo{com.area120.grasshopper/com.area120.grasshopper.MainActivity}"
+        drawable="le_icon" />
 
     <!--greenify-->
     <item
@@ -2597,6 +2738,11 @@
         drawable="le_icon" />
     <item
         component="ComponentInfo{com.coloros.gallery3d/com.coloros.gallery3d.app.MainActivity}"
+        drawable="le_icon" />
+
+    <!--game_launcher-->
+    <item
+        component="ComponentInfo{com.samsung.android.game.gamehome/com.samsung.android.game.gamehome.activity.StartActivity}"
         drawable="le_icon" />
 
     <!--google-->
@@ -3007,9 +3153,18 @@
         component="ComponentInfo{com.x1unix.s60icons/com.x1unix.s60icons.MainActivity}"
         drawable="le_icon" />
 
-    <!--apps_tract_icon_pack-->
+    <!-- apps_tract_icon_pack -->
     <item
         component="ComponentInfo{com.melon.appstract.dark/com.candybar.sample.activities.SplashActivity}"
+        drawable="le_icon" />
+    <!-- icon_pack_studio -->
+    <item
+        component="ComponentInfo{ginlemon.iconpackstudio/ginlemon.iconpackstudio.editor.homeActivity.HomeActivity}"
+        drawable="le_icon" />
+
+    <!-- icon_pack_studio_exported -->
+    <item
+        component="ComponentInfo{ginlemon.iconpackstudio.exported/ginlemon.iconpackstudio.exported.MainActivity}"
         drawable="le_icon" />
 
     <!--ifttt-->
@@ -3058,6 +3213,11 @@
         component="ComponentInfo{com.nianticproject.ingress/com.niantic.nemesis.NemesisActivity}"
         drawable="le_icon" />
 
+    <!--inkywalls_β-->
+    <item
+        component="ComponentInfo{com.benx9.inkywalls/com.benx9.inkywalls.activities.SplashActivity}"
+        drawable="le_icon" />
+
     <!--instagram-->
     <item
         component="ComponentInfo{com.instagram.android/com.instagram.android.activity.MainTabActivity}"
@@ -3066,14 +3226,14 @@
         component="ComponentInfo{com.gbinsta.android/com.gbinsta.android.activity.MainTabActivity}"
         drawable="le_icon" />
 
-    <!--icon_pack_studio-->
+    <!--inshot-->
     <item
-        component="ComponentInfo{ginlemon.iconpackstudio/ginlemon.iconpackstudio.editor.homeActivity.HomeActivity}"
+        component="ComponentInfo{com.camerasideas.instashot/com.camerasideas.instashot.DummyActivity}"
         drawable="le_icon" />
 
-    <!--icon_pack_studio_exported-->
+    <!--intra-->
     <item
-        component="ComponentInfo{ginlemon.iconpackstudio.exported/ginlemon.iconpackstudio.exported.MainActivity}"
+        component="ComponentInfo{app.intra/app.intra.ui.MainActivity}"
         drawable="le_icon" />
 
     <!--idm-->
@@ -3084,6 +3244,16 @@
     <!--internet_speed_meter_lite-->
     <item
         component="ComponentInfo{com.internet.speed.meter.lite/com.internet.speed.meter.lite.Main}"
+        drawable="le_icon" />
+
+    <!--jionet-->
+    <item
+        component="ComponentInfo{com.jio.mhood.jionet/com.jio.android.jionet.JioNetLauncherActivity}"
+        drawable="le_icon" />
+
+    <!--jiotv-->
+    <item
+        component="ComponentInfo{com.jio.jioplay.tv/com.jio.jioplay.tv.activities.IndexActivity}"
         drawable="le_icon" />
 
     <!--journey-->
@@ -3125,6 +3295,7 @@
         drawable="le_icon" />
 
     <!--launchers-->
+
     <!-- adw_launcher -->
     <item
         component="ComponentInfo{org.adw.launcher/org.adw.launcher.LauncherActivity}"
@@ -3135,6 +3306,7 @@
     <item
         component="ComponentInfo{org.adw.launchet/org.adw.launchet.LauncherActivity}"
         drawable="le_icon" />
+
     <!--- nova_launcher -->
     <item
         component="ComponentInfo{com.teslacoilsw.launcher.prime/com.teslacoilsw.launcher.prime.NovaLauncherPrimeActivity}"
@@ -3148,17 +3320,21 @@
     <item
         component="ComponentInfo{com.teslacoilsw.launcher/com.teslacoilsw.launcher.preferences.SettingsActivity}"
         drawable="le_icon" />
+
     <item
         component="ComponentInfo{com.teslacoilsw.launcher/preferences.SettingsActivity}"
         drawable="le_icon" />
+
     <!-- simple_mobile_tools_launcher -->
     <item
         component="ComponentInfo{com.simplemobiletools.applauncher/com.simplemobiletools.applauncher.activities.SplashActivity.Orange}"
         drawable="le_icon" />
+
     <!-- hios_launcher -->
     <item
         component="ComponentInfo{com.transsion.hilauncher/com.android.launcher3.DynamicVirtualEntryActivity}"
         drawable="le_icon" />
+
     <!-- holo_launcher -->
     <item component="ComponentInfo{com.mobint.hololauncher/com.mobint.hololauncher.Launcher}" drawable="le_icon"/>
     <item component="ComponentInfo{com.mobint.hololauncherplus/com.mobint.hololauncherplus.MainActivity}" drawable="le_icon"/>
@@ -3169,14 +3345,17 @@
     <item
         component="ComponentInfo{app.olauncher/app.olauncher.MainActivity}"
         drawable="le_icon" />
+
     <!-- niagara_launcher -->
     <item
         component="ComponentInfo{bitpit.launcher/bitpit.launcher.ui.HomeActivity}"
         drawable="le_icon" />
+
     <!-- ruthless_launcher -->
     <item
         component="ComponentInfo{com.ruthless.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity}"
         drawable="le_icon" />
+
     <!-- action_launcher -->
     <item
         component="ComponentInfo{com.chrislacy.actionlauncher.pro/com.chrislacy.actionlauncher.ActionLauncher}"
@@ -3202,6 +3381,7 @@
     <item
         component="ComponentInfo{com.actionlauncher.playstore/com.actionlauncher.ActionLauncherActivity}"
         drawable="le_icon" />
+
     <!-- apex_launcher -->
     <item
         component="ComponentInfo{com.anddoes.launcher/com.anddoes.launcher.Launcher}"
@@ -3209,10 +3389,12 @@
     <item
         component="ComponentInfo{com.anddoes.launcher.pro/com.anddoes.launcher.pro.ApexLauncherProActivity}"
         drawable="le_icon" />
+
     <!-- aviate_launcher -->
     <item
         component="ComponentInfo{com.tul.aviate/com.tul.aviator.ui.TabbedHomeActivity}"
         drawable="le_icon" />
+
     <!-- go_launcher -->
     <item
         component="ComponentInfo{com.gau.go.launcherex.key.getjar/com.gau.go.launcherex.key.GuideMainActivity}"
@@ -3273,9 +3455,19 @@
         component="ComponentInfo{ch.deletescape.lawnchair.ci/ch.deletescape.lawnchair.LawnchairLauncher}"
         drawable="le_icon" />
 
-    <!--poco_launcher-->
+    <!-- poco_launcher -->
     <item
         component="ComponentInfo{com.mi.android.globallauncher/com.miui.home.launcher.SplashActivity}"
+        drawable="le_icon" />
+
+    <!-- shade_launcher -->
+    <item
+        component="ComponentInfo{amirz.shade.debug/amirz.shade.ShadeLauncher}"
+        drawable="le_icon" />
+
+    <!-- rootless_pixel_launcher -->
+    <item
+        component="ComponentInfo{amirz.rootless.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity}"
         drawable="le_icon" />
 
     <!--^^^^^^^^^^^^^^launchers^^^^^^^^^^^^^^^^^^^^^^^^^^-->
@@ -3284,10 +3476,27 @@
     <item
         component="ComponentInfo{com.ui.LapseItPro/com.ui.LapseIt.Main}"
         drawable="le_icon" />
+
+    <!--lastpass-->
+    <item
+        component="ComponentInfo{com.lastpass.lpandroid/com.lastpass.lpandroid.activity.WebBrowserActivity}"
+        drawable="le_icon" />
+
     <!--legend-->
     <item
         component="ComponentInfo{com.stupeflix.legend/com.stupeflix.legend.activities.MainActivity}"
         drawable="le_icon" />
+
+    <!--lg_tv_plus-->
+    <item
+        component="ComponentInfo{com.lge.app1/com.lge.app1.activity.SplashActivity}"
+        drawable="le_icon" />
+
+    <!--linguee-->
+    <item
+        component="ComponentInfo{com.linguee.linguee/com.linguee.linguee.MainActivity}"
+        drawable="le_icon" />
+
     <!--lens-->
     <item
         component="ComponentInfo{com.google.ar.lens/com.google.vr.apps.ornament.app.lens.LensLauncherActivity}"
@@ -3296,6 +3505,21 @@
     <!--lenovo_help-->
     <item
         component="ComponentInfo{com.lenovo.serviceit/com.lenovo.serviceit.ui.SplashActivity}"
+        drawable="le_icon" />
+
+    <!--lightroom_cc-->
+    <item
+        component="ComponentInfo{com.adobe.lrmobile/com.adobe.lrmobile.StorageCheckActivity}"
+        drawable="le_icon" />
+
+    <!--livescore -->
+    <item
+        component="ComponentInfo{com.livescore/com.livescore.ui.activities.SplashActivity}"
+        drawable="le_icon" />
+
+    <!--liveboot-->
+    <item
+        component="ComponentInfo{eu.chainfire.liveboot/eu.chainfire.liveboot.MainActivity}"
         drawable="le_icon" />
 
     <!--lucky_patcher-->
@@ -3354,6 +3578,11 @@
 
     <item
         component="ComponentInfo{com.linecorp.lineat.android/com.linecorp.lineat.android.activity.LineAtLaunchActivity}"
+        drawable="le_icon" />
+
+    <!--measure-->
+    <item
+        component="ComponentInfo{com.google.tango.measure/com.google.tango.measure.android.LaunchScreenActivity}"
         drawable="le_icon" />
 
     <!---messages-->
@@ -3416,6 +3645,9 @@
         drawable="le_icon" />
     <item
         component="ComponentInfo{smart.messages.message.sms.mms/smart.messages.message.sms.mms.feature.main.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.verizon.messaging.vzmsgs/com.verizon.mms.ui.activity.Provisioning}"
         drawable="le_icon" />
 
     <!---music-->
@@ -3588,6 +3820,16 @@
         component="ComponentInfo{com.topjohnwu.magisk/a.c}"
         drawable="le_icon" />
 
+    <!--material_islands-->
+    <item
+        component="ComponentInfo{com.hippotech.materialislands/com.hippotech.materialislands.MainActivity_}"
+        drawable="le_icon" />
+
+    <!--material_terminal-->
+    <item
+        component="ComponentInfo{yarolegovich.materialterminal/yarolegovich.materialterminal.Term}"
+        drawable="le_icon" />
+
     <!--mat_log-->
     <item
         component="ComponentInfo{com.pluscubed.logcat/com.pluscubed.logcat.ui.LogcatActivity}"
@@ -3623,9 +3865,24 @@
         component="ComponentInfo{mega.privacy.android.app/mega.privacy.android.app.lollipop.ManagerActivityLollipop}"
         drawable="le_icon" />
 
+    <!--microsoft_news-->
+    <item
+        component="ComponentInfo{com.microsoft.amp.apps.bingnews/microsoft.msn.news.android.activities.LaunchActivity}"
+        drawable="le_icon" />
+
     <!--mi_apps -->
     <item
         component="ComponentInfo{com.xiaomi.mipicks/com.xiaomi.market.ui.MarketTabActivity}"
+        drawable="le_icon" />
+
+    <!--mi_drop-->
+    <item
+        component="ComponentInfo{com.xiaomi.midrop/com.xiaomi.midrop.HomeActivity}"
+        drawable="le_icon" />
+
+    <!--mi_remote -->
+    <item
+        component="ComponentInfo{com.duokan.phone.remotecontroller/com.xiaomi.mitv.phone.remotecontroller.HoriWidgetMainActivityV2}"
         drawable="le_icon" />
 
     <!--mile_iq-->
@@ -3644,12 +3901,22 @@
         component="ComponentInfo{com.mojang.minecraftpe.demo/com.mojang.minecraftpe.Minecraft_Market_Demo}"
         drawable="le_icon" />
 
+    <!--minimalist_wallpapers-->
+    <item
+        component="ComponentInfo{com.jndapp.minimalistwallpapers/com.jndapp.minimalistwallpapers.activities.ActivitySplash}"
+        drawable="le_icon" />
+
     <!--musixmatch-->
     <item
         component="ComponentInfo{com.musixmatch.android.lyrify/com.designfuture.music.ui.phone.DashBoardActivity}"
         drawable="le_icon" />
     <item
         component="ComponentInfo{com.musixmatch.android.lyrify/com.musixmatch.android.activities.MainActivity}"
+        drawable="le_icon" />
+
+    <!--muzei-->
+    <item
+        component="ComponentInfo{net.nurik.roman.muzei/com.google.android.apps.muzei.MuzeiActivity}"
         drawable="le_icon" />
 
     <!--mcafee_security -->
@@ -3671,11 +3938,10 @@
     <item
         component="ComponentInfo{com.myairtelapp/com.myairtelapp.activity.OnboardingActivity}"
         drawable="le_icon" />
-
-    <!--mi_remote -->
+    <!--my_jio -->
     <item
-        component="ComponentInfo{com.duokan.phone.remotecontroller/com.xiaomi.mitv.phone.remotecontroller.HoriWidgetMainActivityV2}"
-        drawable="le_icon" />
+        component="ComponentInfo{com.jio.myjio/com.jio.myjio.dashboard.activities.DashboardActivity}"
+        drawable="myjio" />
 
     <!--migrate-->
     <item
@@ -3685,6 +3951,16 @@
     <!--mi_ui_forum -->
     <item
         component="ComponentInfo{com.miui.enbbs/com.miui.miuibbs.activity.WelcomeActivity}"
+        drawable="le_icon" />
+
+    <!--mobilbank-->
+    <item
+        component="ComponentInfo{com.danskebank.mobilebank3.dk/com.danskebank.mobilebank30.MainActivity}"
+        drawable="le_icon" />
+
+    <!--mobilepay -->
+    <item
+        component="ComponentInfo{dk.danskebank.mobilepay/dk.danskebank.p2p.ui.login.LoginActivity}"
         drawable="le_icon" />
 
     <!--mobilism-->
@@ -3716,6 +3992,7 @@
     <item
         component="ComponentInfo{pl.damianpiwowarski.navbarapps/pl.damianpiwowarski.navbarapps.StartActivity_}"
         drawable="le_icon" />
+
     <!--notes-->
     <item
         component="ComponentInfo{com.tcl.note/com.tcl.note.activity.NoteListActivity}"
@@ -3813,6 +4090,9 @@
     <item
         component="ComponentInfo{com.mediatek.notebook/com.mediatek.notebook.NotesList}"
         drawable="le_icon" />
+    <item
+        component="ComponentInfo{org.mozilla.testpilot.notes/org.mozilla.testpilot.notes.MainActivity}"
+        drawable="le_icon" />
 
     <!-- evernote -->
     <item
@@ -3828,6 +4108,11 @@
         component="ComponentInfo{com.evernote/com.evernote.ui.MainActivity}"
         drawable="le_icon" />
 
+    <!--nemIid-->
+    <item
+        component="ComponentInfo{dk.e_nettet.mobilekey.everyone/dk.e_nettet.mobilekey.delivery.view.SplashView}"
+        drawable="le_icon" />
+
     <!--netflix-->
     <item
         component="ComponentInfo{com.netflix.mediaclient/com.netflix.mediaclient.UIWebViewActivity}"
@@ -3837,6 +4122,16 @@
         drawable="le_icon" />
     <item
         component="ComponentInfo{com.netflix.mediaclient/com.netflix.mediaclient.ui.launch.UIWebViewActivity}"
+        drawable="le_icon" />
+
+    <!--news&weather-->
+    <item
+        component="ComponentInfo{com.google.android.apps.genie.geniewidget/com.google.android.apps.genie.geniewidget.activities.NewsActivity}"
+        drawable="le_icon" />
+
+    <!--neutrino-->
+    <item
+        component="ComponentInfo{neutrino.plus/neutrino.plus.activities.splash.SplashActivity}"
         drawable="le_icon" />
 
     <!--notif_off-->
@@ -3872,6 +4167,59 @@
     <item
         component="ComponentInfo{com.microsoft.office.officelens/com.microsoft.office.officelens.MainActivity}"
         drawable="le_icon" />
+    <!--overdrop-->
+    <item
+        component="ComponentInfo{widget.dd.com.overdrop.free/widget.dd.com.overdrop.activity.SplashScreenActivity}"
+        drawable="le_icon" />
+
+    <!--papers-->
+    <item
+        component="ComponentInfo{com.wallpapers.papers/com.wallpapers.papers.ui.SplashActivity}"
+        drawable="le_icon" />
+
+    <!--paper_io-->
+    <item
+        component="ComponentInfo{io.voodoo.paperio/io.voodoo.paperio.UnityPlayerActivity}"
+        drawable="le_icon" />
+
+    <!--payback-->
+    <item
+        component="ComponentInfo{de.payback.client.android/de.payback.app.ui.main.MainActivity}"
+        drawable="le_icon" />
+
+    <!--paypal-->
+    <item
+        component="ComponentInfo{com.paypal.android.p2pmobile/com.paypal.android.p2pmobile.activity.GridLauncherActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.paypal.android.p2pmobile/com.paypal.android.p2pmobile.activity.HubActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.paypal.android.p2pmobile/com.paypal.android.p2pmobile.activity.IntroActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.PaypalMobile/com.PaypalMobile.MainNavigationActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.paypal.android.p2pmobile/com.paypal.android.p2pmobile.startup.activities.StartupActivity}"
+        drawable="le_icon" />
+
+
+    <!--paytm -->
+    <item
+        component="ComponentInfo{net.one97.paytm/net.one97.paytm.AJRJarvisSplash}"
+        drawable="le_icon" />
+
+    <!--paytm_for_business -->
+    <item
+        component="ComponentInfo{com.paytm.business/com.paytm.business.splash.SplashActivity}"
+        drawable="le_icon" />
+
+    <!--pandora-->
+    <item
+        component="ComponentInfo{com.pandora.android/com.pandora.android.Main}"
+        drawable="le_icon" />
+
 
     <!---phone-->
     <item
@@ -4091,9 +4439,50 @@
         component="ComponentInfo{com.android.phone/com.android.phone.Settings}"
         drawable="le_icon" />
 
+    <!--phone_pe -->
+    <item
+        component="ComponentInfo{com.phonepe.app/com.phonepe.app.ui.activity.Navigator_MainActivity}"
+        drawable="le_icon" />
+
     <!--photomath-->
     <item
         component="ComponentInfo{com.microblink.photomath/com.microblink.photomath.main.activity.LauncherActivity}"
+        drawable="le_icon" />
+
+    <!--photoshop-->
+    <item
+        component="ComponentInfo{air.com.adobe.pstouchphone/air.com.adobe.pstouchphone.AppEntry}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{air.com.adobe.pstouch.oem1/air.com.adobe.pstouch.oem1.AppEntry}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{air.com.adobe.pstouchphone.oem1/air.com.adobe.pstouchphone.oem1.AppEntry}"
+        drawable="le_icon" />
+    <!--photoshop_touch-->
+    <item
+        component="ComponentInfo{air.com.adobe.pstouch/air.com.adobe.pstouch.AdobePhotoshopTouchActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{air.com.adobe.pstouch/air.com.adobe.pstouch.AppEntry}"
+        drawable="le_icon" />
+
+    <!--piano_tiles-->
+    <item
+        component="ComponentInfo{com.sabzira.PianoTiles/com.unity3d.player.UnityPlayerActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.umonistudio.tile/com.umonistudio.tile.tile}"
+        drawable="le_icon" />
+
+    <!--picsart-->
+    <item
+        component="ComponentInfo{com.picsart.studio/com.socialin.android.photo.picsinphoto.MainPagerActivity}"
+        drawable="le_icon" />
+
+    <!--pinterest-->
+    <item
+        component="ComponentInfo{com.pinterest/com.pinterest.activity.PinterestActivity}"
         drawable="le_icon" />
 
     <!--pipette-->
@@ -4111,28 +4500,9 @@
         component="ComponentInfo{com.pinterest/com.pinterest.activity.PinterestActivity}"
         drawable="le_icon" />
 
-    <!--premier_league-->
-    <item
-        component="ComponentInfo{com.pl.premierleague/com.pl.premierleague.LaunchActivity}"
-        drawable="le_icon" />
-    <!--premier_league_live_hd-->
-    <item
-        component="ComponentInfo{english.premierleaguelivehd/english.premierleaguelivehd.preinicio}"
-        drawable="le_icon" />
-    <!--postepay-->
-    <item
-        component="ComponentInfo{posteitaliane.posteapp.apppostepay/posteitaliane.posteapp.apppostepay.ui.activity.SplashActivity}"
-        drawable="le_icon" />
 
-    <!--paytm -->
-    <item
-        component="ComponentInfo{net.one97.paytm/net.one97.paytm.AJRJarvisSplash}"
-        drawable="le_icon" />
 
-    <!--paytm_for_business -->
-    <item
-        component="ComponentInfo{com.paytm.business/com.paytm.business.splash.SplashActivity}"
-        drawable="le_icon" />
+
 
     <!---play_store-->
     <item
@@ -4160,40 +4530,10 @@
         component="ComponentInfo{com.google.android.apps.books/com.google.android.apps.books.app.BooksActivity}"
         drawable="le_icon" />
 
-    <!--paypal-->
-    <item
-        component="ComponentInfo{com.paypal.android.p2pmobile/com.paypal.android.p2pmobile.activity.GridLauncherActivity}"
-        drawable="le_icon" />
-    <item
-        component="ComponentInfo{com.paypal.android.p2pmobile/com.paypal.android.p2pmobile.activity.HubActivity}"
-        drawable="le_icon" />
-    <item
-        component="ComponentInfo{com.paypal.android.p2pmobile/com.paypal.android.p2pmobile.activity.IntroActivity}"
-        drawable="le_icon" />
-    <item
-        component="ComponentInfo{com.PaypalMobile/com.PaypalMobile.MainNavigationActivity}"
-        drawable="le_icon" />
-    <item
-        component="ComponentInfo{com.paypal.android.p2pmobile/com.paypal.android.p2pmobile.startup.activities.StartupActivity}"
-        drawable="le_icon" />
-
-    <!--powerpoint-->
-    <item
-        component="ComponentInfo{com.microsoft.office.powerpoint/com.microsoft.office.apphost.LaunchActivity}"
-        drawable="le_icon" />
-
-    <!--phone_pe -->
-    <item
-        component="ComponentInfo{com.phonepe.app/com.phonepe.app.ui.activity.Navigator_MainActivity}"
-        drawable="le_icon" />
 
     <!--plus_messenger-->
     <item
         component="ComponentInfo{org.telegram.plus/org.telegram.ui.LaunchActivity}"
-        drawable="le_icon" />
-    <!--pandora-->
-    <item
-        component="ComponentInfo{com.pandora.android/com.pandora.android.Main}"
         drawable="le_icon" />
 
     <!--pebble-->
@@ -4201,42 +4541,6 @@
         component="ComponentInfo{com.getpebble.android/com.getpebble.android.main.activity.MainActivity}"
         drawable="le_icon" />
 
-    <!--photoshop-->
-    <item
-        component="ComponentInfo{air.com.adobe.pstouchphone/air.com.adobe.pstouchphone.AppEntry}"
-        drawable="le_icon" />
-    <item
-        component="ComponentInfo{air.com.adobe.pstouch.oem1/air.com.adobe.pstouch.oem1.AppEntry}"
-        drawable="le_icon" />
-    <item
-        component="ComponentInfo{air.com.adobe.pstouchphone.oem1/air.com.adobe.pstouchphone.oem1.AppEntry}"
-        drawable="le_icon" />
-
-    <!--photoshop_touch-->
-    <item
-        component="ComponentInfo{air.com.adobe.pstouch/air.com.adobe.pstouch.AdobePhotoshopTouchActivity}"
-        drawable="le_icon" />
-    <item
-        component="ComponentInfo{air.com.adobe.pstouch/air.com.adobe.pstouch.AppEntry}"
-        drawable="le_icon" />
-
-    <!--piano_tiles-->
-    <item
-        component="ComponentInfo{com.sabzira.PianoTiles/com.unity3d.player.UnityPlayerActivity}"
-        drawable="le_icon" />
-    <item
-        component="ComponentInfo{com.umonistudio.tile/com.umonistudio.tile.tile}"
-        drawable="le_icon" />
-
-    <!--picsart-->
-    <item
-        component="ComponentInfo{com.picsart.studio/com.socialin.android.photo.picsinphoto.MainPagerActivity}"
-        drawable="le_icon" />
-
-    <!--pinterest-->
-    <item
-        component="ComponentInfo{com.pinterest/com.pinterest.activity.PinterestActivity}"
-        drawable="le_icon" />
 
     <!--plex-->
     <item
@@ -4246,12 +4550,58 @@
         component="ComponentInfo{com.plexapp.android/com.plexapp.plex.activities.MyPlexActivity}"
         drawable="le_icon" />
 
+    <!--powerpoint-->
+    <item
+        component="ComponentInfo{com.microsoft.office.powerpoint/com.microsoft.office.apphost.LaunchActivity}"
+        drawable="le_icon" />
+
     <!--pocket-->
     <item
         component="ComponentInfo{com.ideashower.readitlater.pro/com.ideashower.readitlater.activity.AppCacheCheckActivity}"
         drawable="le_icon" />
     <item
         component="ComponentInfo{com.ideashower.readitlater.pro/com.ideashower.readitlater.activity.SplashActivity}"
+        drawable="le_icon" />
+
+
+    <!--postepay-->
+    <item
+        component="ComponentInfo{posteitaliane.posteapp.apppostepay/posteitaliane.posteapp.apppostepay.ui.activity.SplashActivity}"
+        drawable="le_icon" />
+
+    <!--potem-->
+    <item
+        component="ComponentInfo{com.vertumus.potem/com.vertumus.potem.LicenseActivity}"
+        drawable="le_icon" />
+
+    <!--pornhub-->
+    <item
+        component="ComponentInfo{com.app.pornhub/com.app.pornhub.alias.normal}"
+        drawable="le_icon" />
+
+    <!--premier_league-->
+    <item
+        component="ComponentInfo{com.pl.premierleague/com.pl.premierleague.LaunchActivity}"
+        drawable="le_icon" />
+
+    <!--premier_league_live_hd-->
+    <item
+        component="ComponentInfo{english.premierleaguelivehd/english.premierleaguelivehd.preinicio}"
+        drawable="le_icon" />
+
+    <!--ps_app-->
+    <item
+        component="ComponentInfo{com.scee.psxandroid/com.scee.psxandroid.activity.TopActivity}"
+        drawable="le_icon" />
+
+    <!--ps_messages-->
+    <item
+        component="ComponentInfo{com.playstation.mobilemessenger/com.playstation.mobilemessenger.activity.WelcomeActivity}"
+        drawable="le_icon" />
+
+    <!--pubg-->
+    <item
+        component="ComponentInfo{com.tencent.ig/com.epicgames.ue4.SplashActivity}"
         drawable="le_icon" />
 
     <!--push_bullet -->
@@ -4279,6 +4629,11 @@
     <!--quick_pic-->
     <item
         component="ComponentInfo{com.alensw.PicFolder/com.alensw.PicFolder.GalleryActivity}"
+        drawable="le_icon" />
+
+    <!--reddit-->
+    <item
+        component="ComponentInfo{com.reddit.frontpage/com.reddit.frontpage.StartActivity}"
         drawable="le_icon" />
 
     <!--radio_net-->
@@ -4313,6 +4668,11 @@
     <item component="ComponentInfo{com.runtastic.android/com.runtastic.android.activities.StartActivity}" drawable="le_icon"/>
     <item component="ComponentInfo{com.runtastic.android.pro2/com.runtastic.android.activities.SplashscreenActivity}" drawable="le_icon"/>
     <item component="ComponentInfo{com.runtastic.android.pro2/com.runtastic.android.activities.StartActivity}" drawable="le_icon"/>
+
+    <!--sesame-->
+    <item
+        component="ComponentInfo{ninja.sesame.app.edge/ninja.sesame.app.edge.activities.MainActivity}"
+        drawable="le_icon" />
 
     <!---settings-->
     <item
@@ -4380,6 +4740,12 @@
     <item
         component="ComponentInfo{com.Slack/slack.features.home.HomeActivity}"
         drawable="le_icon" />
+
+    <!--smart_control-->
+    <item
+        component="ComponentInfo{com.sennheiser.control/com.tns.NativeScriptActivity}"
+        drawable="le_icon" />
+
     <!--snapchat-->
     <item
         component="ComponentInfo{com.snapchat.android/com.snapchat.android.LandingPageActivity}"
@@ -4395,6 +4761,9 @@
     <!---spotify-->
     <item
         component="ComponentInfo{com.spotify.music/com.spotify.music.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.spotify.musid/com.spotify.musid.MainActivity}"
         drawable="le_icon" />
     <item
         component="ComponentInfo{com.spotify.lite/com.spotify.lite.features.launcher.LauncherActivity}"
@@ -4657,6 +5026,16 @@
         component="ComponentInfo{com.starfinanz.smob.android.sfinanzstatus/com.starfinanz.smob.android.sfinanzstatus.SFinanzstatus}"
         drawable="le_icon" />
 
+    <!--swift_backup-->
+    <item
+        component="ComponentInfo{org.swiftapps.swiftbackup/org.swiftapps.swiftbackup.intro.IntroActivity}"
+        drawable="le_icon" />
+
+    <!--swiftKey_keyboard -->
+    <item
+        component="ComponentInfo{com.touchtype.swiftkey/com.touchtype.LauncherActivityIcon}"
+        drawable="swiftkey_keyboard" />
+
     <!--system_update-->
     <item
         component="ComponentInfo{com.zui.ota/com.zui.ota.ui.MainActivity}"
@@ -4761,10 +5140,16 @@
         component="ComponentInfo{com.android.stk/com.android.stk.StkLauncherActivity}"
         drawable="le_icon" />
     <item
+        component="ComponentInfo{com.android.stk/com.android.stk.StkLauncherActivity1}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.stk/com.android.stk.OppoStkSelection}"
+        drawable="le_icon" />
+    <item
         component="ComponentInfo{com.android.stk/com.android.stk.StkLauncherListActivity}"
         drawable="le_icon" />
     <item
-        component="ComponentInfo{com.android.stk/com.android.stk.StkMain}"
+        component="ComponentInfo{com.android.stk1/com.android.stk1.StkLauncherActivity}"
         drawable="le_icon" />
     <item
         component="ComponentInfo{com.android.stk2/com.android.stk2.StkLauncherActivity}"
@@ -4809,6 +5194,7 @@
     <item
         component="ComponentInfo{com.android.stk/com.android.stk.StkLauncherActivitySingle}"
         drawable="le_icon" />
+
     <item
         component="ComponentInfo{com.android.stk/com.android.stk.StkMainActivity}"
         drawable="le_icon" />
@@ -4817,6 +5203,24 @@
         drawable="le_icon" />
     <item
         component="ComponentInfo{com.android.stk/com.android.stk.SubStkLauncherActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.stk/com.android.stk.StkLauncherActivityI}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.stk/com.android.stk.StkLauncherActivityII}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.stk/com.android.stk.StkRootLauncherActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.stk/com.android.stk.StkLauncherDSActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.stk/com.android.stk.PrimaryStkMain}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.stk/com.android.stk.SecondaryStkMain}"
         drawable="le_icon" />
     <item
         component="ComponentInfo{com.android.stk/com.android.stk.UtkExLauncherActivity}"
@@ -4922,15 +5326,6 @@
         component="ComponentInfo{com.yulong.cloneit/com.yulong.cloneit.MainActivity}"
         drawable="le_icon" />
 
-    <!--speedtest-->
-    <item
-        component="ComponentInfo{org.zwanoo.android.speedtest/com.ookla.mobile4.screens.main.MainActivity}"
-        drawable="le_icon" />
-
-    <!--samsung_themes-->
-    <item
-        component="ComponentInfo{com.samsung.android.themestore/com.samsung.android.themestore.activity.Launcher}"
-        drawable="le_icon" />
 
     <!--shazam-->
     <item
@@ -4973,6 +5368,23 @@
         component="ComponentInfo{com.shazam.android.lite/com.shazam.android.lite.ui.SplashActivity}"
         drawable="le_icon" />
 
+    <!--showmax-->
+
+    <!--shuttle-->
+    <item
+        component="ComponentInfo{com.simplecity.amp_pro/com.simplecity.amp_library.ui.screens.main.MainActivity}"
+        drawable="le_icon" />
+
+    <!--speedtest-->
+    <item
+        component="ComponentInfo{org.zwanoo.android.speedtest/com.ookla.mobile4.screens.main.MainActivity}"
+        drawable="le_icon" />
+
+    <!--samsung_themes-->
+    <item
+        component="ComponentInfo{com.samsung.android.themestore/com.samsung.android.themestore.activity.Launcher}"
+        drawable="le_icon" />
+
     <!--sync-->
     <item
         component="ComponentInfo{com.laurencedawson.reddit_sync/com.laurencedawson.reddit_sync.ui.RedditActivity}"
@@ -5003,6 +5415,22 @@
     <item
         component="ComponentInfo{com.syncme.syncmeapp/com.syncme.activities.SplashActivity}"
         drawable="le_icon" />
+
+    <!--tapet-->
+    <item
+        component="ComponentInfo{com.sharpregion.tapet/com.sharpregion.tapet.MainActivity}"
+        drawable="le_icon" />
+
+    <!--tapete-->
+    <item
+        component="ComponentInfo{dejan.llevo3.wallpapers/dejan.llevo3.wallpapers.MainActivity}"
+        drawable="le_icon" />
+
+    <!--tapatalk-->
+    <item
+        component="ComponentInfo{com.quoord.tapatalkpro.activity/com.quoord.tapatalkpro.activity.directory.ics.IcsEntryActivity}"
+        drawable="le_icon" />
+
     <!--taggr-->
     <item
         component="ComponentInfo{id.ridsatrio.taggr/id.ridsatrio.taggr.activities.MusicPickerActivity}"
@@ -5011,6 +5439,16 @@
     <!--target -->
     <item
         component="ComponentInfo{com.target.ui/com.target.ui.activity.NavigationActivity}"
+        drawable="le_icon" />
+
+    <!--tasker-->
+    <item
+        component="ComponentInfo{net.dinglisch.android.taskerm/net.dinglisch.android.taskerm.Tasker}"
+        drawable="le_icon" />
+
+    <!--team_blackout-->
+    <item
+        component="ComponentInfo{com.blackout.paidupdater/com.blackout.paidupdater.Activity.MainActivity}"
         drawable="le_icon" />
 
     <!--telegram-->
@@ -5041,6 +5479,11 @@
     <item component="ComponentInfo{jackpal.androidterm/jackpal.androidterm.Term}" drawable="le_icon"/>
     <item component="ComponentInfo{jackpal.androidterm2/jackpal.androidterm2.Term}" drawable="le_icon"/>
 
+    <!--termux-->
+    <item
+        component="ComponentInfo{com.termux/com.termux.app.TermuxActivity}"
+        drawable="le_icon" />
+
     <!--text_editor-->
     <item component="ComponentInfo{com.sonyericsson.notes/com.sonyericsson.notes.Notes}" drawable="le_icon" />
     <item component="ComponentInfo{mobisle.mobisleNotesADC/mobisle.mobisleNotesADC.TodoMain}" drawable="le_icon" />
@@ -5061,9 +5504,59 @@
         component="ComponentInfo{com.and.games505.Terraria/com.and.games505.Terraria.Terraria}"
         drawable="le_icon" />
 
-    <!--theme_diy -->
+    <!--theme_diy-->
     <item
         component="ComponentInfo{net.darkion.theme.maker/net.darkion.theme.maker.MainActivity}"
+        drawable="le_icon" />
+
+    <!--theme_engine-->
+    <item
+        component="ComponentInfo{org.cyanogenmod.theme.chooser/org.cyanogenmod.theme.chooser.ChooserActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.thememanager/com.android.thememanager.ThemeResourceTabActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{org.cyanogenmod.theme.chooser2/org.cyanogenmod.theme.chooser2.ChooserLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.cyngn.themestore/com.cyngn.themestore.ui.StoreActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.bbk.theme/com.bbk.theme.Theme}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.zookingsoft.themestore/com.zookingsoft.themestore.view.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.asus.themeapp/com.asus.themeapp.ThemeAppActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.huawei.android.thememanager/com.huawei.android.thememanager.HwThemeManagerActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.samsung.android.themestore/com.samsung.android.themestore.activity.Launcher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.samsung.android.themestore/com.samsung.android.themestore.activity.WTLauncher}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.nearme.themespace/com.nearme.themespace.activities.ThemeActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.mixapplications.themeeditor/com.mixapplications.themeeditor.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.lenovo.themecenter/com.lenovo.themecenter.LoadingActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.letv.android.themestore/com.letv.android.themestore.activity.HomeActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.meizu.customizecenter/com.meizu.customizecenter.CustomizeCenterActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.huawei.android.thememanager/com.huawei.android.thememanager.PageActivity}"
         drawable="le_icon" />
 
     <!--the_weather_channel-->
@@ -5072,6 +5565,11 @@
         drawable="le_icon" />
     <item
         component="ComponentInfo{com.weather.Weather/com.weather.Weather.app.SplashScreenActivity}"
+        drawable="le_icon" />
+
+    <!--time_recording-->
+    <item
+        component="ComponentInfo{com.dynamicg.timerecording/com.dynamicg.timerecording.Main}"
         drawable="le_icon" />
 
     <!--tinder-->
@@ -5236,6 +5734,84 @@
         component="ComponentInfo{com.motorola.visualvoicemail/com.motorola.visualvoicemail.ui.VvmMainActivity}"
         drawable="le_icon" />
 
+    <!--videos-->
+    <item
+        component="ComponentInfo{com.oppo.video/com.oppo.video.VideoListActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.lge.videoplayer/com.lge.videoplayer.list.VideoPlayerActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.lge.videoplayer/com.lge.videoplayer.VideoPlayerList}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.tct.videoplayer/com.tct.videoplayer.MovieListActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.haolianluo.video/com.haolianluo.video.fragment.MainFragment}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.zte.videoplayer/com.zte.videoplayer.VideoBrowserActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.mediatek.videoplayer/com.mediatek.videoplayer.MovieListActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.myos.videoplayer/com.myos.videoplayer.movielist.MovieListActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.lenovo.videoplayer/com.lenovo.videoplayer.VideoPlayerActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.yulong.android.videoplayer/com.android.gallery3d.app.galleryforvideo}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.huawei.hwvplayer/com.huawei.hwvplayer.framework.MainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.videoeditor/com.android.videoeditor.ProjectsActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.videoeditor/com.android.videoeditor.VideoEditorActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.meizu.media.video/com.meizu.media.video.VideoMainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.videoeditor/com.android.videoeditor.ProjectsActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.myos.videoplayer/com.myos.videoplayer.MovieListActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.gionee.video/com.gionee.video.VideoTabMainActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.letv.android.videoplayer/com.android.videoplayer.PlayerPermissionActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.huawei.hwvplayer/com.huawei.himovie.ui.login.SplashScreenActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.android.VideoPlayer/com.android.VideoPlayer.VideoPlayer}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.huawei.himovie/com.huawei.himovie.ui.login.SplashScreenActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.coloros.video/com.oppo.video.VideoListActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.miui.video/com.miui.video.HomeActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.miui.videoplayer/com.miui.video.global.app.LauncherActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.huawei.himovie.overseas/com.huawei.himovie.ui.login.SplashScreenActivity}"
+        drawable="le_icon" />
+
+
     <!--viber-->
     <item
         component="ComponentInfo{com.viber.voip/com.viber.voip.IdleActivity}"
@@ -5271,6 +5847,9 @@
     <item
         component="ComponentInfo{org.videolan.vlc/.StartActivity}"
         drawable="le_icon" />
+    <item
+        component="ComponentInfo{org.videolan.vlc/org.videolan.vlc.gui.MainActivity}"
+        drawable="le_icon" />
 
     <!--vnc-->
     <item
@@ -5305,9 +5884,24 @@
         component="ComponentInfo{app.netapex.org.getgooglewallet/app.netapex.org.getgooglewallet.GoogleWalletActivity}"
         drawable="le-icon" />
 
+    <!--walli-->
+    <item
+        component="ComponentInfo{com.shanga.walli/com.shanga.walli.mvp.splash.SplashActivity}"
+        drawable="le_icon" />
+
     <!--wallsplash-->
     <item
         component="ComponentInfo{com.mikepenz.unsplash/com.mikepenz.unsplash.activities.MainActivity}"
+        drawable="le_icon" />
+
+    <!--walpy-->
+    <item
+        component="ComponentInfo{com.feresr.walpy/com.feresr.wallpapers.SplashActivity}"
+        drawable="le_icon" />
+
+    <!--waze-->
+    <item
+        component="ComponentInfo{com.waze/com.waze.FreeMapAppActivity}"
         drawable="le_icon" />
 
     <!--whattpad-->
@@ -5635,11 +6229,23 @@
         component="ComponentInfo{de.robv.android.xposed.installer/de.robv.android.xposed.installer.WelcomeActivity}"
         drawable="le_icon"/>
 
+    <!--xvideos-->
+    <item
+        component="ComponentInfo{com.xvideos.app/com.xvideos.common.activities.DefaultActivity}"
+        drawable="le_icon" />
+
     <!--yaata-->
     <item
         component="ComponentInfo{rpkandrodev.yaata/rpkandrodev.yaata.activity.ThreadListActivity}"
         drawable="le_icon" />
 
+    <!--yt_studio -->
+    <item
+        component="ComponentInfo{com.google.android.apps.youtube.creator/com.google.android.apps.youtube.creator.activities.SplashActivity}"
+        drawable="le_icon" />
+    <item
+        component="ComponentInfo{com.google.android.apps.youtube.creator/com.google.android.apps.youtube.creator.main.MainActivity}"
+        drawable="le_icon" />
 
     <!---youtube-->
     <item
@@ -5661,10 +6267,24 @@
         component="ComponentInfo{com.google.android.apps.youtube.gaming/com.google.android.apps.youtube.gaming.watchwhile.activity.WatchWhileActivity}"
         drawable="le_icon" />
 
+    <!--youtube_music-->
+    <item
+        component="ComponentInfo{com.google.android.apps.youtube.music/com.google.android.apps.youtube.music.activities.MusicActivity}"
+        drawable="le_icon" />
 
     <!--yacine_tv-->
     <item
         component="ComponentInfo{com.app.yacinetv.v4/com.app.yacinetv.activities.ActivitySplash}"
+        drawable="le_icon" />
+
+    <!--zarchiver-->
+    <item
+        component="ComponentInfo{ru.zdevs.zarchiver/ru.zdevs.zarchiver.ZArchiver}"
+        drawable="le_icon" />
+
+    <!--zedge-->
+    <item
+        component="ComponentInfo{net.zedge.android/net.zedge.android.Main}"
         drawable="le_icon" />
 
     <!--zip_signer -->
