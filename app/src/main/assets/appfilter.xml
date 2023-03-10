@@ -946,15 +946,15 @@
     <!-- google_calendar -->
     <item
         component="ComponentInfo{com.google.android.calendar/com.android.calendar.LaunchActivity}"
-        drawable="gc" />
+        drawable="ca" />
     <item
         component="ComponentInfo{com.google.android.calendar/com.android.calendar.AllInOneActivity}"
-        drawable="gc" />
+        drawable="ca" />
 
     <!-- sunrise_calendar -->
     <item
         component="ComponentInfo{am.sunrise.android.calendar/am.sunrise.android.calendar.ui.HomeActivity}"
-        drawable="sc" />
+        drawable="ca" />
 
 
     <!---camera-->
@@ -3564,8 +3564,11 @@
 
     <!-- shade_launcher -->
     <item
+        component="ComponentInfo{amirz.shade/amirz.shade.ShadeLauncher}"
+        drawable="sh" />
+    <item
         component="ComponentInfo{amirz.shade.debug/amirz.shade.ShadeLauncher}"
-        drawable="sl" />
+        drawable="sh" />
 
     <!-- rootless_pixel_launcher -->
     <item
