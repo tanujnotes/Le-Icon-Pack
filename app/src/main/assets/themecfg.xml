@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme>
+    <version>1</version>
+    <pkgName>com.tanujnotes.leiconpack</pkgName>
+    <themeName>Le Icon Pack</themeName>
+    <themeInfo>Le Icon Pack is a simple user friendly icon pack.</themeInfo>
+    <preview img1="preview1" />
+</theme>

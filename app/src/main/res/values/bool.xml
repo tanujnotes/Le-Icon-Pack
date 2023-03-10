@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Apex Launcher Config-->
+    <bool name="config_iconpack">true</bool>
+    <bool name="config_apexskin">true</bool>
+
+    <!--Go Launcher-->
+    <bool name="enableIconPack">true</bool>
+    <bool name="enableDockPack">true</bool>
+
+    <!--Theme Managers-->
+    <bool name="manager_action">true</bool>
+    <bool name="manager_adw">true</bool>
+    <bool name="manager_apex">true</bool>
+    <bool name="manager_atom">true</bool>
+    <bool name="manager_go">false</bool>
+    <bool name="manager_nova">true</bool>
+    <bool name="manager_smart">true</bool>
+    <bool name="manager_solo">true</bool>
+</resources>
