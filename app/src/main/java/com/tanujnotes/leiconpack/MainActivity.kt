@@ -462,10 +462,10 @@ fun CustomIcon(letters: String, cornerShape: RoundedCornerShape, modifier: Modif
         modifier = modifier
             .size(60.dp)
             .clip(cornerShape)
-            .background(color = Color.Black),
+            .background(color = Color(0xFF212121)),
         contentAlignment = Alignment.Center
     ) {
-        Text(text = letters, color = Color.White)
+        Text(text = letters, color = Color.White, fontSize = 30.sp)
     }
 }
 

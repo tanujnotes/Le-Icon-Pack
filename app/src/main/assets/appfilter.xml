@@ -946,15 +946,15 @@
     <!-- google_calendar -->
     <item
         component="ComponentInfo{com.google.android.calendar/com.android.calendar.LaunchActivity}"
-        drawable="ca" />
+        drawable="gc" />
     <item
         component="ComponentInfo{com.google.android.calendar/com.android.calendar.AllInOneActivity}"
-        drawable="ca" />
+        drawable="gc" />
 
     <!-- sunrise_calendar -->
     <item
         component="ComponentInfo{am.sunrise.android.calendar/am.sunrise.android.calendar.ui.HomeActivity}"
-        drawable="ca" />
+        drawable="sc" />
 
 
     <!---camera-->
@@ -1963,6 +1963,10 @@
     <item
         component="ComponentInfo{luck.of.wise.emailpicker.pro/luck.of.wise.emailpicker.pro.EmailPickerActivity}"
         drawable="em" />
+    <!-- gmail -->
+    <item
+        component="ComponentInfo{com.google.android.gm/com.google.android.gm.ConversationListActivityGmail}"
+        drawable="gm" />
 
     <!-- gmail_go-->
     <item
@@ -3509,6 +3513,9 @@
         component="ComponentInfo{ginlemon.flowerpro/ginlemon.flower.HomeScreen}"
         drawable="sl" />
 
+    <!-- shade launcher-->
+    <item component="ComponentInfo{amirz.shade/amirz.shade.ShadeLauncher}" drawable="sh" />
+
     <!-- solo_launcher -->
     <item
         component="ComponentInfo{home.solo.launcher.free/home.solo.launcher.free.SplashActivity}"
@@ -3564,11 +3571,8 @@
 
     <!-- shade_launcher -->
     <item
-        component="ComponentInfo{amirz.shade/amirz.shade.ShadeLauncher}"
-        drawable="sh" />
-    <item
         component="ComponentInfo{amirz.shade.debug/amirz.shade.ShadeLauncher}"
-        drawable="sh" />
+        drawable="sl" />
 
     <!-- rootless_pixel_launcher -->
     <item

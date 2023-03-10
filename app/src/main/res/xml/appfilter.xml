@@ -1963,6 +1963,9 @@
     <item
         component="ComponentInfo{luck.of.wise.emailpicker.pro/luck.of.wise.emailpicker.pro.EmailPickerActivity}"
         drawable="em" />
+    <!-- gmail -->
+    <item component="ComponentInfo{com.google.android.gm/com.google.android.gm.ConversationListActivityGmail}"
+        drawable="gm" />
 
     <!-- gmail_go-->
     <item
@@ -3508,6 +3511,9 @@
     <item
         component="ComponentInfo{ginlemon.flowerpro/ginlemon.flower.HomeScreen}"
         drawable="sl" />
+
+    <!-- shade launcher-->
+    <item component="ComponentInfo{amirz.shade/amirz.shade.ShadeLauncher}" drawable="sh" />
 
     <!-- solo_launcher -->
     <item
