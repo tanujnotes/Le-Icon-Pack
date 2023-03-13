@@ -2,15 +2,18 @@ package com.tanujnotes.leiconpack.ui
 
 import android.content.ActivityNotFoundException
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.net.Uri
+import android.os.Build
+import android.widget.Toast
 import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Done
+import androidx.compose.material.icons.filled.Send
 import androidx.compose.material.icons.filled.Share
-import androidx.compose.material.icons.outlined.Star
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
@@ -44,9 +47,10 @@ fun Dashboard(
 ) {
     val scrollState = rememberScrollState()
     val context = LocalContext.current
-    val showDialog = remember { mutableStateOf(false) }
+    val showDimensionsDialog = remember { mutableStateOf(false) }
+    val showReportDialog = remember { mutableStateOf(false) }
     val iconsLabel = viewModel.lettersList
-    Box(modifier = Modifier.fillMaxWidth()) {
+    Box(modifier = Modifier.fillMaxSize()) {
         Column(
             modifier = Modifier
                 .fillMaxWidth()
@@ -134,9 +138,9 @@ fun Dashboard(
                             verticalAlignment = Alignment.CenterVertically,
                             horizontalArrangement = Arrangement.spacedBy(10.dp)
                         ) {
-                            Icon(imageVector = Icons.Outlined.Star, contentDescription = null)
+                            Icon(painter = painterResource(id = drawable.ic_star), contentDescription = null)
                             Text(
-                                text = "Rate & Review".uppercase(),
+                                text = stringResource(string.rate_review_label).uppercase(),
                                 fontSize = 18.sp,
                                 fontWeight = FontWeight.Bold
                             )
@@ -169,7 +173,7 @@ fun Dashboard(
                         contentColor = MaterialTheme.colorScheme.onSurfaceVariant
                     ),
                     onClick = {
-                        showDialog.value = true
+                        showDimensionsDialog.value = true
                     },
                     contentPadding = PaddingValues(0.dp),
                     modifier = Modifier
@@ -205,12 +209,12 @@ fun Dashboard(
                         )
                     }
                 }
-                if (showDialog.value) {
+                if (showDimensionsDialog.value) {
                     AlertDialog(
-                        onDismissRequest = { showDialog.value = false },
+                        onDismissRequest = { showDimensionsDialog.value = false },
                         confirmButton = {
                             TextButton(onClick = {
-                                showDialog.value = false
+                                showDimensionsDialog.value = false
                                 selectedItem.value = MenuItem.Home
                             }) {
                                 Text(text = stringResource(string.close_label).uppercase())
@@ -273,8 +277,77 @@ fun Dashboard(
 
                 }
             }
+            Spacer(modifier = Modifier.height(20.dp))
+            Button(
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = MaterialTheme.colorScheme.surfaceVariant,
+                    contentColor = MaterialTheme.colorScheme.onSurfaceVariant
+                ),
+                shape = RoundedCornerShape(16.dp),
+                onClick = {
+                    showReportDialog.value = true
+                },
+                contentPadding = PaddingValues(vertical = 16.dp),
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Icon(painter = painterResource(id = drawable.ic_report) , contentDescription = null )
+                Spacer(modifier = Modifier.width(16.dp))
+                    Text(
+                        text = stringResource(string.report_missing_label),
+                        fontSize = 18.sp,
+                        fontWeight = FontWeight.Normal
+                    )
+            }
             Spacer(modifier = Modifier.height(100.dp))
+            if (showReportDialog.value){
+                AlertDialog(
+                    onDismissRequest = { showReportDialog.value = false },
+                    confirmButton = {
+                                    Button(onClick = {
+                                        showReportDialog.value = false
+                                        val emailIntent = Intent(Intent.ACTION_SENDTO).apply {
+                                            data = Uri.parse("mailto:")
+                                            putExtra(Intent.EXTRA_EMAIL, arrayOf("leiconpack@gmail.com"))
+                                            putExtra(Intent.EXTRA_SUBJECT,"Missing Icon Report")
+                                            putExtra(Intent.EXTRA_TEXT, "Manufacturer : ${Build.MANUFACTURER.uppercase()}\n" +
+                                                    "Model: ${Build.MODEL.uppercase()}\n\n App Name:")
+                                        }
+                                        try {
+                                            context.startActivity(Intent.createChooser(emailIntent, "Choose email app"))
 
+                                        }catch (e:ActivityNotFoundException){
+                                            Toast.makeText(
+                                                context,
+                                                "No email activity found",
+                                                Toast.LENGTH_SHORT
+                                            ).show()
+                                        }
+
+                                    }) {
+                                        Text(text = stringResource(string.report_label))
+                                        Spacer(modifier = Modifier.width(10.dp))
+                                        Icon(
+                                            imageVector = Icons.Default.Send,
+                                            contentDescription = "report icons"
+                                        )
+                                    }
+                    },
+                    title = { Text(text = "Missing Icons")},
+                    text = {
+                        Column {
+                            Text(text = "Please provide us with the following in your request:")
+                            Spacer(modifier = Modifier.height(10.dp))
+                            ReportInfoItem("Device Model")
+                            Spacer(modifier = Modifier.height(10.dp))
+                            ReportInfoItem("Device Manufacturer")
+                            Spacer(modifier = Modifier.height(10.dp))
+                            ReportInfoItem("App Name")
+                            Spacer(modifier = Modifier.height(10.dp))
+                            ReportInfoItem("Playstore link for the app (If possible)")
+                        }
+                    }
+                )
+            }
             if (showApplyDialog.value) {
                 AlertDialog(
                     onDismissRequest = { showApplyDialog.value = false },
@@ -350,6 +423,22 @@ fun Dashboard(
         }
     }
 
+}
+
+@Composable
+fun ReportInfoItem(info:String) {
+    Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+        Box(
+            modifier = Modifier
+                .padding(top = 5.dp)
+                .size(8.dp)
+                .background(
+                    color = MaterialTheme.colorScheme.onSurface,
+                    shape = CircleShape
+                )
+        )
+        Text(text = info)
+    }
 }
 
 @Composable
