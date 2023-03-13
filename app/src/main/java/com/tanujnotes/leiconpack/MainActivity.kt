@@ -25,10 +25,12 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
@@ -251,7 +253,7 @@ fun DrawerContent(navController:NavHostController, viewModel: MainViewModel= Mai
                         }
                         ) {
                             Icon(
-                                imageVector = it.icon,
+                                painter = painterResource(id = it.icon),
                                 contentDescription = null,
                                 tint = if (it == MenuItem.Home) {
                                     MaterialTheme.colorScheme.surfaceTint
@@ -469,12 +471,11 @@ fun CustomIcon(letters: String, cornerShape: RoundedCornerShape, modifier: Modif
     }
 }
 
-/*@Preview(showBackground = true, showSystemUi = true)
+@Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun DefaultPreview() {
     LeIconPackTheme {
        // LeIconPackApp(viewModel = MainViewModel())
-       DrawerContent(rememberNavController()){
-        }
+       DrawerContent(rememberNavController())
     }
-}*/
+}

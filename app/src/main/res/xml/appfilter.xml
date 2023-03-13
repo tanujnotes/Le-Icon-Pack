@@ -946,10 +946,10 @@
     <!-- google_calendar -->
     <item
         component="ComponentInfo{com.google.android.calendar/com.android.calendar.LaunchActivity}"
-        drawable="gc" />
+        drawable="ca" />
     <item
         component="ComponentInfo{com.google.android.calendar/com.android.calendar.AllInOneActivity}"
-        drawable="gc" />
+        drawable="ca" />
 
     <!-- sunrise_calendar -->
     <item
@@ -2915,22 +2915,22 @@
     <!--google_search-->
     <item
         component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.googlequicksearchbox.SearchActivity}"
-        drawable="gs" />
+        drawable="gg" />
     <item
         component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.apps.gsa.staticplugins.opa.EnterOpaActivityFromLauncher}"
-        drawable="gs" />
+        drawable="gg" />
     <item
         component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.googlequicksearchbox.VoiceSearchActivity}"
-        drawable="gs" />
+        drawable="gg" />
     <item
         component="ComponentInfo{com.google.android.voicesearch/com.google.android.voicesearch.RecognitionActivity}"
-        drawable="gs" />
+        drawable="gg" />
     <item
         component="ComponentInfo{com.google.android.voicesearch/com.google.android.voicesearch.RecognitionActivityReal}"
-        drawable="gs" />
+        drawable="gg" />
     <item
         component="ComponentInfo{com.google.android.voicesearch/com.google.android.voicesearch.performanceanalysis.LogFilesViewer}"
-        drawable="gs" />
+        drawable="gg" />
 
     <!--google_sound_amplifier-->
     <item

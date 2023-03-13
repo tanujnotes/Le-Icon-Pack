@@ -14,6 +14,7 @@
     <string name="custom_icons_label">Custom icons</string>
     <string name="custom_icons_count">676</string>
     <string name="apply_label">Apply Le Icon Pack</string>
+    <string name="report_missing_label">Report Missing Icons</string>
     <string name="nova_package_name">com.teslacoilsw.launcher</string>
     <string name="niagara_package_name">bitpit.launcher</string>
     <string name="apex_package_name">com.anddoes.launcher</string>
@@ -37,4 +38,6 @@
     <string name="apply_step_four">Select \"Le Icon Pack\" from icon pack list displayed to apply</string>
     <string name="apply_step_five">Click \"Apply\" or \"Save\" to confirm selection if not yet applied</string>
     <string name="apply_note">Note: The specified steps above may vary depending on the different launchers.</string>
+    <string name="rate_review_label"><![CDATA[Rate & Review]]></string>
+    <string name="report_label">Report</string>
 </resources>

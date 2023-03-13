@@ -920,10 +920,10 @@
         <!-- google_calendar -->
         <AppIcon
             component="ComponentInfo{com.google.android.calendar/com.android.calendar.LaunchActivity}"
-            image="gc" />
+            image="ca" />
         <AppIcon
             component="ComponentInfo{com.google.android.calendar/com.android.calendar.AllInOneActivity}"
-            image="gc" />
+            image="ca" />
 
         <!-- sunrise_calendar -->
         <AppIcon
@@ -2891,22 +2891,22 @@
         <!--google_search-->
         <AppIcon
             component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.googlequicksearchbox.SearchActivity}"
-            image="gs" />
+            image="gg" />
         <AppIcon
             component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.apps.gsa.staticplugins.opa.EnterOpaActivityFromLauncher}"
-            image="gs" />
+            image="gg" />
         <AppIcon
             component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.googlequicksearchbox.VoiceSearchActivity}"
-            image="gs" />
+            image="gg" />
         <AppIcon
             component="ComponentInfo{com.google.android.voicesearch/com.google.android.voicesearch.RecognitionActivity}"
-            image="gs" />
+            image="gg" />
         <AppIcon
             component="ComponentInfo{com.google.android.voicesearch/com.google.android.voicesearch.RecognitionActivityReal}"
-            image="gs" />
+            image="gg" />
         <AppIcon
             component="ComponentInfo{com.google.android.voicesearch/com.google.android.voicesearch.performanceanalysis.LogFilesViewer}"
-            image="gs" />
+            image="gg" />
 
         <!--google_sound_amplifier-->
         <AppIcon
