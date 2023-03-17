@@ -21,8 +21,11 @@ fun NavGraph(
         composable(route = MenuItem.Home.title.lowercase().trim()){
             Dashboard(navController = navController, viewModel = viewModel, selectedItem, showApplyDialog = showApplyDialog)
         }
-        composable(route = MenuItem.CustomIcons.title.lowercase().trim()){
+        composable(route = MenuItem.WhyLeIcons.title.lowercase().trim()){
             WhyLeIconPack()
+        }
+        composable(route = MenuItem.IconRequest.title.lowercase().trim()){
+            MissingIcons(viewModel = viewModel)
         }
     }
 

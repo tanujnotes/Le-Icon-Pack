@@ -2,7 +2,6 @@ package com.tanujnotes.leiconpack.ui
 
 import android.content.ActivityNotFoundException
 import android.content.Intent
-import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Build
 import android.widget.Toast
@@ -15,10 +14,7 @@ import androidx.compose.material.icons.filled.Done
 import androidx.compose.material.icons.filled.Send
 import androidx.compose.material.icons.filled.Share
 import androidx.compose.material3.*
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.MutableState
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
+import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
@@ -252,7 +248,7 @@ fun Dashboard(
                     shape = RoundedCornerShape(16.dp),
                     onClick = {
                         navController.navigate(
-                            route = MenuItem.CustomIcons.title.lowercase().trim()
+                            route = MenuItem.WhyLeIcons.title.lowercase().trim()
                         )
                     },
                     contentPadding = PaddingValues(horizontal = 20.dp, vertical = 30.dp),
@@ -285,7 +281,11 @@ fun Dashboard(
                 ),
                 shape = RoundedCornerShape(16.dp),
                 onClick = {
-                    showReportDialog.value = true
+                    navController.navigate(route = MenuItem.IconRequest.title.trim().lowercase())
+                             /* viewModel.missingComponentNames.forEach { app ->
+                              Log.d("Dashboard", "${app.label}: ${app.componentName} ")
+                          }*/
+                    //showReportDialog.value = true
                 },
                 contentPadding = PaddingValues(vertical = 16.dp),
                 modifier = Modifier.fillMaxWidth()
