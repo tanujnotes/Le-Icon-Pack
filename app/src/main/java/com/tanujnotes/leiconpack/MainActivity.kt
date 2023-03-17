@@ -1,11 +1,15 @@
 package com.tanujnotes.leiconpack
 
+import android.app.Activity
 import android.content.ActivityNotFoundException
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.net.Uri
+import android.os.Build
 import android.os.Bundle
-import android.view.Menu
+import android.util.Log
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.*
@@ -17,6 +21,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.Menu
+import androidx.compose.material.icons.filled.Send
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -33,6 +38,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
@@ -47,8 +53,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             val navController = rememberNavController()
+            val viewModel:MainViewModel = viewModel()
             LeIconPackTheme {
-                 DrawerContent(navController)
+                 DrawerContent(navController, viewModel = viewModel)
             }
         }
     }
@@ -65,14 +72,22 @@ fun LeIconPackApp(
 ) {
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentRoute = navBackStackEntry?.destination?.route
+    val context = LocalContext.current as Activity
 
     Scaffold(
         topBar = {
             TopAppBar(
                 title = {
-                    Text(text = if(currentRoute == MenuItem.CustomIcons.title.lowercase().trim()) {
-                        "${MenuItem.CustomIcons.title}?"
-                    } else MenuItem.Home.title)
+                    Text(text = when (currentRoute) {
+                        MenuItem.WhyLeIcons.title.lowercase().trim() -> {
+                            "${MenuItem.WhyLeIcons.title}?"
+                        }
+                        MenuItem.IconRequest.title.lowercase().trim() -> {
+                            MenuItem.IconRequest.title
+                        }
+                        else -> MenuItem.Home.title
+                    }
+                    )
                         },
                 colors = TopAppBarDefaults.mediumTopAppBarColors(
                     containerColor = MaterialTheme.colorScheme.primary,
@@ -80,21 +95,66 @@ fun LeIconPackApp(
                     navigationIconContentColor = MaterialTheme.colorScheme.onPrimary
                 ),
                 navigationIcon = {
-                    if (currentRoute==MenuItem.CustomIcons.title.lowercase().trim()){
-                        IconButton(onClick = {
-                            selectedItem.value = MenuItem.CustomIcons
-                            navController.popBackStack()
-                        }) {
-                            Icon(imageVector = Icons.Default.ArrowBack, contentDescription = null)
+                    when (currentRoute) {
+                        MenuItem.WhyLeIcons.title.lowercase().trim() -> {
+                            IconButton(onClick = {
+                                selectedItem.value = MenuItem.WhyLeIcons
+                                navController.popBackStack()
+                            }) {
+                                Icon(imageVector = Icons.Default.ArrowBack, contentDescription = null)
+                            }
                         }
-                    }else {
-                        IconButton(onClick = openDrawer) {
-                            Icon(imageVector = Icons.Default.Menu, contentDescription = null)
+                        MenuItem.IconRequest.title.lowercase().trim() -> {
+                            IconButton(onClick = {
+                                navController.popBackStack()
+                            }) {
+                                Icon(imageVector = Icons.Default.ArrowBack, contentDescription = null)
+                            }
+                        }
+                        else -> {
+                            IconButton(onClick = openDrawer) {
+                                Icon(imageVector = Icons.Default.Menu, contentDescription = null)
+                            }
                         }
                     }
                 }
             )
         },
+        floatingActionButton = {
+            when (currentRoute) {
+                MenuItem.IconRequest.title.lowercase().trim() ->{
+                    FloatingActionButton(onClick = {
+                        val stringBuilder = StringBuilder()
+                        stringBuilder.append("Manufacturer : ${Build.MANUFACTURER.uppercase()}\n" +
+                                "Model: ${Build.MODEL.uppercase()}\n\n")
+                        Log.d("ViewModel", "${viewModel.missingIconApps.toList()}")
+                        viewModel.missingIconApps.size
+                        viewModel.missingIconApps.filter { it.checked }.forEach { app->
+                            stringBuilder.append("Name: ${app.appName}\n ComponentInfo: ${app.componentName}\n\n")
+                        }
+                        val emailIntent = Intent(Intent.ACTION_SENDTO).apply {
+                            data = Uri.parse("mailto:")
+                            putExtra(Intent.EXTRA_EMAIL, arrayOf("leiconpack@gmail.com"))
+                            putExtra(Intent.EXTRA_SUBJECT,"Missing Icon Report")
+                            putExtra(Intent.EXTRA_TEXT, stringBuilder.toString())
+                        }
+                        try {
+                            context.startActivity(Intent.createChooser(emailIntent, "Choose email app"))
+                            viewModel.resetSelection()
+                        }catch (e:ActivityNotFoundException){
+                            Toast.makeText(
+                                context,
+                                "No email activity found",
+                                Toast.LENGTH_SHORT
+                            ).show()
+                        }
+                    }) {
+                        Icon(imageVector = Icons.Default.Send, contentDescription ="action request" )
+                    }
+                }
+            }
+        },
+        floatingActionButtonPosition = FabPosition.End
     ) { paddingValues ->
         Surface(
             modifier = Modifier
@@ -190,10 +250,10 @@ fun LeIconPackApp(
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun DrawerContent(navController:NavHostController, viewModel: MainViewModel= MainViewModel()) {
+fun DrawerContent(navController:NavHostController, viewModel: MainViewModel) {
     val drawerState = rememberDrawerState(DrawerValue.Closed)
     val coroutineScope = rememberCoroutineScope()
-    val context = LocalContext.current
+    val context = LocalContext.current as Activity
     val items = viewModel.drawerItems
     val selectedItem = remember{ mutableStateOf(items[0]) }
     val showApplyDialog = remember { mutableStateOf(false)    }
@@ -241,12 +301,13 @@ fun DrawerContent(navController:NavHostController, viewModel: MainViewModel= Mai
                                         drawerState.close()
                                     }
                                 }
-                                is MenuItem.CustomIcons ->{
-                                    navController.navigate(route = MenuItem.CustomIcons.title.lowercase().trim())
+                                is MenuItem.WhyLeIcons ->{
+                                    navController.navigate(route = MenuItem.WhyLeIcons.title.lowercase().trim())
                                     coroutineScope.launch {
                                         drawerState.close()
                                     }
                                 }
+                                else -> {Unit}
                             }
 
 
@@ -263,7 +324,7 @@ fun DrawerContent(navController:NavHostController, viewModel: MainViewModel= Mai
                             )
                             Spacer(modifier = Modifier.width(10.dp))
                             Text(
-                                text = if (it.title == MenuItem.CustomIcons.title) "${it.title}?" else it.title,
+                                text = if (it.title == MenuItem.WhyLeIcons.title) "${it.title}?" else it.title,
                                 fontSize = 16.sp,
                                 textAlign = TextAlign.Start,
                                 color = if (it == MenuItem.Home) {
@@ -283,7 +344,7 @@ fun DrawerContent(navController:NavHostController, viewModel: MainViewModel= Mai
         }
     ){
         LeIconPackApp(
-            viewModel = MainViewModel(),
+            viewModel = viewModel,
             navController = navController,
             showApplyDialog = showApplyDialog,
             selectedItem = selectedItem
@@ -474,8 +535,8 @@ fun CustomIcon(letters: String, cornerShape: RoundedCornerShape, modifier: Modif
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun DefaultPreview() {
-    LeIconPackTheme {
+    LeIconPackTheme(useDarkTheme = true) {
        // LeIconPackApp(viewModel = MainViewModel())
-       DrawerContent(rememberNavController())
+       DrawerContent(rememberNavController(),viewModel = MainViewModel())
     }
 }
