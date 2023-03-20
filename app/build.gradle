@@ -11,8 +11,8 @@ android {
         applicationId "com.tanujnotes.leiconpack"
         minSdk 26
         targetSdk 33
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "v0.2"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -21,8 +21,14 @@ android {
     }
 
     buildTypes {
-        release {
+        debug {
+            debuggable true
             minifyEnabled false
+            applicationIdSuffix ".debug"
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -66,7 +72,7 @@ dependencies {
     implementation "io.coil-kt:coil-compose:2.2.2"
 
     testImplementation 'junit:junit:4.13.2'
-    
+
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_ui_version"
