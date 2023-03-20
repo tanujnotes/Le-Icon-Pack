@@ -20,16 +20,14 @@ import org.w3c.dom.Node
 import javax.xml.parsers.DocumentBuilderFactory
 
 class MainViewModel : ViewModel() {
-
-    val rectangularIconsShape = mutableStateOf(true)
+    /*
+        val rectangularIconsShape = mutableStateOf(true)
+        val themeRadioOptions = listOf("Dark", "Light")
+        val shapeRadioOptions = listOf("Rectangular", "Circle")
+        val themeSelectedOption = mutableStateOf(themeRadioOptions[0])
+        val shapeSelectedOption = mutableStateOf(shapeRadioOptions[0])
+    */
     val lettersList = mutableStateListOf("Aa", "Ab", "Bb", "Ba", "Ca", "Cb", "Da", "Db")
-
-
-    val themeRadioOptions = listOf("Dark", "Light")
-    val shapeRadioOptions = listOf("Rectangular", "Circle")
-
-    val themeSelectedOption = mutableStateOf(themeRadioOptions[0])
-    val shapeSelectedOption = mutableStateOf(shapeRadioOptions[0])
 
     val drawerItems = listOf(MenuItem.Home, MenuItem.Apply, MenuItem.WhyLeIcons)
 
@@ -116,12 +114,11 @@ class MainViewModel : ViewModel() {
         }
     }
 
-    fun onCircleShapeIconsSelected() {
+  /*  fun onCircleShapeIconsSelected() {
         rectangularIconsShape.value = false
     }
-
     fun onRectangularShapeIconsSelected() {
         rectangularIconsShape.value = true
-    }
+    }*/
 
 }

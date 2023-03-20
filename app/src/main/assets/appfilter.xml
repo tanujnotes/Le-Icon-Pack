@@ -2886,12 +2886,12 @@
     <!--google_keyboard-->
     <item
         component="ComponentInfo{com.google.android.inputmethod.latin/com.android.inputmethod.latin.setup.SetupActivity}"
-        drawable="gb" />
+        drawable="kb" />
 
     <!--google_analytics-->
     <item
         component="ComponentInfo{com.google.android.apps.giant/com.google.android.apps.giant.activity.LauncherActivity}"
-        drawable="ga" />
+        drawable="an" />
 
     <!---google_docs-->
     <item
@@ -2906,7 +2906,7 @@
     <!--google_assistant-->
     <item
         component="ComponentInfo{com.google.android.apps.googleassistant/com.google.android.apps.googleassistant.AssistantActivity}"
-        drawable="ga" />
+        drawable="as" />
 
     <!--google_meet-->
     <item
@@ -2936,7 +2936,7 @@
     <!--google_sound_amplifier-->
     <item
         component="ComponentInfo{com.google.android.accessibility.soundamplifier/com.google.android.accessibility.soundamplifier.ui.SoundAmplifierSettingActivity}"
-        drawable="sa" />
+        drawable="so" />
 
     <!--google_pay-->
     <item
