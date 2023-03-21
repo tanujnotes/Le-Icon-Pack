@@ -13,8 +13,11 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.tanujnotes.leiconpack.R
 import com.tanujnotes.leiconpack.ui.theme.LeIconPackTheme
 
 @Composable
@@ -38,6 +41,7 @@ private fun Features(title:String, desc:String) {
     Text(
         text = title,
         color = MaterialTheme.colorScheme.onSecondary,
+        fontFamily = FontFamily(Font(R.font.inter)),
         modifier = Modifier
             .background(
                 color = MaterialTheme.colorScheme.secondary,
@@ -59,7 +63,10 @@ private fun Features(title:String, desc:String) {
                     shape = CircleShape
                 )
         )
-        Text(text = desc)
+        Text(
+            text = desc,
+            fontFamily = FontFamily(Font(R.font.inter)),
+        )
     }
     Spacer(modifier = Modifier.height(20.dp))
 }

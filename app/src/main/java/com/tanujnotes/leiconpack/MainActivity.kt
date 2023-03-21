@@ -33,6 +33,8 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -78,7 +80,8 @@ fun LeIconPackApp(
         topBar = {
             TopAppBar(
                 title = {
-                    Text(text = when (currentRoute) {
+                    Text(
+                        text = when (currentRoute) {
                         MenuItem.WhyLeIcons.title.lowercase().trim() -> {
                             "${MenuItem.WhyLeIcons.title}?"
                         }
@@ -86,7 +89,8 @@ fun LeIconPackApp(
                             MenuItem.IconRequest.title
                         }
                         else -> MenuItem.Home.title
-                    }
+                    },
+                        fontFamily = FontFamily(Font(R.font.inter)),
                     )
                         },
                 colors = TopAppBarDefaults.mediumTopAppBarColors(
@@ -273,6 +277,7 @@ fun DrawerContent(navController:NavHostController, viewModel: MainViewModel) {
                             Text(
                                 text = stringResource(id = R.string.app_name),
                                 fontSize = 18.sp,
+                                fontFamily = FontFamily(Font(R.font.inter)),
                                 fontWeight = FontWeight.Bold,
                                 color=MaterialTheme.colorScheme.onPrimary,
                                 modifier = Modifier
@@ -326,6 +331,7 @@ fun DrawerContent(navController:NavHostController, viewModel: MainViewModel) {
                             Text(
                                 text = if (it.title == MenuItem.WhyLeIcons.title) "${it.title}?" else it.title,
                                 fontSize = 16.sp,
+                                fontFamily = FontFamily(Font(R.font.inter)),
                                 textAlign = TextAlign.Start,
                                 color = if (it == MenuItem.Home) {
                                     MaterialTheme.colorScheme.surfaceTint
@@ -515,7 +521,10 @@ private fun SelectableGroup(
             selected = selected,
             onClick = null
         )
-        Text(text = selectableOption, modifier = Modifier.padding(start = 16.dp))
+        Text(
+            text = selectableOption,
+            fontFamily = FontFamily(Font(R.font.inter)),
+            modifier = Modifier.padding(start = 16.dp))
     }
 }
 
@@ -528,7 +537,10 @@ fun CustomIcon(letters: String, cornerShape: RoundedCornerShape, modifier: Modif
             .background(color = Color(0xFF212121)),
         contentAlignment = Alignment.Center
     ) {
-        Text(text = letters, color = Color.White, fontSize = 30.sp)
+        Text(
+            text = letters,
+            fontFamily = FontFamily(Font(R.font.inter)),
+            color = Color.White, fontSize = 30.sp)
     }
 }
 
