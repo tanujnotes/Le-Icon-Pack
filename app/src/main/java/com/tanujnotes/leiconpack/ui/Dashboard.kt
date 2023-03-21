@@ -20,14 +20,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import com.google.accompanist.flowlayout.FlowCrossAxisAlignment
-import com.google.accompanist.flowlayout.FlowMainAxisAlignment
 import com.tanujnotes.leiconpack.CustomIcon
+import com.tanujnotes.leiconpack.R
 import com.tanujnotes.leiconpack.R.drawable
 import com.tanujnotes.leiconpack.R.string
 import com.tanujnotes.leiconpack.applyIcons
@@ -44,7 +45,7 @@ fun Dashboard(
     val scrollState = rememberScrollState()
     val context = LocalContext.current
     val showDimensionsDialog = remember { mutableStateOf(false) }
-    val showReportDialog = remember { mutableStateOf(false) }
+   // val showReportDialog = remember { mutableStateOf(false) }
     val iconsLabel = viewModel.lettersList
     Box(modifier = Modifier.fillMaxSize()) {
         Column(
@@ -69,8 +70,9 @@ fun Dashboard(
                         modifier = Modifier
                             .fillMaxWidth()
                             .background(MaterialTheme.colorScheme.surface),
+                        contentAlignment = Alignment.Center
                     ) {
-                        com.google.accompanist.flowlayout.FlowRow(
+                      /* com.google.accompanist.flowlayout.FlowRow(
                             modifier = Modifier
                                 .padding(16.dp)
                                 .fillMaxWidth(),
@@ -82,14 +84,36 @@ fun Dashboard(
                             iconsLabel.forEach { letters ->
                                 CustomIcon(letters = letters, RoundedCornerShape(12.dp))
                             }
+                        }*/
+                        Column(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(vertical = 20.dp)
+                        ) {
+                        Row(modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.SpaceAround) {
+                            iconsLabel.subList(0,4).forEach { letters ->
+                                CustomIcon(letters = letters, RoundedCornerShape(12.dp))
+                            }
+                        }
+                        Spacer(modifier = Modifier.height(20.dp))
+                        Row(modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.SpaceAround) {
+                            iconsLabel.subList(4,8).forEach { letters ->
+                                CustomIcon(letters = letters, RoundedCornerShape(12.dp))
+                            }
                         }
                     }
+                    }
+
+
 
                     Spacer(modifier = Modifier.height(10.dp))
                     Text(
                         text = stringResource(id = string.app_name),
                         fontSize = 25.sp,
                         fontWeight = FontWeight.Bold,
+                        fontFamily = FontFamily(Font(R.font.inter)),
                         modifier = Modifier
                             .fillMaxWidth()
                             .padding(horizontal = 16.dp)
@@ -99,6 +123,7 @@ fun Dashboard(
                         text = stringResource(string.app_description),
                         fontSize = 16.sp,
                         fontWeight = FontWeight.Normal,
+                        fontFamily = FontFamily(Font(R.font.inter)),
                         modifier = Modifier
                             .fillMaxWidth()
                             .padding(horizontal = 16.dp)
@@ -137,6 +162,7 @@ fun Dashboard(
                             Icon(painter = painterResource(id = drawable.ic_star), contentDescription = null)
                             Text(
                                 text = stringResource(string.rate_review_label).uppercase(),
+                                fontFamily = FontFamily(Font(R.font.inter)),
                                 fontSize = 18.sp,
                                 fontWeight = FontWeight.Bold
                             )
@@ -191,6 +217,7 @@ fun Dashboard(
                             Spacer(modifier = Modifier.width(16.dp))
                             Text(
                                 text = stringResource(id = string.chrome_app_label),
+                                fontFamily = FontFamily(Font(R.font.inter)),
                                 fontSize = 18.sp,
                                 fontWeight = FontWeight.Bold
                             )
@@ -198,6 +225,7 @@ fun Dashboard(
                         Text(
                             text = stringResource(string.icon_dimension_label),
                             fontSize = 16.sp,
+                            fontFamily = FontFamily(Font(R.font.inter)),
                             fontWeight = FontWeight.Normal,
                             modifier = Modifier
                                 .fillMaxWidth()
@@ -213,13 +241,17 @@ fun Dashboard(
                                 showDimensionsDialog.value = false
                                 selectedItem.value = MenuItem.Home
                             }) {
-                                Text(text = stringResource(string.close_label).uppercase())
+                                Text(
+                                    text = stringResource(string.close_label).uppercase(),
+                                    fontFamily = FontFamily(Font(R.font.inter))
+                                )
                             }
                         },
                         title = {
                             Text(
                                 text = stringResource(string.chrome_app_label),
                                 fontSize = 18.sp,
+                                fontFamily = FontFamily(Font(R.font.inter)),
                                 fontWeight = FontWeight.Bold
                             )
                         },
@@ -259,12 +291,14 @@ fun Dashboard(
                             text = stringResource(string.custom_icons_count),
                             fontSize = 30.sp,
                             fontWeight = FontWeight.Bold,
+                            fontFamily = FontFamily(Font(R.font.inter)),
                             textAlign = TextAlign.End,
                             modifier = Modifier.fillMaxWidth()
                         )
                         Text(
                             text = stringResource(string.why_icons_label),
                             fontSize = 18.sp,
+                            fontFamily = FontFamily(Font(R.font.inter)),
                             fontWeight = FontWeight.Normal,
                             textAlign = TextAlign.End,
                             modifier = Modifier.fillMaxWidth()
@@ -282,10 +316,6 @@ fun Dashboard(
                 shape = RoundedCornerShape(16.dp),
                 onClick = {
                     navController.navigate(route = MenuItem.IconRequest.title.trim().lowercase())
-                             /* viewModel.missingComponentNames.forEach { app ->
-                              Log.d("Dashboard", "${app.label}: ${app.componentName} ")
-                          }*/
-                    //showReportDialog.value = true
                 },
                 contentPadding = PaddingValues(vertical = 16.dp),
                 modifier = Modifier.fillMaxWidth()
@@ -294,12 +324,13 @@ fun Dashboard(
                 Spacer(modifier = Modifier.width(16.dp))
                     Text(
                         text = stringResource(string.report_missing_label),
+                        fontFamily = FontFamily(Font(R.font.inter)),
                         fontSize = 18.sp,
                         fontWeight = FontWeight.Normal
                     )
             }
             Spacer(modifier = Modifier.height(100.dp))
-            if (showReportDialog.value){
+           /* if (showReportDialog.value){
                 AlertDialog(
                     onDismissRequest = { showReportDialog.value = false },
                     confirmButton = {
@@ -324,7 +355,9 @@ fun Dashboard(
                                         }
 
                                     }) {
-                                        Text(text = stringResource(string.report_label))
+                                        Text(
+                                            text = stringResource(string.report_label),
+                                            fontFamily = FontFamily(Font(R.font.inter)),)
                                         Spacer(modifier = Modifier.width(10.dp))
                                         Icon(
                                             imageVector = Icons.Default.Send,
@@ -332,10 +365,16 @@ fun Dashboard(
                                         )
                                     }
                     },
-                    title = { Text(text = "Missing Icons")},
+                    title = { Text(
+                        text = "Missing Icons",
+                        fontFamily = FontFamily(Font(R.font.inter)),
+                    ) },
                     text = {
                         Column {
-                            Text(text = "Please provide us with the following in your request:")
+                            Text(
+                                text = "Please provide us with the following in your request:",
+                                fontFamily = FontFamily(Font(R.font.inter)),
+                            )
                             Spacer(modifier = Modifier.height(10.dp))
                             ReportInfoItem("Device Model")
                             Spacer(modifier = Modifier.height(10.dp))
@@ -347,7 +386,7 @@ fun Dashboard(
                         }
                     }
                 )
-            }
+            }*/
             if (showApplyDialog.value) {
                 AlertDialog(
                     onDismissRequest = { showApplyDialog.value = false },
@@ -355,14 +394,18 @@ fun Dashboard(
                         TextButton(onClick = {
                             showApplyDialog.value = false
                         }) {
-                            Text(text = stringResource(string.close_label).uppercase())
+                            Text(
+                                text = stringResource(string.close_label).uppercase(),
+                                fontFamily = FontFamily(Font(R.font.inter))
+                            )
                         }
                     },
                     title = {
                         Text(
                             text = stringResource(string.applying_icons_label),
                             fontSize = 18.sp,
-                            fontWeight = FontWeight.Bold
+                            fontWeight = FontWeight.Bold,
+                            fontFamily = FontFamily(Font(R.font.inter))
                         )
                     },
                     text = {
@@ -395,7 +438,11 @@ fun Dashboard(
                                 instruction = stringResource(string.apply_step_five)
                             )
                             Spacer(modifier = Modifier.height(20.dp))
-                            Text(text = stringResource(string.apply_note))
+                            Text(
+
+                                text = stringResource(string.apply_note),
+                                fontFamily = FontFamily(Font(R.font.inter))
+                            )
 
                         }
                     }
@@ -405,7 +452,7 @@ fun Dashboard(
 
         Button(
             onClick = {
-                applyIcons(context, showApplyDialog)
+                 applyIcons(context, showApplyDialog)
             },
             contentPadding = PaddingValues(16.dp),
             modifier = Modifier
@@ -418,7 +465,8 @@ fun Dashboard(
             Text(
                 text = stringResource(string.apply_label),
                 fontSize = 20.sp,
-                fontWeight = FontWeight.Bold
+                fontWeight = FontWeight.Bold,
+                fontFamily = FontFamily(Font(R.font.inter))
             )
         }
     }
@@ -437,7 +485,10 @@ fun ReportInfoItem(info:String) {
                     shape = CircleShape
                 )
         )
-        Text(text = info)
+        Text(
+            text = info,
+            fontFamily = FontFamily(Font(R.font.inter)),
+        )
     }
 }
 
@@ -455,8 +506,14 @@ private fun ApplyInstruction(step: String, instruction: String) {
                 ),
             contentAlignment = Alignment.Center
         ) {
-            Text(text = step, color = MaterialTheme.colorScheme.onSecondary)
+            Text(
+                text = step,
+                fontFamily = FontFamily(Font(R.font.inter)),
+                color = MaterialTheme.colorScheme.onSecondary)
         }
-        Text(text = instruction)
+        Text(
+            text = instruction,
+            fontFamily = FontFamily(Font(R.font.inter)),
+        )
     }
 }

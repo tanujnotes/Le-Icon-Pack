@@ -1,11 +1,15 @@
 package com.tanujnotes.leiconpack.ui
 
 import android.annotation.SuppressLint
+import android.content.ComponentName
 import android.content.Context
+import android.content.Intent
+import android.content.pm.ActivityInfo
 import android.content.pm.LauncherApps
+import android.content.pm.PackageManager
+import android.os.Build
 import android.os.UserManager
 import androidx.compose.runtime.mutableStateListOf
-import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.tanujnotes.leiconpack.model.AppInfo
@@ -19,6 +23,7 @@ import org.w3c.dom.Element
 import org.w3c.dom.Node
 import javax.xml.parsers.DocumentBuilderFactory
 
+@Suppress("DEPRECATION")
 class MainViewModel : ViewModel() {
     /*
         val rectangularIconsShape = mutableStateOf(true)
@@ -79,22 +84,20 @@ class MainViewModel : ViewModel() {
     fun getMissingApps(context: Context) {
         viewModelScope.launch {
             if (missingIconApps.isEmpty()) {
-            val userManager = context.getSystemService(Context.USER_SERVICE) as UserManager
-            val launcherApps = context.getSystemService(Context.LAUNCHER_APPS_SERVICE) as LauncherApps
             val missingApps = mutableListOf<AppInfo>()
-            for (profile in userManager.userProfiles) {
-                for (app in launcherApps.getActivityList(null, profile)) {
-                    if (!appFilterComponentNames(context).contains(app.componentName.toString())) {
+                for (appActivityInfo in activityInfos(context)) {
+                    val componentName = ComponentName(appActivityInfo.packageName, appActivityInfo.name)
+                    if (!appFilterComponentNames(context).contains(componentName.toString())) {
                         missingApps.add(
                             AppInfo(
-                            app.getIcon(0),
-                            app.label.toString(),
-                            app.componentName.toString().replace("ComponentInfo{","").removeSuffix("}")
-                        )
+                            appActivityInfo.loadIcon(context.packageManager),
+                            appActivityInfo.loadLabel(context.packageManager).toString(),
+                            componentName.flattenToString()
+                            )
                         )
                     }
                 }
-            }
+
                 missingIconApps.addAll(missingApps)
                 if (missingIconApps.size ==missingApps.size) {
                     _isLoading.value = false
@@ -102,6 +105,27 @@ class MainViewModel : ViewModel() {
 
             }
         }
+    }
+
+    private fun activityInfos(context: Context): MutableList<ActivityInfo> {
+        val launchAbleApps: MutableList<ActivityInfo> = mutableListOf()
+        val intent = Intent(Intent.ACTION_MAIN, null)
+        intent.addCategory(Intent.CATEGORY_LAUNCHER)
+
+        val packageManager = context.packageManager
+        val activities= if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            packageManager.queryIntentActivities(
+                intent,
+                PackageManager.ResolveInfoFlags.of(PackageManager.MATCH_ALL.toLong())
+            )
+        } else {
+           packageManager.queryIntentActivities(intent, PackageManager.MATCH_ALL)
+        }
+
+        for (resolveInfo in activities) {
+                launchAbleApps.add(resolveInfo.activityInfo)
+        }
+        return launchAbleApps
     }
 
     fun updateSelection(appList:MutableList<AppInfo>,index: Int, selected:Boolean) {

@@ -13,9 +13,12 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import coil.compose.rememberAsyncImagePainter
+import com.tanujnotes.leiconpack.R
 import com.tanujnotes.leiconpack.model.AppInfo
 import com.tanujnotes.leiconpack.ui.theme.LeIconPackTheme
 
@@ -82,7 +85,10 @@ fun AppRow(
                 contentDescription = "icon",
                 modifier = modifier.size(60.dp)
             )
-            Text(text = app.appName)
+            Text(
+                text = app.appName,
+                fontFamily = FontFamily(Font(R.font.inter)),
+            )
         }
         Checkbox(
             checked = app.checked,
