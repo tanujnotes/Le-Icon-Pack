@@ -6,5 +6,5 @@ data class AppInfo(
     val appIcon:Drawable,
     val appName:String,
     val componentName:String,
-    val checked:Boolean = false
+    val checked:Boolean = true
 )
