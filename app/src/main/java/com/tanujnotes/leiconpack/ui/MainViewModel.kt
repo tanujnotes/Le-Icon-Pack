@@ -38,12 +38,12 @@ class MainViewModel : ViewModel() {
 
     val appFeatures = listOf(
         Feature(
-            feature = "Faster Navigation",
-            desc = "Navigate through your apps more quickly and easily, reducing the time you spend searching for the right app."
-        ),
-        Feature(
             feature = "Reduced screen time",
             desc = "Focus on the task at hand by minimizing distractions on your home screen"
+        ),
+        Feature(
+            feature = "Huge number of icons",
+            desc = "Quickly apply icons to almost every app in your device with ease"
         ),
         Feature(
             feature = "Consistent design",
