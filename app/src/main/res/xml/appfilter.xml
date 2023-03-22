@@ -6497,5 +6497,105 @@
         component="ComponentInfo{org.zooper.zwpro/org.zooper.zwlib.Launcher}"
         drawable="zp" />
 
+    <!--Olauncher-->
+    <item
+        component="ComponentInfo{app.olauncher.debug/app.olauncher.MainActivity}"
+        drawable="ol" />
+
+    <!--PROlauncher-->
+    <item
+        component="ComponentInfo{app.prolauncher/app.prolauncher.MainActivity}"
+        drawable="pl" />
+
+    <!--Brave-->
+    <item
+        component="ComponentInfo{com.brave.browser/com.google.android.apps.chrome.Main}"
+        drawable="br" />
+
+    <!--GPay-->
+    <item
+        component="ComponentInfo{com.google.android.apps.nbu.paisa.user/com.google.nbu.paisa.flutter.gpay.app.LauncherActivity}"
+        drawable="gp" />
+
+    <!--Screen Recorder-->
+    <item
+        component="ComponentInfo{com.miui.screenrecorder/com.miui.screenrecorder.activity.ScreenRecorderHomeActivity}"
+        drawable="sr" />
+
+    <!--Security-->
+    <item
+        component="ComponentInfo{com.miui.securitycenter/com.miui.securityscan.MainActivity}"
+    drawable="se" />
+
+    <!--ShareMe-->
+    <item
+        component="ComponentInfo{com.xiaomi.midrop/com.xiaomi.midrop.SplashScreen}"
+    drawable="sm" />
+
+    <!--GetApps-->
+    <item
+        component="ComponentInfo{com.xiaomi.mipicks/com.xiaomi.mipicks.DefaultAlias}"
+    drawable="ga" />
+
+    <!--Ratio-->
+    <item
+        component="ComponentInfo{com.bllocosn/com.bllocosn.MainActivity}"
+    drawable="ra" />
+
+    <!--Walpy-->
+    <item
+        component="ComponentInfo{com.feresr.walpy/com.feresr.walpy.welcome.WelcomeActivity}"
+    drawable="wa" />
+
+    <!--To Do-->
+    <item
+        component="ComponentInfo{com.microsoft.todos/com.microsoft.todos.ui.LaunchActivity}"
+    drawable="td" />
+
+    <!--FAST-->
+    <item
+        component="ComponentInfo{com.netflix.Speedtest/com.netflix.Speedtest.MainActivity}"
+    drawable="fa" />
+
+    <!--Battlegrounds India-->
+    <item
+        component="ComponentInfo{com.pubg.imobile/com.epicgames.ue4.SplashActivity}"
+    drawable="bg" />
+
+    <!--Keyboard-->
+    <item
+        component="ComponentInfo{com.simplemobiletools.keyboard/com.simplemobiletools.keyboard.activities.SplashActivity.Orange}"
+    drawable="kb" />
+
+    <!--Le Icon Pack-->
+    <item
+        component="ComponentInfo{com.tanujnotes.leiconpack.debug/com.tanujnotes.leiconpack.MainActivity}"
+    drawable="le" />
+
+    <!--Walldrobe-->
+    <item
+        component="ComponentInfo{walldrobe.coffecode.com/com.coffecode.walldrobe.ui.main.MainActivity}"
+    drawable="wd" />
+
+    <!--Delta-->
+    <item
+        component="ComponentInfo{website.leifs.delta/website.leifs.delta.activities.SplashActivity}"
+    drawable="de" />
+
+    <!--Canva-->
+    <item component="ComponentInfo{com.canva.editor/com.canva.app.editor.splash.SplashActivity}"
+        drawable="ca" />
+
+    <!--FS 16-->
+    <item component="ComponentInfo{com.giantssoftware.fs16/com.giantssoftware.fs16.FS16Activity}"
+        drawable="fa" />
+
+    <!--File Manager-->
+    <item component="ComponentInfo{com.simplemobiletools.filemanager.pro/com.simplemobiletools.filemanager.pro.activities.SplashActivity.Orange}"
+        drawable="fm" />
+
+    <!--My Debt Manager-->
+    <item component="ComponentInfo{dev.geedevelopers.borrowapp/dev.geedevelopers.borrowapp.MainActivity}"
+        drawable="md" />
 
 </resources>

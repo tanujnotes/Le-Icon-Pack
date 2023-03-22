@@ -238,16 +238,28 @@
         image="ac" />
 
     <!---avg_antivirus-->
-    <AppIcon component="ComponentInfo{avg.antivirus/com.antivirus.ui.main.AntivirusMainScreen}" image="av" />
-    <AppIcon component="ComponentInfo{org.antivirus/com.antivirus.ui.main.AntivirusMainScreen}" image="av" />
+    <AppIcon
+        component="ComponentInfo{avg.antivirus/com.antivirus.ui.main.AntivirusMainScreen}"
+        image="av" />
+    <AppIcon
+        component="ComponentInfo{org.antivirus/com.antivirus.ui.main.AntivirusMainScreen}"
+        image="av" />
 
     <!---bbc_i_player-->
-    <AppIcon component="ComponentInfo{bbc.iplayer.android/uk.co.bbc.iplayer.config.ui.ConfigLoadingActivity}" image="bb" />
-    <AppIcon component="ComponentInfo{bbc.iplayer.android/uk.co.bbc.iplayer.startup.StartupActivity}" image="bb" />
+    <AppIcon
+        component="ComponentInfo{bbc.iplayer.android/uk.co.bbc.iplayer.config.ui.ConfigLoadingActivity}"
+        image="bb" />
+    <AppIcon
+        component="ComponentInfo{bbc.iplayer.android/uk.co.bbc.iplayer.startup.StartupActivity}"
+        image="bb" />
 
     <!---bbc_news-->
-    <AppIcon component="ComponentInfo{bbc.mobile.news.uk/bbc.mobile.news.v3.app.TopLevelActivity}" image="bn"/>
-    <AppIcon component="ComponentInfo{bbc.mobile.news.ww/bbc.mobile.news.v3.app.TopLevelActivity}" image="bn" />
+    <AppIcon
+        component="ComponentInfo{bbc.mobile.news.uk/bbc.mobile.news.v3.app.TopLevelActivity}"
+        image="bn" />
+    <AppIcon
+        component="ComponentInfo{bbc.mobile.news.ww/bbc.mobile.news.v3.app.TopLevelActivity}"
+        image="bn" />
 
 
     <!--banggood-->
@@ -1938,7 +1950,7 @@
         component="ComponentInfo{luck.of.wise.emailpicker.pro/luck.of.wise.emailpicker.pro.EmailPickerActivity}"
         image="em" />
     <!-- gmail -->
-    <item
+    <AppIcon
         component="ComponentInfo{com.google.android.gm/com.google.android.gm.ConversationListActivityGmail}"
         image="gm" />
 
@@ -4681,11 +4693,17 @@
         component="ComponentInfo{com.alensw.PicFolder/com.alensw.PicFolder.GalleryActivity}"
         image="qp" />
     <!---quran_indonesia-->
-    <AppIcon component="ComponentInfo{com.andi.alquran.id/com.andi.alquran.ActivityHome}" image="qi" />
+    <AppIcon
+        component="ComponentInfo{com.andi.alquran.id/com.andi.alquran.ActivityHome}"
+        image="qi" />
 
     <!---reddit_is_fun-->
-    <AppIcon component="ComponentInfo{com.andrewshu.android.reddit/com.andrewshu.android.reddit.MainActivity}" image="re"/>
-    <AppIcon component="ComponentInfo{com.andrewshu.android.redditdonation/com.andrewshu.android.reddit.MainActivity}" image="re"/>
+    <AppIcon
+        component="ComponentInfo{com.andrewshu.android.reddit/com.andrewshu.android.reddit.MainActivity}"
+        image="re" />
+    <AppIcon
+        component="ComponentInfo{com.andrewshu.android.redditdonation/com.andrewshu.android.reddit.MainActivity}"
+        image="re" />
 
 
     <!--reddit-->
@@ -6433,5 +6451,106 @@
     <AppIcon
         component="ComponentInfo{org.zooper.zwpro/org.zooper.zwlib.Launcher}"
         image="zp" />
+
+    <!--Olauncher-->
+    <AppIcon
+        component="ComponentInfo{app.olauncher.debug/app.olauncher.MainActivity}"
+        image="ol" />
+
+    <!--PROlauncher-->
+    <AppIcon
+        component="ComponentInfo{app.prolauncher/app.prolauncher.MainActivity}"
+        image="pl" />
+
+    <!--Brave-->
+    <AppIcon
+        component="ComponentInfo{com.brave.browser/com.google.android.apps.chrome.Main}"
+        image="br" />
+
+    <!--GPay-->
+    <AppIcon
+        component="ComponentInfo{com.google.android.apps.nbu.paisa.user/com.google.nbu.paisa.flutter.gpay.app.LauncherActivity}"
+        image="gp" />
+
+    <!--Screen Recorder-->
+    <AppIcon
+        component="ComponentInfo{com.miui.screenrecorder/com.miui.screenrecorder.activity.ScreenRecorderHomeActivity}"
+        image="sr" />
+
+    <!--Security-->
+    <AppIcon
+        component="ComponentInfo{com.miui.securitycenter/com.miui.securityscan.MainActivity}"
+        image="se" />
+
+    <!--ShareMe-->
+    <AppIcon
+        component="ComponentInfo{com.xiaomi.midrop/com.xiaomi.midrop.SplashScreen}"
+        image="sm" />
+
+    <!--GetApps-->
+    <AppIcon
+        component="ComponentInfo{com.xiaomi.mipicks/com.xiaomi.mipicks.DefaultAlias}"
+        image="ga" />
+
+    <!--Ratio-->
+    <AppIcon
+        component="ComponentInfo{com.bllocosn/com.bllocosn.MainActivity}"
+        image="ra" />
+
+    <!--Walpy-->
+    <AppIcon
+        component="ComponentInfo{com.feresr.walpy/com.feresr.walpy.welcome.WelcomeActivity}"
+        image="wa" />
+
+    <!--To Do-->
+    <AppIcon
+        component="ComponentInfo{com.microsoft.todos/com.microsoft.todos.ui.LaunchActivity}"
+        image="td" />
+
+    <!--FAST-->
+    <AppIcon
+        component="ComponentInfo{com.netflix.Speedtest/com.netflix.Speedtest.MainActivity}"
+        image="fa" />
+
+    <!--Battlegrounds India-->
+    <AppIcon
+        component="ComponentInfo{com.pubg.imobile/com.epicgames.ue4.SplashActivity}"
+        image="bg" />
+
+    <!--Keyboard-->
+    <AppIcon
+        component="ComponentInfo{com.simplemobiletools.keyboard/com.simplemobiletools.keyboard.activities.SplashActivity.Orange}"
+        image="kb" />
+
+    <!--Le Icon Pack-->
+    <AppIcon
+        component="ComponentInfo{com.tanujnotes.leiconpack.debug/com.tanujnotes.leiconpack.MainActivity}"
+        image="le" />
+
+    <!--Walldrobe-->
+    <AppIcon
+        component="ComponentInfo{walldrobe.coffecode.com/com.coffecode.walldrobe.ui.main.MainActivity}"
+        image="wd" />
+
+    <!--Delta-->
+    <AppIcon
+        component="ComponentInfo{website.leifs.delta/website.leifs.delta.activities.SplashActivity}"
+        image="de" />
+
+    <!--Canva-->
+    <AppIcon component="ComponentInfo{com.canva.editor/com.canva.app.editor.splash.SplashActivity}"
+        image="ca" />
+
+    <!--FS 16-->
+    <AppIcon component="ComponentInfo{com.giantssoftware.fs16/com.giantssoftware.fs16.FS16Activity}"
+        image="fa" />
+
+    <!--File Manager-->
+    <AppIcon component="ComponentInfo{com.simplemobiletools.filemanager.pro/com.simplemobiletools.filemanager.pro.activities.SplashActivity.Orange}"
+        image="fm" />
+
+    <!--My Debt Manager-->
+    <AppIcon component="ComponentInfo{dev.geedevelopers.borrowapp/dev.geedevelopers.borrowapp.MainActivity}"
+        image="md" />
 
 </Theme>
