@@ -25,7 +25,7 @@ fun NavGraph(
             WhyLeIconPack()
         }
         composable(route = MenuItem.IconRequest.title.lowercase().trim()){
-            MissingIcons(viewModel = viewModel)
+            MissingIcons(viewModel = viewModel, navController = navController)
         }
     }
 

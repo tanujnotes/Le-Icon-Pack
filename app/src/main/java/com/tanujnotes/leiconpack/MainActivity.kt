@@ -111,6 +111,7 @@ fun LeIconPackApp(
                         MenuItem.IconRequest.title.lowercase().trim() -> {
                             IconButton(onClick = {
                                 navController.popBackStack()
+                                viewModel.selectAll(appList = viewModel.missingIconApps, selected = true)
                             }) {
                                 Icon(imageVector = Icons.Default.ArrowBack, contentDescription = null)
                             }

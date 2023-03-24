@@ -1,6 +1,7 @@
 package com.tanujnotes.leiconpack.ui
 
 import android.app.Activity
+import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -17,19 +18,25 @@ import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import coil.compose.rememberAsyncImagePainter
 import com.tanujnotes.leiconpack.R
 import com.tanujnotes.leiconpack.model.AppInfo
 import com.tanujnotes.leiconpack.ui.theme.LeIconPackTheme
 
 @Composable
-fun MissingIcons(modifier: Modifier = Modifier, viewModel: MainViewModel) {
+fun MissingIcons(modifier: Modifier = Modifier, viewModel: MainViewModel, navController: NavController) {
     val context = LocalContext.current as Activity
     val missingIconApps = viewModel.missingIconApps
     LaunchedEffect(Unit){
         if (missingIconApps.isEmpty()){
             viewModel.getMissingApps(context)
         }
+    }
+    BackHandler {
+        viewModel.selectAll(appList = missingIconApps, selected = true)
+        navController.popBackStack()
     }
     val isLoading by viewModel.isLoading.collectAsState()
     val listState = rememberLazyListState()
@@ -41,6 +48,7 @@ fun MissingIcons(modifier: Modifier = Modifier, viewModel: MainViewModel) {
             CircularProgressIndicator()
         }
     }
+
     LazyColumn(
         modifier = modifier.fillMaxHeight(),
         contentPadding = PaddingValues(horizontal = 16.dp),
@@ -103,6 +111,6 @@ fun AppRow(
 @Composable
 fun RequestPreview() {
     LeIconPackTheme(useDarkTheme = true) {
-        MissingIcons(viewModel = MainViewModel())
+        MissingIcons(viewModel = MainViewModel(), navController = rememberNavController())
     }
 }

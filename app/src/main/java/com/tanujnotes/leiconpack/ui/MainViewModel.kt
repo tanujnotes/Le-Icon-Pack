@@ -131,6 +131,11 @@ class MainViewModel : ViewModel() {
     fun updateSelection(appList:MutableList<AppInfo>,index: Int, selected:Boolean) {
         appList[index] = appList[index].copy(checked = selected)
     }
+    fun selectAll(appList:MutableList<AppInfo>, selected:Boolean) {
+        for (index in 0 until appList.size) {
+            appList[index] = appList[index].copy(checked = selected)
+        }
+    }
 
     fun resetSelection(){
         for (i in  0 until missingIconApps.size ){
