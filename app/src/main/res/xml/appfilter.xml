@@ -7235,5 +7235,129 @@
     <item component="ComponentInfo{ws.hanzo.Vrrh/ws.hanzo.Vrrh.SplashActivity}"
         drawable="sv" />
 
+   <!--AR Zone-->
+    <item component="ComponentInfo{com.samsung.android.arzone/com.samsung.android.arzone.ARZoneLauncher}"
+        drawable="ar" />
+
+   <!--Samsung Free-->
+    <item component="ComponentInfo{com.samsung.android.app.spage/com.samsung.android.app.spage.main.LauncherActivity}"
+        drawable="sf" />
+
+   <!--Samsung Shop-->
+    <item component="ComponentInfo{com.samsung.ecomm.global.in/com.samsung.ecomm.MainActivity}"
+        drawable="ss" />
+
+   <!--Buy Me a Coffee-->
+    <item component="ComponentInfo{app.buymeacoffee/app.buymeacoffee.MainActivity}"
+        drawable="bm" />
+
+   <!--Splitwise-->
+    <item component="ComponentInfo{com.Splitwise.SplitwiseMobile/com.Splitwise.SplitwiseMobile.views.SplitwiseSplashScreen}"
+    drawable="sp" />
+
+   <!--Beeper-->
+    <item component="ComponentInfo{com.beeper.chat/im.vector.application.features.Alias}"
+        drawable="be" />
+
+   <!--Cake Wallet-->
+    <item component="ComponentInfo{com.cakewallet.cake_wallet/com.cakewallet.cake_wallet.MainActivity}"
+        drawable="cw" />
+
+   <!--YouCut - Video Editor-->
+    <item component="ComponentInfo{com.camerasideas.trimmer/com.camerasideas.instashot.MainActivity}"
+        drawable="yc" />
+
+   <!--Play Console-->
+    <item component="ComponentInfo{com.google.android.apps.playconsole/com.google.android.apps.playconsole.activity.MainAndroidActivity}"
+        drawable="pc" />
+
+   <!--Blinkit-->
+    <item component="ComponentInfo{com.grofers.customerapp/com.grofers.customerapp.ui.screens.splash.SplashActivity}"
+        drawable="bl" />
+
+   <!--Vyom-->
+    <item component="ComponentInfo{com.infrasoft.uboi/com.infrasoft.uboi.UnxtProdLiveUIUX}"
+        drawable="vy" />
+
+   <!--Pro Guitar Tuner-->
+    <item component="ComponentInfo{com.jrinnovation.proguitartuner/com.jrinnovation.proguitartuner.MainActivity}"
+        drawable="pg" />
+
+   <!--LOFOSCAN-->
+    <item component="ComponentInfo{com.lofoscan/com.lofoscan.MainActivity}"
+        drawable="lo" />
+
+   <!--Note to Self-->
+    <item component="ComponentInfo{com.makenotetoself/com.makenotetoself.MainActivity}"
+        drawable="Ns" />
+
+   <!--Office-->
+    <item component="ComponentInfo{com.microsoft.office.officehubrow/com.microsoft.office.officesuite.OfficeSuiteActivity}"
+        drawable="of" />
+
+   <!--Airtel-->
+    <item component="ComponentInfo{com.myairtelapp/com.myairtelapp.home.views.activities.SplashScreenActivity}"
+        drawable="at" />
+
+   <!--MyGate-->
+    <item component="ComponentInfo{com.mygate.user/com.mygate.user.modules.shared.SplashActivity}"
+        drawable="mg" />
+
+   <!--ScreenCam-->
+    <item component="ComponentInfo{com.orpheusdroid.screenrecorder/com.orpheusdroid.screenrecorder.ui.MainActivity}"
+        drawable="sc" />
+
+   <!--Atom-->
+    <item component="ComponentInfo{com.subconscious.thrive/com.subconscious.thrive.SplashScreenActivity}"
+        drawable="at" />
+
+   <!--12% Club-->
+    <item component="ComponentInfo{com.twelve.club/com.twelve.club.appUseCases.common.SplashActivity}"
+        drawable="cl" />
+
+   <!--Vanced Manager-->
+    <item component="ComponentInfo{com.vanced.manager/com.vanced.manager.ui.SplashScreenActivity}"
+        drawable="vm" />
+
+   <!--BHIM-->
+    <item component="ComponentInfo{in.org.npci.upiapp/in.org.npci.upiapp.HomeActivity}"
+        drawable="bh" />
+
+   <!--Swiggy-->
+    <item component="ComponentInfo{in.swiggy.android/in.swiggy.android.activities.HomeActivity}"
+        drawable="sw" />
+
+   <!--Snapdrop-->
+    <item component="ComponentInfo{net.snapdrop/net.snapdrop.MainActivity}"
+        drawable="sd" />
+
+   <!--Notion-->
+    <item component="ComponentInfo{notion.id/notion.local.id.MainActivity}"
+        drawable="no" />
+
+   <!--Signal-->
+    <item component="ComponentInfo{org.thoughtcrime.securesms/org.thoughtcrime.securesms.RoutingActivity}"
+        drawable="si" />
+
+   <!--OpenWeather-->
+    <item component="ComponentInfo{uk.co.openweather/uk.co.openweather.MainActivity}"
+        drawable="ow" />
+
+   <!--Message-->
+    <item component="ComponentInfo{com.google.android.apps.messaging/com.google.android.apps.messaging.main.MainActivity}"
+        drawable="me" />
+
+   <!--Music Player 2022-->
+    <item component="ComponentInfo{com.musicplayer.mp3player.media.musicplayer2020/com.nqa.media.activity.MainActivityNew}"
+        drawable="mp" />
+
+   <!--Phone Master-->
+    <item component="ComponentInfo{com.transsion.phonemaster/com.cyin.himgr.ads.SplashActivity}"
+        drawable="pm" />
+
+   <!--Free Music App-->
+    <item component="ComponentInfo{com.mimosic.mp3download.musicdownloader/com.mimosic.mp3download.musicdownloader.activity_Splash}"
+        drawable="fm" />
+
 
 </resources>
