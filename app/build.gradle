@@ -11,8 +11,8 @@ android {
         applicationId "com.tanujnotes.leiconpack"
         minSdk 26
         targetSdk 33
-        versionCode 3
-        versionName "v0.3"
+        versionCode 6
+        versionName "v0.6"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
