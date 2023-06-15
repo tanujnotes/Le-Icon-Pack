@@ -70,6 +70,7 @@ dependencies {
     implementation "com.google.accompanist:accompanist-systemuicontroller:0.29.1-alpha"
     implementation 'org.jetbrains:annotations:15.0'
     implementation "io.coil-kt:coil-compose:2.2.2"
+    implementation "androidx.datastore:datastore-preferences:1.0.0"
 
     testImplementation 'junit:junit:4.13.2'
 
