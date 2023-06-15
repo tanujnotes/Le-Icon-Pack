@@ -1,17 +1,43 @@
 package com.tanujnotes.leiconpack.ui
 
-import android.content.ActivityNotFoundException
-import android.content.Intent
-import android.net.Uri
-import androidx.compose.foundation.*
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.IntrinsicSize
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.wrapContentHeight
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Done
 import androidx.compose.material.icons.filled.Share
-import androidx.compose.material3.*
-import androidx.compose.runtime.*
+import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.Card
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.MutableState
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
@@ -29,6 +55,8 @@ import com.tanujnotes.leiconpack.R
 import com.tanujnotes.leiconpack.R.drawable
 import com.tanujnotes.leiconpack.R.string
 import com.tanujnotes.leiconpack.applyIcons
+import com.tanujnotes.leiconpack.util.Extensions.openPlayStore
+import com.tanujnotes.leiconpack.util.Extensions.openShareIntent
 import com.tanujnotes.leiconpack.util.MenuItem
 
 
@@ -42,7 +70,6 @@ fun Dashboard(
     val scrollState = rememberScrollState()
     val context = LocalContext.current
     val showDimensionsDialog = remember { mutableStateOf(false) }
-    // val showReportDialog = remember { mutableStateOf(false) }
     val iconsLabel = viewModel.lettersList
     Box(modifier = Modifier.fillMaxSize()) {
         Column(
@@ -68,19 +95,6 @@ fun Dashboard(
                             .background(MaterialTheme.colorScheme.surface),
                         contentAlignment = Alignment.Center
                     ) {
-                        /* com.google.accompanist.flowlayout.FlowRow(
-                              modifier = Modifier
-                                  .padding(16.dp)
-                                  .fillMaxWidth(),
-                              mainAxisSpacing = 10.dp,
-                              crossAxisSpacing = 10.dp,
-                              crossAxisAlignment = FlowCrossAxisAlignment.Center,
-                              mainAxisAlignment = FlowMainAxisAlignment.Center
-                          ) {
-                              iconsLabel.forEach { letters ->
-                                  CustomIcon(letters = letters, RoundedCornerShape(12.dp))
-                              }
-                          }*/
                         Column(
                             modifier = Modifier
                                 .fillMaxWidth()
@@ -138,22 +152,7 @@ fun Dashboard(
                             modifier = Modifier
                                 .padding(vertical = 10.dp)
                                 .clickable {
-                                    val packageName = context.packageName
-                                    try {
-                                        context.startActivity(
-                                            Intent(
-                                                Intent.ACTION_VIEW,
-                                                Uri.parse("market://details?id=$packageName")
-                                            )
-                                        )
-                                    } catch (e: ActivityNotFoundException) {
-                                        context.startActivity(
-                                            Intent(
-                                                Intent.ACTION_VIEW,
-                                                Uri.parse("https://play.google.com/store/apps/details?id=$packageName")
-                                            )
-                                        )
-                                    }
+                                    context.openPlayStore()
                                 },
                             verticalAlignment = Alignment.CenterVertically,
                             horizontalArrangement = Arrangement.spacedBy(10.dp)
@@ -171,15 +170,7 @@ fun Dashboard(
                         }
 
                         IconButton(onClick = {
-                            val shareIntent = Intent.createChooser(Intent().apply {
-                                action = Intent.ACTION_SEND
-                                putExtra(
-                                    Intent.EXTRA_TEXT, "Check out this cool icon pack app. " +
-                                            "https://play.google.com/store/apps/details?id=${context.packageName}"
-                                )
-                                type = "text/plain"
-                            }, "Choose App")
-                            context.startActivity(shareIntent)
+                            context.openShareIntent()
                         }) {
                             Icon(imageVector = Icons.Default.Share, contentDescription = "share")
                         }
@@ -201,7 +192,6 @@ fun Dashboard(
                     onClick = {
                         showDimensionsDialog.value = true
                     },
-                    //contentPadding = PaddingValues(0.dp),
                     contentPadding = PaddingValues(16.dp/*horizontal = 20.dp, vertical = 20.dp*/),
                     modifier = Modifier
                         .weight(1f)
@@ -235,7 +225,6 @@ fun Dashboard(
                             fontWeight = FontWeight.Normal,
                             modifier = Modifier
                                 .fillMaxWidth()
-                               // .padding(10.dp)
                         )
                     }
                 }
@@ -294,9 +283,11 @@ fun Dashboard(
                         .fillMaxHeight()
                 ) {
                     Column(modifier = Modifier) {
-                        Row(modifier = Modifier.fillMaxWidth(),
-                        horizontalArrangement = Arrangement.spacedBy(10.dp),
-                        verticalAlignment = Alignment.CenterVertically) {
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.spacedBy(10.dp),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
                             Text(
                                 text = stringResource(string.custom_icons_count),
                                 fontSize = 30.sp,
@@ -304,7 +295,6 @@ fun Dashboard(
                                 fontFamily = FontFamily(Font(R.font.inter)),
                                 textAlign = TextAlign.Center,
                                 modifier = Modifier
-                                    //.fillMaxWidth()
                             )
                             Text(
                                 text = stringResource(id = string.icons_label),
@@ -319,7 +309,6 @@ fun Dashboard(
                             fontSize = 18.sp,
                             fontFamily = FontFamily(Font(R.font.inter)),
                             fontWeight = FontWeight.Normal,
-                            //textAlign = TextAlign.End,
                             modifier = Modifier.fillMaxWidth()
                         )
                     }
@@ -349,63 +338,6 @@ fun Dashboard(
                 )
             }
             Spacer(modifier = Modifier.height(100.dp))
-            /* if (showReportDialog.value){
-                 AlertDialog(
-                     onDismissRequest = { showReportDialog.value = false },
-                     confirmButton = {
-                                     Button(onClick = {
-                                         showReportDialog.value = false
-                                         val emailIntent = Intent(Intent.ACTION_SENDTO).apply {
-                                             data = Uri.parse("mailto:")
-                                             putExtra(Intent.EXTRA_EMAIL, arrayOf("leiconpack@gmail.com"))
-                                             putExtra(Intent.EXTRA_SUBJECT,"Missing Icon Report")
-                                             putExtra(Intent.EXTRA_TEXT, "Manufacturer : ${Build.MANUFACTURER.uppercase()}\n" +
-                                                     "Model: ${Build.MODEL.uppercase()}\n\n App Name:")
-                                         }
-                                         try {
-                                             context.startActivity(Intent.createChooser(emailIntent, "Choose email app"))
-
-                                         }catch (e:ActivityNotFoundException){
-                                             Toast.makeText(
-                                                 context,
-                                                 "No email activity found",
-                                                 Toast.LENGTH_SHORT
-                                             ).show()
-                                         }
-
-                                     }) {
-                                         Text(
-                                             text = stringResource(string.report_label),
-                                             fontFamily = FontFamily(Font(R.font.inter)),)
-                                         Spacer(modifier = Modifier.width(10.dp))
-                                         Icon(
-                                             imageVector = Icons.Default.Send,
-                                             contentDescription = "report icons"
-                                         )
-                                     }
-                     },
-                     title = { Text(
-                         text = "Missing Icons",
-                         fontFamily = FontFamily(Font(R.font.inter)),
-                     ) },
-                     text = {
-                         Column {
-                             Text(
-                                 text = "Please provide us with the following in your request:",
-                                 fontFamily = FontFamily(Font(R.font.inter)),
-                             )
-                             Spacer(modifier = Modifier.height(10.dp))
-                             ReportInfoItem("Device Model")
-                             Spacer(modifier = Modifier.height(10.dp))
-                             ReportInfoItem("Device Manufacturer")
-                             Spacer(modifier = Modifier.height(10.dp))
-                             ReportInfoItem("App Name")
-                             Spacer(modifier = Modifier.height(10.dp))
-                             ReportInfoItem("Playstore link for the app (If possible)")
-                         }
-                     }
-                 )
-             }*/
             if (showApplyDialog.value) {
                 AlertDialog(
                     onDismissRequest = { showApplyDialog.value = false },
@@ -491,25 +423,6 @@ fun Dashboard(
     }
 
 }
-
-/*@Composable
-fun ReportInfoItem(info: String) {
-    Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-        Box(
-            modifier = Modifier
-                .padding(top = 5.dp)
-                .size(8.dp)
-                .background(
-                    color = MaterialTheme.colorScheme.onSurface,
-                    shape = CircleShape
-                )
-        )
-        Text(
-            text = info,
-            fontFamily = FontFamily(Font(R.font.inter)),
-        )
-    }
-}*/
 
 @Composable
 private fun ApplyInstruction(step: String, instruction: String) {
