@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Le Icon Pack</string>
+    <string name="app_name">Letters Icon Pack</string>
     <string name="icons_theme">Icons Theme</string>
     <string name="dark">Dark</string>
     <string name="light">Light</string>
@@ -13,8 +13,8 @@
     <string name="chrome_app_label">Chrome</string>
     <string name="icons_label">Icons</string>
     <string name="custom_icons_label">Custom icons</string>
-    <string name="custom_icons_count">676+</string>
-    <string name="apply_label">Apply Le Icon Pack</string>
+    <string name="custom_icons_count">3000+</string>
+    <string name="apply_label">Apply Letters Icon Pack</string>
     <string name="report_missing_label">Report Missing Icons</string>
     <string name="nova_package_name">com.teslacoilsw.launcher</string>
     <string name="niagara_package_name">bitpit.launcher</string>

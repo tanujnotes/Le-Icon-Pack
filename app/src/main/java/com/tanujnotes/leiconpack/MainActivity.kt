@@ -558,7 +558,7 @@ fun CustomIcon(letters: String, cornerShape: RoundedCornerShape, modifier: Modif
         Text(
             text = letters,
             fontFamily = FontFamily(Font(R.font.inter)),
-            color = Color.White, fontSize = 30.sp
+            color = Color.White, fontSize = 24.sp
         )
     }
 }
