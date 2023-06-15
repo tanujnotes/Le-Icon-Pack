@@ -5,16 +5,16 @@ import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.content.pm.ActivityInfo
-import android.content.pm.LauncherApps
 import android.content.pm.PackageManager
 import android.os.Build
-import android.os.UserManager
 import androidx.compose.runtime.mutableStateListOf
+import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.tanujnotes.leiconpack.model.AppInfo
 import com.tanujnotes.leiconpack.model.Feature
 import com.tanujnotes.leiconpack.util.MenuItem
+import com.tanujnotes.leiconpack.util.PrefUtil
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
@@ -25,13 +25,7 @@ import javax.xml.parsers.DocumentBuilderFactory
 
 @Suppress("DEPRECATION")
 class MainViewModel : ViewModel() {
-    /*
-        val rectangularIconsShape = mutableStateOf(true)
-        val themeRadioOptions = listOf("Dark", "Light")
-        val shapeRadioOptions = listOf("Rectangular", "Circle")
-        val themeSelectedOption = mutableStateOf(themeRadioOptions[0])
-        val shapeSelectedOption = mutableStateOf(shapeRadioOptions[0])
-    */
+
     val lettersList = mutableStateListOf("Aa", "Ab", "Bb", "Ba", "Ca", "Cb", "Da", "Db")
 
     val drawerItems = listOf(MenuItem.Home, MenuItem.Apply, MenuItem.WhyLeIcons)
@@ -58,9 +52,11 @@ class MainViewModel : ViewModel() {
     private val _isLoading = MutableStateFlow(true)
     val isLoading = _isLoading.asStateFlow()
     var missingIconApps = mutableStateListOf<AppInfo>()
+    val showReviewDialog = mutableStateOf(false)
+    val showRateDialogOnResume = mutableStateOf(false)
 
     @SuppressLint("ResourceType")
-  suspend fun appFilterComponentNames(context: Context): MutableList<String> {
+    suspend fun appFilterComponentNames(context: Context): MutableList<String> {
         val appFilterString = context.assets.open("appfilter.xml")
         val documentBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder()
         val document = withContext(Dispatchers.IO) {
@@ -73,7 +69,7 @@ class MainViewModel : ViewModel() {
             if (node.nodeType == Node.ELEMENT_NODE) {
                 val element = nodeList.item(index) as Element
                 val componentName = element.attributes.getNamedItem("component").nodeValue
-                if (!componentName.contains(":")){
+                if (!componentName.contains(":")) {
                     appFilterComponentNames.add(componentName)
                 }
             }
@@ -84,22 +80,23 @@ class MainViewModel : ViewModel() {
     fun getMissingApps(context: Context) {
         viewModelScope.launch {
             if (missingIconApps.isEmpty()) {
-            val missingApps = mutableListOf<AppInfo>()
+                val missingApps = mutableListOf<AppInfo>()
                 for (appActivityInfo in activityInfos(context)) {
-                    val componentName = ComponentName(appActivityInfo.packageName, appActivityInfo.name)
+                    val componentName =
+                        ComponentName(appActivityInfo.packageName, appActivityInfo.name)
                     if (!appFilterComponentNames(context).contains(componentName.toString())) {
                         missingApps.add(
                             AppInfo(
-                            appActivityInfo.loadIcon(context.packageManager),
-                            appActivityInfo.loadLabel(context.packageManager).toString(),
-                            componentName.flattenToString()
+                                appActivityInfo.loadIcon(context.packageManager),
+                                appActivityInfo.loadLabel(context.packageManager).toString(),
+                                componentName.flattenToString()
                             )
                         )
                     }
                 }
 
                 missingIconApps.addAll(missingApps)
-                if (missingIconApps.size ==missingApps.size) {
+                if (missingIconApps.size == missingApps.size) {
                     _isLoading.value = false
                 }
 
@@ -113,41 +110,48 @@ class MainViewModel : ViewModel() {
         intent.addCategory(Intent.CATEGORY_LAUNCHER)
 
         val packageManager = context.packageManager
-        val activities= if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+        val activities = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             packageManager.queryIntentActivities(
                 intent,
                 PackageManager.ResolveInfoFlags.of(PackageManager.MATCH_ALL.toLong())
             )
         } else {
-           packageManager.queryIntentActivities(intent, PackageManager.MATCH_ALL)
+            packageManager.queryIntentActivities(intent, PackageManager.MATCH_ALL)
         }
 
         for (resolveInfo in activities) {
-                launchAbleApps.add(resolveInfo.activityInfo)
+            launchAbleApps.add(resolveInfo.activityInfo)
         }
         return launchAbleApps
     }
 
-    fun updateSelection(appList:MutableList<AppInfo>,index: Int, selected:Boolean) {
+    fun updateSelection(appList: MutableList<AppInfo>, index: Int, selected: Boolean) {
         appList[index] = appList[index].copy(checked = selected)
     }
-    fun selectAll(appList:MutableList<AppInfo>, selected:Boolean) {
+
+    fun selectAll(appList: MutableList<AppInfo>, selected: Boolean) {
         for (index in 0 until appList.size) {
             appList[index] = appList[index].copy(checked = selected)
         }
     }
 
-    fun resetSelection(){
-        for (i in  0 until missingIconApps.size ){
+    fun resetSelection() {
+        for (i in 0 until missingIconApps.size) {
             missingIconApps[i] = missingIconApps[i].copy(checked = false)
         }
     }
 
-  /*  fun onCircleShapeIconsSelected() {
-        rectangularIconsShape.value = false
+    fun getPrefDatastore(context: Context) = PrefUtil(context)
+
+    fun setIsReviewShown(prefDatastore: PrefUtil) = viewModelScope.launch {
+        prefDatastore.setIsReviewed()
     }
-    fun onRectangularShapeIconsSelected() {
-        rectangularIconsShape.value = true
-    }*/
+
+    /*  fun onCircleShapeIconsSelected() {
+          rectangularIconsShape.value = false
+      }
+      fun onRectangularShapeIconsSelected() {
+          rectangularIconsShape.value = true
+      }*/
 
 }
