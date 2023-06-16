@@ -514,7 +514,11 @@ fun ReviewDialog(
             )
         },
         text = {
-            Text(text = stringResource(R.string.rate_review_message))
+            Text(
+                text = stringResource(R.string.rate_review_message),
+                fontFamily = FontFamily(Font(R.font.inter)),
+                fontSize = 14.sp,
+            )
         }
     )
 }

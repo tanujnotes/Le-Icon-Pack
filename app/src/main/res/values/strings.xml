@@ -44,5 +44,5 @@
     <string name="rate_now">Rate Now</string>
     <string name="no_thanks">Maybe Later</string>
     <string name="rate_this_app">Liking Letters?</string>
-    <string name="rate_review_message"><![CDATA[If yes, a 5-star rating always makes us developers happy. Thank you! 😊]]></string>
+    <string name="rate_review_message"><![CDATA[A 5-star rating always makes us developers happy. Thank you! 😊]]></string>
 </resources>
