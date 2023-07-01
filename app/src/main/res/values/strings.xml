@@ -8,14 +8,15 @@
     <string name="apply_icons">Apply Icons</string>
     <string name="shape">Shape</string>
     <string name="icon_dimension_label">200 x 200 pixels icon dimension</string>
-    <string name="app_description">Simple and user friendly Letter Icon pack to give your apps unique and good look.</string>
+    <string name="app_description">Minimal icon pack to help you reduce your screen time by replacing colorful app icons.</string>
     <string name="close_label">close</string>
     <string name="chrome_app_label">Chrome</string>
     <string name="icons_label">Icons</string>
     <string name="custom_icons_label">Custom icons</string>
-    <string name="custom_icons_count">3000+</string>
+    <string name="custom_icons_count">3k+</string>
     <string name="apply_label">Apply Letters Icon Pack</string>
     <string name="report_missing_label">Report Missing Icons</string>
+    <string name="digital_minimalism">Powered by Digital Minimalism</string>
     <string name="nova_package_name">com.teslacoilsw.launcher</string>
     <string name="niagara_package_name">bitpit.launcher</string>
     <string name="apex_package_name">com.anddoes.launcher</string>

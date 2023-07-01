@@ -31,6 +31,22 @@ object Extensions {
             )
         }
     }
+    fun Context.openPlayStoreDevPage() {
+        try {
+            startActivity(
+                Intent(
+                    Intent.ACTION_VIEW,
+                    Uri.parse("https://play.google.com/store/apps/dev?id=7198807840081074933")
+                ).addFlags(
+                    Intent.FLAG_ACTIVITY_NO_HISTORY or
+                            Intent.FLAG_ACTIVITY_NEW_DOCUMENT or
+                            Intent.FLAG_ACTIVITY_MULTIPLE_TASK
+                )
+            )
+        } catch (e: ActivityNotFoundException) {
+            e.printStackTrace()
+        }
+    }
 
     fun Context.openShareIntent() {
         val shareIntent = Intent.createChooser(Intent().apply {
