@@ -40,13 +40,16 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
@@ -56,6 +59,7 @@ import com.tanujnotes.leiconpack.R.drawable
 import com.tanujnotes.leiconpack.R.string
 import com.tanujnotes.leiconpack.applyIcons
 import com.tanujnotes.leiconpack.util.Extensions.openPlayStore
+import com.tanujnotes.leiconpack.util.Extensions.openPlayStoreDevPage
 import com.tanujnotes.leiconpack.util.Extensions.openShareIntent
 import com.tanujnotes.leiconpack.util.MenuItem
 
@@ -65,7 +69,7 @@ fun Dashboard(
     navController: NavController,
     viewModel: MainViewModel,
     selectedItem: MutableState<MenuItem>,
-    showApplyDialog: MutableState<Boolean>
+    showApplyDialog: MutableState<Boolean>,
 ) {
     val scrollState = rememberScrollState()
     val context = LocalContext.current
@@ -107,7 +111,7 @@ fun Dashboard(
                                 horizontalArrangement = Arrangement.SpaceAround
                             ) {
                                 iconsLabel.subList(0, 4).forEach { letters ->
-                                    CustomIcon(letters = letters, RoundedCornerShape(12.dp))
+                                    CustomIcon(letters = letters, RoundedCornerShape(16.dp))
                                 }
                             }
                             Row(
@@ -115,7 +119,7 @@ fun Dashboard(
                                 horizontalArrangement = Arrangement.SpaceAround
                             ) {
                                 iconsLabel.subList(4, 8).forEach { letters ->
-                                    CustomIcon(letters = letters, RoundedCornerShape(12.dp))
+                                    CustomIcon(letters = letters, RoundedCornerShape(16.dp))
                                 }
                             }
                         }
@@ -124,7 +128,7 @@ fun Dashboard(
                     Spacer(modifier = Modifier.height(10.dp))
                     Text(
                         text = stringResource(id = string.app_name),
-                        fontSize = 25.sp,
+                        fontSize = 22.sp,
                         fontWeight = FontWeight.Bold,
                         fontFamily = FontFamily(Font(R.font.inter)),
                         modifier = Modifier
@@ -134,7 +138,7 @@ fun Dashboard(
                     Spacer(modifier = Modifier.height(10.dp))
                     Text(
                         text = stringResource(string.app_description),
-                        fontSize = 16.sp,
+                        fontSize = 15.sp,
                         fontWeight = FontWeight.Normal,
                         fontFamily = FontFamily(Font(R.font.inter)),
                         modifier = Modifier
@@ -144,7 +148,7 @@ fun Dashboard(
                     Row(
                         modifier = Modifier
                             .fillMaxWidth()
-                            .padding(horizontal = 16.dp, vertical = 16.dp),
+                            .padding(horizontal = 16.dp, vertical = 8.dp),
                         horizontalArrangement = Arrangement.SpaceBetween,
                         verticalAlignment = Alignment.CenterVertically
                     ) {
@@ -162,9 +166,9 @@ fun Dashboard(
                                 contentDescription = null
                             )
                             Text(
-                                text = stringResource(string.rate_review_label).uppercase(),
+                                text = stringResource(string.rate_review_label),
                                 fontFamily = FontFamily(Font(R.font.inter)),
-                                fontSize = 18.sp,
+                                fontSize = 16.sp,
                                 fontWeight = FontWeight.Bold
                             )
                         }
@@ -299,13 +303,13 @@ fun Dashboard(
                             Text(
                                 text = stringResource(id = string.icons_label),
                                 fontFamily = FontFamily(Font(R.font.inter)),
-                                fontSize = 16.sp,
-                                fontWeight = FontWeight.Bold
+                                fontSize = 18.sp,
                             )
                         }
-
+                        Spacer(modifier = Modifier.height(12.dp))
                         Text(
                             text = stringResource(string.why_icons_label),
+                            style = TextStyle(textDecoration = TextDecoration.Underline),
                             fontSize = 18.sp,
                             fontFamily = FontFamily(Font(R.font.inter)),
                             fontWeight = FontWeight.Normal,
@@ -329,12 +333,32 @@ fun Dashboard(
                 modifier = Modifier.fillMaxWidth()
             ) {
                 Icon(painter = painterResource(id = drawable.ic_report), contentDescription = null)
-                Spacer(modifier = Modifier.width(16.dp))
+                Spacer(modifier = Modifier.width(8.dp))
                 Text(
                     text = stringResource(string.report_missing_label),
                     fontFamily = FontFamily(Font(R.font.inter)),
-                    fontSize = 18.sp,
+                    fontSize = 16.sp,
                     fontWeight = FontWeight.Bold
+                )
+            }
+            Spacer(modifier = Modifier.height(4.dp))
+            Button(
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color.Transparent,
+                    contentColor = MaterialTheme.colorScheme.onSurfaceVariant
+                ),
+                shape = RoundedCornerShape(16.dp),
+                onClick = {
+                    context.openPlayStoreDevPage()
+                },
+                contentPadding = PaddingValues(vertical = 16.dp),
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text(
+                    style = TextStyle(textDecoration = TextDecoration.Underline),
+                    text = stringResource(string.digital_minimalism),
+                    fontFamily = FontFamily(Font(R.font.inter)),
+                    fontSize = 16.sp,
                 )
             }
             Spacer(modifier = Modifier.height(100.dp))

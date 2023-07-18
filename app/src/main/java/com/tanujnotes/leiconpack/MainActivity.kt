@@ -514,7 +514,11 @@ fun ReviewDialog(
             )
         },
         text = {
-            Text(text = stringResource(R.string.rate_review_message))
+            Text(
+                text = stringResource(R.string.rate_review_message),
+                fontFamily = FontFamily(Font(R.font.inter)),
+                fontSize = 14.sp,
+            )
         }
     )
 }
@@ -558,7 +562,7 @@ fun CustomIcon(letters: String, cornerShape: RoundedCornerShape, modifier: Modif
         Text(
             text = letters,
             fontFamily = FontFamily(Font(R.font.inter)),
-            color = Color.White, fontSize = 30.sp
+            color = Color.White, fontSize = 24.sp
         )
     }
 }
