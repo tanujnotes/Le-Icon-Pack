@@ -5779,28 +5779,28 @@
     <!---twitter-->
     <AppIcon
         component="ComponentInfo{org.chromium.webapk.abb86223c0f42c4f2/org.chromium.webapk.shell_apk.MainActivity}"
-        image="tw" />
+        image="xt" />
     <AppIcon
         component="ComponentInfo{com.twitter.android/com.twitter.android.StartActivity}"
-        image="tw" />
+        image="xt" />
     <AppIcon
         component="ComponentInfo{org.chromium.webapk.ad390ea703ab950bd_v2/org.chromium.webapk.shell_apk.h2o.H2OOpaqueMainActivity}"
-        image="tw" />
+        image="xt" />
     <AppIcon
         component="ComponentInfo{org.chromium.webapk.a7b392fd2cee70007_v2/org.chromium.webapk.shell_apk.h2o.H2OOpaqueMainActivity}"
-        image="tw" />
+        image="xt" />
     <AppIcon
         component="ComponentInfo{org.chromium.webapk.ace0b15a6ce931426/org.chromium.webapk.shell_apk.h2o.H2OOpaqueMainActivity}"
-        image="tw" />
+        image="xt" />
     <AppIcon
         component="ComponentInfo{org.chromium.webapk.a09f0e199f3f8829c/org.chromium.webapk.shell_apk.h2o.H2OOpaqueMainActivity}"
-        image="tw" />
+        image="xt" />
     <AppIcon
         component="ComponentInfo{com.htc.htctwitter/com.htc.htctwitter.TwidroidSplash}"
-        image="tw" />
+        image="xt" />
     <AppIcon
         component="ComponentInfo{com.twitter.android/com.twitter.android.LoginActivity}"
-        image="tw" />
+        image="xt" />
 
     <AppIcon
         component="ComponentInfo{com.twitter.android.lite/com.twitter.android.lite.TwitterLiteActivity}"
@@ -5808,8 +5808,7 @@
 
     <AppIcon
         component="ComponentInfo{twimate.tweetdownloader.savetwittergif.twittervideodownloader/polaris.downloader.twitter.ui.activity.MainActivity}"
-        image="tw" />
-
+        image="xd" />
 
     <!--truecaller-->
     <AppIcon
