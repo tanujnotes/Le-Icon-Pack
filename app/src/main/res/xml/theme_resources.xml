@@ -17851,4 +17851,74 @@
         component="ComponentInfo{widewalls.rad.walls/widewalls.rad.walls.MainActivity}"
         image="ww" />
 
+    <!--Rappi-->
+    <AppIcon
+        component="ComponentInfo{com.grability.rappi/com.rappi.discovery.onboarding.impl.activities.RappiMainEntryActivity}"
+        image="ra" />
+
+    <!--Uber Eats-->
+    <AppIcon
+        component="ComponentInfo{com.ubercab.eats/com.ubercab.eats.core.activity.LauncherActivity}"
+        image="ue" />
+
+    <!--Papers-->
+    <AppIcon
+        component="ComponentInfo{org.evolutionx.papers/org.evolutionx.papers.MainActivity}"
+        image="pa" />
+
+    <!--Pocket Casts-->
+    <AppIcon
+        component="ComponentInfo{au.com.shiftyjelly.pocketcasts/au.com.shiftyjelly.pocketcasts.ui.MainActivity}"
+        image="po" />
+
+    <!--Brew Timer-->
+    <AppIcon
+        component="ComponentInfo{com.apptivity.brewtimer/com.apptivity.brewtimer.MainActivity}"
+        image="br" />
+
+    <!--Charcoal Free-->
+    <AppIcon
+        component="ComponentInfo{com.arandompackage.flatconsblack/com.arandompackage.flatconsblack.MainActivity}"
+        image="ch" />
+
+    <!--Coin Stats-->
+    <AppIcon
+        component="ComponentInfo{com.coinstats.crypto.portfolio/com.coinstats.crypto.home.HomeActivity}"
+        image="co" />
+
+    <!--Super Easy-->
+    <AppIcon
+        component="ComponentInfo{com.contifico.supereasy.supereasy_android/com.contifico.supereasy.supereasy_android.presentacion.view.SplashActivity}"
+        image="su" />
+
+    <!--DiDi-->
+    <AppIcon
+        component="ComponentInfo{com.didiglobal.passenger/com.didi.sdk.app.DidiLoadDexActivity}"
+        image="di" />
+
+    <!--Game Pass-->
+    <AppIcon
+        component="ComponentInfo{com.gamepass/com.gamepass.MainActivity}"
+        image="ga" />
+
+    <!--Threads-->
+    <AppIcon
+        component="ComponentInfo{com.instagram.barcelona/com.instagram.barcelona.mainactivity.BarcelonaActivity}"
+        image="th" />
+
+    <!--Plex-->
+    <AppIcon
+        component="ComponentInfo{com.plexapp.android/com.plexapp.plex.activities.SplashActivity}"
+        image="pl" />
+
+    <!--Plex Dash-->
+    <AppIcon
+        component="ComponentInfo{tv.plex.labs.dash/tv.plex.labs.dashboard.MainActivity}"
+        image="pl" />
+
+    <!--Ubisoft Connect-->
+    <AppIcon
+        component="ComponentInfo{com.ubisoft.uplay/com.zoontek.rnbootsplash.RNBootSplashActivity}"
+        image="ub" />
+
 </Theme>
