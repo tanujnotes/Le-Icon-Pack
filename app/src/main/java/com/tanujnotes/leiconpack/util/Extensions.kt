@@ -52,7 +52,7 @@ object Extensions {
         val shareIntent = Intent.createChooser(Intent().apply {
             action = Intent.ACTION_SEND
             putExtra(
-                Intent.EXTRA_TEXT, "Check out this cool icon pack app. " +
+                Intent.EXTRA_TEXT, "Check out this minimal icon pack. Totally free! " +
                         "https://play.google.com/store/apps/details?id=$packageName"
             )
             type = "text/plain"

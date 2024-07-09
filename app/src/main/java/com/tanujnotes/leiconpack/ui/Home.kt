@@ -455,7 +455,7 @@ private fun ApplyInstruction(step: String, instruction: String) {
     ) {
         Box(
             modifier = Modifier
-                .size(18.dp)
+                .size(24.dp)
                 .background(
                     color = MaterialTheme.colorScheme.secondary,
                     shape = CircleShape
