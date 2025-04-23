@@ -19213,4 +19213,589 @@
     <AppIcon
         component="ComponentInfo{uczmwcw.w.xxop/v.n.w.q.b0}"
         image="ma" />
+
+    <!-- WienMobil -->
+    <AppIcon
+        component="ComponentInfo{at.wienerlinien.wienmobillab/at.upstream.citymobil.feature.splash.SplashActivity}"
+        image="wi" />
+
+    <!-- Crypto.com -->
+    <AppIcon
+        component="ComponentInfo{co.mona.android/co.mona.android.splash.ui.SplashActivity}"
+        image="cr" />
+
+    <!-- Busuu -->
+    <AppIcon
+        component="ComponentInfo{com.busuu.android.enc/com.busuu.android.bootstrap.presentation.BootStrapActivity}"
+        image="bu" />
+
+    <!-- Deliveroo -->
+    <AppIcon
+        component="ComponentInfo{com.deliveroo.orderapp/com.deliveroo.orderapp.appicon.default}"
+        image="de" />
+
+    <!-- Expert RAW -->
+    <AppIcon
+        component="ComponentInfo{com.samsung.android.app.galaxyraw/com.samsung.android.app.galaxyraw.GalaxyRaw}"
+        image="ex" />
+
+    <!-- Trainline -->
+    <AppIcon
+        component="ComponentInfo{com.thetrainline/com.thetrainline.activities.home_screen.SplashScreenActivity}"
+        image="tr" />
+
+    <!-- Bolt -->
+    <AppIcon
+        component="ComponentInfo{ee.mtakso.client/ee.mtakso.client.activity.SplashHomeActivity}"
+        image="bo" />
+
+    <!-- Live Transcribe -->
+    <AppIcon
+        component="ComponentInfo{com.google.audio.hearing.visualization.accessibility.scribe/com.google.audio.hearing.visualization.accessibility.scribe.LauncherActivity}"
+        image="li" />
+
+    <!-- WiFi Analyzer -->
+    <AppIcon
+        component="ComponentInfo{abdelrahman.wifianalyzerpro/abdelrahman.wifianalyzerpro.MainActivity}"
+        image="wi" />
+
+    <!-- Burger King -->
+    <AppIcon
+        component="ComponentInfo{air.com.unit9.bkFrApp/air.com.unit9.bkFrApp.MainActivity}"
+        image="bu" />
+
+    <!-- Braavos -->
+    <AppIcon
+        component="ComponentInfo{app.braavos.wallet/app.braavos.wallet.MainActivity}"
+        image="br" />
+
+    <!-- Take Take Take -->
+    <AppIcon
+        component="ComponentInfo{app.fantasychess.watch/app.fantasychess.watch.MainActivity}"
+        image="ta" />
+
+    <!-- Macro BMA -->
+    <AppIcon
+        component="ComponentInfo{ar.com.itau.mobilepersonas/ar.com.itau.mobilepersonas.MainActivity}"
+        image="ma" />
+
+    <!-- Mi AFIP -->
+    <AppIcon
+        component="ComponentInfo{ar.gob.afip.mobile.android.contribuyentes.mi_afip/ar.gob.afip.mobile.android.contribuyentes.mi_afip.activities.SplashActivity}"
+        image="mi" />
+
+    <!-- Mi Argentina -->
+    <AppIcon
+        component="ComponentInfo{ar.gob.argentinagobar/com.miargentina.mobile.feature.landing.LandingActivity}"
+        image="mi" />
+
+    <!-- SPAR -->
+    <AppIcon
+        component="ComponentInfo{at.spar.app/at.spar.mobile.ui.splash.SplashActivity}"
+        image="sp" />
+
+    <!-- Mein Magenta -->
+    <AppIcon
+        component="ComponentInfo{at.tmobile.android.myt/com.telekom.oneapp.launcher.components.launcher.LauncherActivity}"
+        image="me" />
+
+    <!-- Auto Clicker -->
+    <AppIcon
+        component="ComponentInfo{autoclicker.clicker.autoclickerapp.autoclickerforgames/autoclicker.clicker.clickerapp.autoclickerforgames.ui.SplashActivity}"
+        image="au" />
+
+    <!-- CPU X -->
+    <AppIcon
+        component="ComponentInfo{com.abs.cpu_z_advance/com.abs.cpu_z_advance.MainActivity}"
+        image="cp" />
+
+    <!-- Action -->
+    <AppIcon
+        component="ComponentInfo{com.action.consumerapp/com.action.consumerapp.MainActivity}"
+        image="ac" />
+
+    <!-- Digital Editions -->
+    <AppIcon
+        component="ComponentInfo{com.adobe.digitaleditions/com.adobe.reader.ReaderMainActivity}"
+        image="di" />
+
+    <!-- AmazingTalker -->
+    <AppIcon
+        component="ComponentInfo{com.amazingtalker/com.amazingtalker.ui.welcome.WelcomeActivity}"
+        image="am" />
+
+    <!-- IDF Mobilités -->
+    <AppIcon
+        component="ComponentInfo{com.applidium.vianavigo/com.applidium.vianavigo.views.MainVianavigo}"
+        image="id" />
+
+    <!-- Night screen -->
+    <AppIcon
+        component="ComponentInfo{com.arrowsapp.nightscreen/com.arrowsapp.nightscreen.ui.main.MainActivity}"
+        image="ni" />
+
+    <!-- Qioz -->
+    <AppIcon
+        component="ComponentInfo{com.assist.eaandroid/com.assist.eaandroid.presentation.auth.splash.SplashActivity}"
+        image="qi" />
+
+    <!-- Jira -->
+    <AppIcon
+        component="ComponentInfo{com.atlassian.android.jira.core/com.atlassian.android.jira.core.app.LauncherActivity}"
+        image="ji" />
+
+    <!-- VerseLocker -->
+    <AppIcon
+        component="ComponentInfo{com.audioverse.smf.audioverse/co.median.android.LaunchActivity}"
+        image="ve" />
+
+    <!-- Kilter Board -->
+    <AppIcon
+        component="ComponentInfo{com.auroraclimbing.kilterboard/com.auroraclimbing.auroraboard.controller.SplashActivity}"
+        image="ki" />
+
+    <!-- Mon Appli Assuré -->
+    <AppIcon
+        component="ComponentInfo{com.axelliance.ascore/crc64b9c0378baa48ca36.SplashActivity}"
+        image="mo" />
+
+    <!-- Fast Budget -->
+    <AppIcon
+        component="ComponentInfo{com.blodhgard.easybudget/com.blodhgard.easybudget.MainActivity}"
+        image="fa" />
+
+    <!-- Truco Blyts -->
+    <AppIcon
+        component="ComponentInfo{com.blyts.trucolite.activities/com.google.firebase.MessagingUnityPlayerActivity}"
+        image="tr" />
+
+    <!-- Boolder -->
+    <AppIcon
+        component="ComponentInfo{com.boolder.boolder/com.boolder.boolder.view.main.MainActivity}"
+        image="bo" />
+
+    <!-- Bose -->
+    <AppIcon
+        component="ComponentInfo{com.bose.bosemusic/com.bose.madrid.SplashScreenActivity}"
+        image="bo" />
+
+    <!-- StayFree -->
+    <AppIcon
+        component="ComponentInfo{com.burockgames.timeclocker/com.burockgames.timeclocker.activityAliasDefault}"
+        image="st" />
+
+    <!-- Exchange -->
+    <AppIcon
+        component="ComponentInfo{com.crypto.exchange/com.crypto.exchange.android.view.SplashActivity}"
+        image="ex" />
+
+    <!-- Decathlon -->
+    <AppIcon
+        component="ComponentInfo{com.decathlon.app/com.decathlon.app.splash.SplashActivity}"
+        image="de" />
+
+    <!-- Wallet -->
+    <AppIcon
+        component="ComponentInfo{com.droid4you.application.wallet/com.droid4you.application.wallet.SplashScreenActivity}"
+        image="wa" />
+
+    <!-- EDF & MOI -->
+    <AppIcon
+        component="ComponentInfo{com.edf.edfetmoi/com.edf.edfetmoi.presentation.feature.splash.presentation.SplashActivity}"
+        image="ed" />
+
+    <!-- Mic Speaker -->
+    <AppIcon
+        component="ComponentInfo{com.eonsoft.micspeaker/com.eonsoft.micspeaker.Select}"
+        image="mi" />
+
+    <!-- D&D Beyond -->
+    <AppIcon
+        component="ComponentInfo{com.fandom.playercompanion/com.fandom.feature.splash.SplashActivity}"
+        image="dd" />
+
+    <!-- Figma -->
+    <AppIcon
+        component="ComponentInfo{com.figma.mirror/com.figma.figma.MainActivity}"
+        image="fi" />
+
+    <!-- Connect -->
+    <AppIcon
+        component="ComponentInfo{com.garmin.android.apps.connectmobile/com.garmin.android.apps.connectmobile.GCMActivityStartup}"
+        image="co" />
+
+    <!-- Stōkt -->
+    <AppIcon
+        component="ComponentInfo{com.getstokt.stokt/com.getstokt.stokt.MainActivity}"
+        image="st" />
+
+    <!-- Gemini -->
+    <AppIcon
+        component="ComponentInfo{com.google.android.apps.bard/com.google.android.apps.bard.shellapp.BardEntryPointActivity}"
+        image="ge" />
+
+    <!-- Grippy -->
+    <AppIcon
+        component="ComponentInfo{com.griptonite.grippy/com.griptonite.grippy.MainActivity}"
+        image="gr" />
+
+    <!-- Liftoff -->
+    <AppIcon
+        component="ComponentInfo{com.gymbros.app/com.gymbros.app.MainActivity}"
+        image="li" />
+
+    <!-- Ultra Bouters -->
+    <AppIcon
+        component="ComponentInfo{com.hax.ultrabouters/com.unity3d.player.UnityPlayerActivity}"
+        image="ul" />
+
+    <!-- Tsuki Odyssey -->
+    <AppIcon
+        component="ComponentInfo{com.hyperbeard.odyssey/com.unity3d.player.UnityPlayerActivity}"
+        image="ts" />
+
+    <!-- Dark Stories -->
+    <AppIcon
+        component="ComponentInfo{com.icecover.darkstories/com.unity3d.player.UnityPlayerActivity}"
+        image="da" />
+
+    <!-- AnkiDroid -->
+    <AppIcon
+        component="ComponentInfo{com.ichi2.anki/com.ichi2.anki.IntentHandler}"
+        image="an" />
+
+    <!-- Ivy Wallet -->
+    <AppIcon
+        component="ComponentInfo{com.ivy.wallet/com.ivy.wallet.RootActivity}"
+        image="iv" />
+
+    <!-- Macros -->
+    <AppIcon
+        component="ComponentInfo{com.josmantek.macros/com.josmantek.macros.MainActivity}"
+        image="ma" />
+
+    <!-- Lidl Plus -->
+    <AppIcon
+        component="ComponentInfo{com.lidl.eci.lidlplus/es.lidlplus.i18n.splash.presentation.view.SplashActivity}"
+        image="li" />
+
+    <!-- LinkedIn -->
+    <AppIcon
+        component="ComponentInfo{com.linkedin.android/com.linkedin.android.authenticator.LaunchActivityDefault}"
+        image="li" />
+
+    <!-- Lufthansa -->
+    <AppIcon
+        component="ComponentInfo{com.lufthansa.android.lufthansa/com.lhgroup.lhgroupapp.MainActivity}"
+        image="lu" />
+
+    <!-- FlyNet -->
+    <AppIcon
+        component="ComponentInfo{com.lufthansa.flynet/de.telekom.conectivity.inflight.MainActivity}"
+        image="fl" />
+
+    <!-- spusu -->
+    <AppIcon
+        component="ComponentInfo{com.massresponse.spusu/com.massresponse.spusu.SplashScreen}"
+        image="sp" />
+
+    <!-- McDonald's -->
+    <AppIcon
+        component="ComponentInfo{com.mcdonalds.mobileapp/com.mcdonalds.mobileapp.SplashActivity}"
+        image="mc" />
+
+    <!-- Mercado Pago -->
+    <AppIcon
+        component="ComponentInfo{com.mercadopago.wallet/com.mercadopago.wallet.splash.SplashActivity}"
+        image="me" />
+
+    <!-- MyEdenred -->
+    <AppIcon
+        component="ComponentInfo{com.myedenredmobile.droid/com.myedenredmobile.recette.droid.MainActivity}"
+        image="my" />
+
+    <!-- NordVPN -->
+    <AppIcon
+        component="ComponentInfo{com.nordvpn.android/com.nordvpn.android.mobile.MainActivity}"
+        image="no" />
+
+    <!-- PedidosYa -->
+    <AppIcon
+        component="ComponentInfo{com.pedidosya/com.pedidosya.main.access.initialization.SplashActivity}"
+        image="pe" />
+
+    <!-- Polarsteps -->
+    <AppIcon
+        component="ComponentInfo{com.polarsteps/com.polarsteps.activities.SplashActivity}"
+        image="po" />
+
+    <!-- WebCode -->
+    <AppIcon
+        component="ComponentInfo{com.qamar.ide.web/com.alif.app.AppActivity}"
+        image="we" />
+
+    <!-- Renpho Health -->
+    <AppIcon
+        component="ComponentInfo{com.renpho.health/com.renpho.health.SplashActivity}"
+        image="re" />
+
+    <!-- Countries Been -->
+    <AppIcon
+        component="ComponentInfo{com.riliclabs.countriesbeen/com.riliclabs.countriesbeen.LoginActivity}"
+        image="co" />
+
+    <!-- Wild Rift -->
+    <AppIcon
+        component="ComponentInfo{com.riotgames.league.wildrift/com.tencent.lolm.lgame}"
+        image="wi" />
+
+    <!-- ROLI Learn -->
+    <AppIcon
+        component="ComponentInfo{com.roli.lumi/com.roli.lumi.RNActivity}"
+        image="ro" />
+
+    <!-- Find -->
+    <AppIcon
+        component="ComponentInfo{com.samsung.android.app.find/com.samsung.android.app.find.SplashActivity}"
+        image="fi" />
+
+    <!-- Sound Assistant -->
+    <AppIcon
+        component="ComponentInfo{com.samsung.android.soundassistant/com.samsung.android.soundassistant.activities.MainActivity}"
+        image="so" />
+
+    <!-- Samsung Shop -->
+    <AppIcon
+        component="ComponentInfo{com.samsung.ecomm.global.gbr/com.samsung.ecomm.global.shop_app.MainActivity}"
+        image="sa" />
+
+    <!-- Virtual Gamepad -->
+    <AppIcon
+        component="ComponentInfo{com.samsung.vd.companions/com.samsung.vd.companions.MainActivity}"
+        image="vi" />
+
+    <!-- MacroFactor -->
+    <AppIcon
+        component="ComponentInfo{com.sbs.diet/com.sbs.diet.MainActivity}"
+        image="ma" />
+
+    <!-- Mi Movistar -->
+    <AppIcon
+        component="ComponentInfo{com.services.movistar.ar/com.services.movistar.ar.MainActivity}"
+        image="mi" />
+
+    <!-- RED & Moi -->
+    <AppIcon
+        component="ComponentInfo{com.sfr.android.redmoncompte/com.sfr.android.redmoncompte.MonCompteMain}"
+        image="re" />
+
+    <!-- Bible -->
+    <AppIcon
+        component="ComponentInfo{com.sirma.mobile.bible.android/youversion.bible.app.MainActivity}"
+        image="bi" />
+
+    <!-- JavaScript Editor -->
+    <AppIcon
+        component="ComponentInfo{com.sorincovor.javascript_editor/com.sorincovor.javascript_editor.MainActivity}"
+        image="ja" />
+
+    <!-- Stepstone -->
+    <AppIcon
+        component="ComponentInfo{com.stepstone.borowf01/com.stepstone.feature.splash.presentation.view.SCSplashActivityCustomBrand}"
+        image="st" />
+
+    <!-- Carga SUBE -->
+    <AppIcon
+        component="ComponentInfo{com.sube.cargasube/com.sube.cargasube.gui.splash.SplashActivity}"
+        image="ca" />
+
+    <!-- Squad Busters -->
+    <AppIcon
+        component="ComponentInfo{com.supercell.squad/com.supercell.squad.GameApp}"
+        image="sq" />
+
+    <!-- DS file -->
+    <AppIcon
+        component="ComponentInfo{com.synology.DSfile/com.synology.DSfile.Splash}"
+        image="ds" />
+
+    <!-- DS finder -->
+    <AppIcon
+        component="ComponentInfo{com.synology.DSfinder/com.synology.assistant.ui.activity.SplashActivity}"
+        image="ds" />
+
+    <!-- Chat -->
+    <AppIcon
+        component="ComponentInfo{com.synology.dschat/com.synology.dschat.ui.activity.SplashActivity}"
+        image="ch" />
+
+    <!-- Drive -->
+    <AppIcon
+        component="ComponentInfo{com.synology.dsdrive/com.synology.dsdrive.activity.SplashActivity}"
+        image="dr" />
+
+    <!-- MailPlus -->
+    <AppIcon
+        component="ComponentInfo{com.synology.dsmail/com.synology.dsmail.activities.SplashActivity}"
+        image="ma" />
+
+    <!-- DS video -->
+    <AppIcon
+        component="ComponentInfo{com.synology.dsvideo/com.synology.dsvideo.SplashActivity}"
+        image="ds" />
+
+    <!-- Photos -->
+    <AppIcon
+        component="ComponentInfo{com.synology.projectkailash/com.synology.projectkailash.ui.splash.SplashActivity}"
+        image="ph" />
+
+    <!-- VocalPitchMonitor -->
+    <AppIcon
+        component="ComponentInfo{com.tadaoyamaoka.vocalpitchmonitor/com.tadaoyamaoka.vocalpitchmonitor.MainActivity}"
+        image="vo" />
+
+    <!-- Ticket sans contact -->
+    <AppIcon
+        component="ComponentInfo{com.wizway.nfcagent/com.wizway.nfcagent.activity.InfosActivity}"
+        image="ti" />
+
+    <!-- World App -->
+    <AppIcon
+        component="ComponentInfo{com.worldcoin/com.worldcoin.app.main.MainActivity}"
+        image="wo" />
+
+    <!-- hvv -->
+    <AppIcon
+        component="ComponentInfo{de.eos.uptrade.android.fahrinfo.hamburg/de.hvv.info.AppActivity}"
+        image="hv" />
+
+    <!-- nextbike -->
+    <AppIcon
+        component="ComponentInfo{de.nextbike/net.nextbike.v3.presentation.ui.main.view.MapActivity}"
+        image="ne" />
+
+    <!-- DevCheck -->
+    <AppIcon
+        component="ComponentInfo{flar2.devcheck/flar2.devcheck.MainActivity}"
+        image="de" />
+
+    <!-- Focus Tree -->
+    <AppIcon
+        component="ComponentInfo{focustree.app/focustree.app.MainActivity}"
+        image="fo" />
+
+    <!-- Compte ameli -->
+    <AppIcon
+        component="ComponentInfo{fr.cnamts.it.activity/fr.cnamts.it.activity.LoginActivity}"
+        image="co" />
+
+    <!-- Doctolib -->
+    <AppIcon
+        component="ComponentInfo{fr.doctolib.www/fr.doctolib.www.MainActivity}"
+        image="do" />
+
+    <!-- Fnac -->
+    <AppIcon
+        component="ComponentInfo{fr.fnac.com/com.fnac.fnacdirect.ui.splashscreen.SplashScreenActivity}"
+        image="fn" />
+
+    <!-- Freebox -->
+    <AppIcon
+        component="ComponentInfo{fr.freebox.android.compagnon/fr.freebox.android.compagnon.MainFreeboxActivityLauncher}"
+        image="fr" />
+
+    <!-- Freebox -->
+    <AppIcon
+        component="ComponentInfo{fr.freebox.android.compagnon/fr.freebox.android.compagnon.MainTVActivityLauncher}"
+        image="fr" />
+
+    <!-- Freebox -->
+    <AppIcon
+        component="ComponentInfo{fr.freebox.android.compagnon/fr.freebox.android.compagnon.MainAutomationActivityLauncher}"
+        image="fr" />
+
+    <!-- Freebox Connect -->
+    <AppIcon
+        component="ComponentInfo{fr.freebox.network/networkapp.presentation.main.ui.MainActivity}"
+        image="fr" />
+
+    <!-- AntiCovid -->
+    <AppIcon
+        component="ComponentInfo{fr.gouv.android.stopcovid/com.lunabeestudio.stopcovid.activity.SplashScreenActivity}"
+        image="an" />
+
+    <!-- impots.gouv -->
+    <AppIcon
+        component="ComponentInfo{fr.gouv.finances.smartphone.android/fr.gouv.finances.smartphone.android.MainActivity}"
+        image="im" />
+
+    <!-- La Poste Mobile -->
+    <AppIcon
+        component="ComponentInfo{fr.lapostemobile.appliclient/fr.lapostemobile.appliclient.MainActivity}"
+        image="la" />
+
+    <!-- 4K Wallpapers -->
+    <AppIcon
+        component="ComponentInfo{hd.uhd.wallpapers.best.quality/hd.uhd.wallpapers.best.quality.activities.SplashScreenNew}"
+        image="wa" />
+
+    <!-- Argent -->
+    <AppIcon
+        component="ComponentInfo{im.argent.contractwalletclient/im.argent.contractwalletclient.screens.StartupActivity}"
+        image="ar" />
+
+    <!-- Data Monitor -->
+    <AppIcon
+        component="ComponentInfo{info.kfsoft.datamonitor/info.kfsoft.datamonitor.MainActivity}"
+        image="da" />
+
+    <!-- Vertical-Life -->
+    <AppIcon
+        component="ComponentInfo{info.verticallife/info.verticallife.vl2.ui.view.activity.LandingPage}"
+        image="ve" />
+
+    <!-- Matched -->
+    <AppIcon
+        component="ComponentInfo{io.taste.matched/io.taste.matched.MainActivity}"
+        image="ma" />
+
+    <!-- Voi -->
+    <AppIcon
+        component="ComponentInfo{io.voiapp.voi/io.voiapp.voi.MainActivity}"
+        image="vo" />
+
+    <!-- MediaInfo -->
+    <AppIcon
+        component="ComponentInfo{net.mediaarea.mediainfo/net.mediaarea.mediainfo.ReportListActivity}"
+        image="me" />
+
+    <!-- MyAnimeList -->
+    <AppIcon
+        component="ComponentInfo{net.myanimelist.app/net.myanimelist.presentation.activity.HomeActivity}"
+        image="my" />
+
+    <!-- Tandem -->
+    <AppIcon
+        component="ComponentInfo{net.tandem/net.tandem.ui.MainActivity}"
+        image="ta" />
+
+    <!-- Cuándo SUBO -->
+    <AppIcon
+        component="ComponentInfo{org.nssa_sube.android/org.onebusaway.android.SplashScreen}"
+        image="cu" />
+
+    <!-- Conjugaison -->
+    <AppIcon
+        component="ComponentInfo{vatefaireconjuguer.app/vatefaireconjuguer.app.MainActivity}"
+        image="co" />
+
+    <!-- Vivino -->
+    <AppIcon
+        component="ComponentInfo{vivino.web.app/com.sphinx_solution.Launcher}"
+        image="vi" />
+
+    <!-- AppSheet -->
+    <AppIcon
+        component="ComponentInfo{x1Trackmaster.x1Trackmaster/x1Trackmaster.x1Trackmaster.activities.MainActivity}"
+        image="ap" />
 </Theme>
