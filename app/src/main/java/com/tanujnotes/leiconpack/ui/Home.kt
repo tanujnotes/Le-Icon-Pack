@@ -34,6 +34,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.tanujnotes.leiconpack.R
 import com.tanujnotes.leiconpack.ui.theme.LeIconPackTheme
+import com.tanujnotes.leiconpack.util.openGitHub
 import com.tanujnotes.leiconpack.util.openPlayStore
 import com.tanujnotes.leiconpack.util.openPlayStoreDevPage
 import com.tanujnotes.leiconpack.util.openShareIntent
@@ -57,6 +58,12 @@ fun HomeScreen(
     LettersScreen(
         topBar = {
             TopBar(horizontalArrangement = Arrangement.End) {
+                IconButton(onClick = { context.openGitHub() }) {
+                    Icon(
+                        painter = painterResource(R.drawable.ic_github),
+                        contentDescription = stringResource(R.string.cd_github)
+                    )
+                }
                 IconButton(onClick = { context.openShareIntent() }) {
                     Icon(
                         painter = painterResource(R.drawable.ic_share),

@@ -12,6 +12,7 @@
     <string name="digital_minimalism">Powered by Digital Minimalism</string>
     <string name="apply_label">Apply icon pack</string>
     <string name="cd_share">Share</string>
+    <string name="cd_github">GitHub</string>
     <string name="share_chooser_title">Choose App</string>
     <string name="share_message">Check out this minimal icon pack. Totally free! %1$s</string>
     <string name="no_app_to_open_link">No app found to open this link</string>

@@ -10,6 +10,7 @@ import androidx.core.net.toUri
 import com.tanujnotes.leiconpack.R
 
 private const val PLAY_STORE_DEV_PAGE = "https://play.google.com/store/apps/dev?id=7198807840081074933"
+private const val GITHUB_URL = "https://github.com/tanujnotes/Le-Icon-Pack"
 private const val REPORT_EMAIL = "leiconpack@gmail.com"
 
 /**
@@ -50,6 +51,13 @@ fun Context.openPlayStore() {
 fun Context.openPlayStoreDevPage() {
     val opened = tryStartActivity(
         Intent(Intent.ACTION_VIEW, PLAY_STORE_DEV_PAGE.toUri()).addFlags(EXTERNAL_PAGE_FLAGS)
+    )
+    if (!opened) showToast(R.string.no_app_to_open_link)
+}
+
+fun Context.openGitHub() {
+    val opened = tryStartActivity(
+        Intent(Intent.ACTION_VIEW, GITHUB_URL.toUri()).addFlags(EXTERNAL_PAGE_FLAGS)
     )
     if (!opened) showToast(R.string.no_app_to_open_link)
 }
