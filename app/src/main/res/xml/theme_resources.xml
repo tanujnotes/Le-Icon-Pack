@@ -841,9 +841,6 @@
     <AppIcon
         component="ComponentInfo{com.popularapp.periodcalendar/com.popularapp.periodcalendar.AdActivity}"
         image="ca" />
-    <calendar
-        component="ComponentInfo{com.android.calendar/com.android.calendar.AllInOneActivity}"
-        prefix="calendar_" />
     <AppIcon
         component="ComponentInfo{com.sec.android.app.latin.launcher.calendar/com.sec.android.app.latin.launcher.calendar.Launcher}"
         image="ca" />
@@ -10846,11 +10843,6 @@
     <AppIcon
         component="ComponentInfo{heartratemonitor.heartrate.pulse.pulseapp/heartratemonitor.heartrate.pulse.pulseapp.ui.SplashActivity}"
         image="hr" />
-
-    <!--Bible Coloring-->
-    <AppIcon
-        component="ComponentInfo{holy.bible.biblegame.bibleverse.color.by.number.colorbynumber.paint.pixel.art/com.meevii.ui.activity.SplashNewActivity }"
-        image="bc" />
 
     <!--FaceYoga-->
     <AppIcon

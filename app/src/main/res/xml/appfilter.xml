@@ -864,9 +864,6 @@
     <item
         component="ComponentInfo{com.popularapp.periodcalendar/com.popularapp.periodcalendar.AdActivity}"
         drawable="ca" />
-    <calendar
-        component="ComponentInfo{com.android.calendar/com.android.calendar.AllInOneActivity}"
-        prefix="calendar_" />
     <item
         component="ComponentInfo{com.sec.android.app.latin.launcher.calendar/com.sec.android.app.latin.launcher.calendar.Launcher}"
         drawable="ca" />
@@ -10920,11 +10917,6 @@
     <item
         component="ComponentInfo{heartratemonitor.heartrate.pulse.pulseapp/heartratemonitor.heartrate.pulse.pulseapp.ui.SplashActivity}"
         drawable="hr" />
-
-    <!--Bible Coloring-->
-    <item
-        component="ComponentInfo{holy.bible.biblegame.bibleverse.color.by.number.colorbynumber.paint.pixel.art/com.meevii.ui.activity.SplashNewActivity }"
-        drawable="bc" />
 
     <!--FaceYoga-->
     <item
