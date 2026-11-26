@@ -1,47 +1,57 @@
 <resources>
     <string name="app_name">Letters Icon Pack</string>
-    <string name="icons_theme">Icons Theme</string>
-    <string name="dark">Dark</string>
-    <string name="light">Light</string>
-    <string name="rectangular">Rectangular</string>
-    <string name="circle">Circle</string>
-    <string name="apply_icons">Apply Icons</string>
-    <string name="shape">Shape</string>
-    <string name="icon_dimension_label">200 x 200 pixels icon dimension</string>
     <string name="app_description">Minimal icon pack to help you reduce your screen time by replacing colorful app icons.</string>
-    <string name="close_label">close</string>
+
+    <!-- Navigation -->
+    <string name="menu_home">Home</string>
+    <string name="menu_apply">Apply</string>
+    <string name="missing_icons_title">Missing Icons</string>
+    <string name="why_icons_label">Why Letters?</string>
+    <string name="cd_open_menu">Open menu</string>
+    <string name="cd_navigate_up">Navigate up</string>
+
+    <!-- Home -->
     <string name="chrome_app_label">Chrome</string>
+    <string name="icon_dimension_label">200 x 200 pixels icon dimension</string>
     <string name="icons_label">Icons</string>
-    <string name="custom_icons_label">Custom icons</string>
     <string name="custom_icons_count">3k+</string>
     <string name="apply_label">Apply Letters Icon Pack</string>
     <string name="report_missing_label">Report Missing Icons</string>
     <string name="digital_minimalism">Powered by Digital Minimalism</string>
-    <string name="nova_package_name">com.teslacoilsw.launcher</string>
-    <string name="niagara_package_name">bitpit.launcher</string>
-    <string name="apex_package_name">com.anddoes.launcher</string>
-    <string name="lawnchair_package_name">ch.deletescape.lawnchair.plah</string>
-    <string name="action_package_name">com.actionlauncher.playstore</string>
-    <string name="smart_free_package_name">ginlemon.flowerfree</string>
-    <string name="smart_pro_package_name">ginlemon.flowerpro</string>
-    <string name="smart_special_package_name">ginlemon.flowerpro.special</string>
-    <string name="go_package_name">com.gau.go.launcherex</string>
-    <string name="hyperion_package_name">projekt.launcher</string>
-    <string name="pixel_package_name">com.tushar.launcher3</string>
-    <string name="poco_package_name">com.mi.android.globallauncher</string>
-    <string name="total_package_name">com.ss.launcher2</string>
-    <string name="google_pixel_package_name">com.google.android.apps.nexuslauncher</string>
-    <string name="lynx_package_name">org.n277.lynxlauncher</string>
+    <string name="rate_review_label"><![CDATA[Rate & Review]]></string>
+    <string name="cd_share">Share</string>
+    <string name="close_label">close</string>
+    <string name="share_chooser_title">Choose App</string>
+    <string name="share_message">Check out this minimal icon pack. Totally free! %1$s</string>
+    <string name="no_app_to_open_link">No app found to open this link</string>
+
+    <!-- Applying the icon pack -->
     <string name="applying_icons_label">Applying Letters Icon Pack</string>
-    <string name="why_icons_label">Why Letters?</string>
     <string name="apply_step_one">Open your preferred launcher app and go to the home screen</string>
     <string name="apply_step_two">Open launcher settings or options</string>
-    <string name="apply_step_three">Look for  \"Icon Pack\" or \"Themes\" option and tap on it</string>
+    <string name="apply_step_three">Look for \"Icon Pack\" or \"Themes\" option and tap on it</string>
     <string name="apply_step_four">Select \"Letters Icon Pack\" from icon pack list displayed to apply</string>
     <string name="apply_step_five">Click \"Apply\" or \"Save\" to confirm selection if not yet applied</string>
     <string name="apply_note">Note: The specified steps above may vary depending on the different launchers.</string>
-    <string name="rate_review_label"><![CDATA[Rate & Review]]></string>
-    <string name="report_label">Report</string>
+
+    <!-- Why Letters -->
+    <string name="feature_screen_time_title">Reduced screen time</string>
+    <string name="feature_screen_time_desc">Focus on the task at hand by minimizing distractions on your home screen</string>
+    <string name="feature_icon_count_title">Huge number of icons</string>
+    <string name="feature_icon_count_desc">Quickly apply icons to almost every app in your device with ease</string>
+    <string name="feature_consistent_title">Consistent design</string>
+    <string name="feature_consistent_desc">Identify apps and find the one you need without having to decipher different icon styles.</string>
+    <string name="feature_cognitive_load_title">Reduced cognitive load</string>
+    <string name="feature_cognitive_load_desc">Easily understand icons and reduce the cognitive load required to navigate your home screen.</string>
+
+    <!-- Missing icons report -->
+    <string name="cd_send_report">Send report</string>
+    <string name="select_apps_to_report">Please select some apps to report</string>
+    <string name="no_email_app">No email app found</string>
+    <string name="report_email_subject">Missing Icon Report</string>
+    <string name="report_email_chooser_title">Choose email app</string>
+
+    <!-- Review prompt -->
     <string name="rate_now">Rate Now</string>
     <string name="no_thanks">Maybe Later</string>
     <string name="rate_this_app">Liking Letters?</string>

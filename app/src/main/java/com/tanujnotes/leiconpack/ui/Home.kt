@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.IntrinsicSize
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.RowScope
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
@@ -17,9 +18,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
@@ -32,155 +31,59 @@ import androidx.compose.material3.Card
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.MutableState
+import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.TextStyle
-import androidx.compose.ui.text.font.Font
-import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextDecoration
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.navigation.NavController
-import com.tanujnotes.leiconpack.CustomIcon
 import com.tanujnotes.leiconpack.R
-import com.tanujnotes.leiconpack.R.drawable
-import com.tanujnotes.leiconpack.R.string
-import com.tanujnotes.leiconpack.applyIcons
-import com.tanujnotes.leiconpack.util.Extensions.openPlayStore
-import com.tanujnotes.leiconpack.util.Extensions.openPlayStoreDevPage
-import com.tanujnotes.leiconpack.util.Extensions.openShareIntent
-import com.tanujnotes.leiconpack.util.MenuItem
+import com.tanujnotes.leiconpack.ui.theme.LeIconPackTheme
+import com.tanujnotes.leiconpack.util.openPlayStore
+import com.tanujnotes.leiconpack.util.openPlayStoreDevPage
+import com.tanujnotes.leiconpack.util.openShareIntent
 
+/** Sample icons shown in the header card, two rows of four. */
+private val SampleIconRows = listOf("Aa", "Ab", "Bb", "Ba", "Ca", "Cb", "Da", "Db").chunked(4)
+
+private val CardShape = RoundedCornerShape(16.dp)
 
 @Composable
 fun Dashboard(
-    navController: NavController,
-    viewModel: MainViewModel,
-    selectedItem: MutableState<MenuItem>,
-    showApplyDialog: MutableState<Boolean>,
+    onApplyIcons: () -> Unit,
+    onWhyLettersClick: () -> Unit,
+    onReportMissingClick: () -> Unit,
 ) {
-    val scrollState = rememberScrollState()
     val context = LocalContext.current
-    val showDimensionsDialog = remember { mutableStateOf(false) }
-    val iconsLabel = viewModel.lettersList
+    var showChromeIconDialog by rememberSaveable { mutableStateOf(false) }
+
     Box(modifier = Modifier.fillMaxSize()) {
         Column(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(horizontal = 16.dp)
-                .verticalScroll(scrollState)
+                .verticalScroll(rememberScrollState())
                 .align(Alignment.TopCenter)
         ) {
-            Card(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .wrapContentHeight(),
-                shape = RoundedCornerShape(16.dp)
-            ) {
-                Column(
-                    modifier = Modifier
-                        .fillMaxSize()
-                ) {
-                    Box(
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .background(MaterialTheme.colorScheme.surface),
-                        contentAlignment = Alignment.Center
-                    ) {
-                        Column(
-                            modifier = Modifier
-                                .fillMaxWidth()
-                                .padding(vertical = 20.dp),
-                            horizontalAlignment = Alignment.CenterHorizontally,
-                            verticalArrangement = Arrangement.spacedBy(20.dp)
-                        ) {
-                            Row(
-                                modifier = Modifier.fillMaxWidth(),
-                                horizontalArrangement = Arrangement.SpaceAround
-                            ) {
-                                iconsLabel.subList(0, 4).forEach { letters ->
-                                    CustomIcon(letters = letters, RoundedCornerShape(16.dp))
-                                }
-                            }
-                            Row(
-                                modifier = Modifier.fillMaxWidth(),
-                                horizontalArrangement = Arrangement.SpaceAround
-                            ) {
-                                iconsLabel.subList(4, 8).forEach { letters ->
-                                    CustomIcon(letters = letters, RoundedCornerShape(16.dp))
-                                }
-                            }
-                        }
-                    }
-
-                    Spacer(modifier = Modifier.height(10.dp))
-                    Text(
-                        text = stringResource(id = string.app_name),
-                        fontSize = 22.sp,
-                        fontWeight = FontWeight.Bold,
-                        fontFamily = FontFamily(Font(R.font.inter)),
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .padding(horizontal = 16.dp)
-                    )
-                    Spacer(modifier = Modifier.height(10.dp))
-                    Text(
-                        text = stringResource(string.app_description),
-                        fontSize = 15.sp,
-                        fontWeight = FontWeight.Normal,
-                        fontFamily = FontFamily(Font(R.font.inter)),
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .padding(horizontal = 16.dp)
-                    )
-                    Row(
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .padding(horizontal = 16.dp, vertical = 8.dp),
-                        horizontalArrangement = Arrangement.SpaceBetween,
-                        verticalAlignment = Alignment.CenterVertically
-                    ) {
-                        Row(
-                            modifier = Modifier
-                                .padding(vertical = 10.dp)
-                                .clickable {
-                                    context.openPlayStore()
-                                },
-                            verticalAlignment = Alignment.CenterVertically,
-                            horizontalArrangement = Arrangement.spacedBy(10.dp)
-                        ) {
-                            Icon(
-                                painter = painterResource(id = drawable.ic_star),
-                                contentDescription = null
-                            )
-                            Text(
-                                text = stringResource(string.rate_review_label),
-                                fontFamily = FontFamily(Font(R.font.inter)),
-                                fontSize = 16.sp,
-                                fontWeight = FontWeight.Bold
-                            )
-                        }
-
-                        IconButton(onClick = {
-                            context.openShareIntent()
-                        }) {
-                            Icon(imageVector = Icons.Default.Share, contentDescription = "share")
-                        }
-                    }
-                }
-            }
+            HeaderCard(
+                onRateClick = { context.openPlayStore() },
+                onShareClick = { context.openShareIntent() }
+            )
             Spacer(modifier = Modifier.height(16.dp))
             Row(
                 modifier = Modifier
@@ -188,155 +91,78 @@ fun Dashboard(
                     .height(IntrinsicSize.Max),
                 horizontalArrangement = Arrangement.spacedBy(16.dp)
             ) {
-                Button(
-                    colors = ButtonDefaults.buttonColors(
-                        containerColor = MaterialTheme.colorScheme.surfaceVariant,
-                        contentColor = MaterialTheme.colorScheme.onSurfaceVariant
-                    ),
-                    onClick = {
-                        showDimensionsDialog.value = true
-                    },
-                    contentPadding = PaddingValues(16.dp/*horizontal = 20.dp, vertical = 20.dp*/),
+                DashboardButton(
+                    onClick = { showChromeIconDialog = true },
+                    contentPadding = PaddingValues(16.dp),
                     modifier = Modifier
                         .weight(1f)
-                        .fillMaxHeight(),
-                    shape = RoundedCornerShape(16.dp),
+                        .fillMaxHeight()
                 ) {
                     Column(modifier = Modifier.fillMaxWidth()) {
                         Row(
-                            modifier = Modifier
-                                .fillMaxWidth(),
+                            modifier = Modifier.fillMaxWidth(),
                             verticalAlignment = Alignment.CenterVertically,
                             horizontalArrangement = Arrangement.spacedBy(10.dp)
                         ) {
                             Image(
-                                painter = painterResource(id = drawable.ch),
+                                painter = painterResource(id = R.drawable.ch),
                                 contentDescription = null,
                                 modifier = Modifier.size(40.dp)
                             )
                             Text(
-                                text = stringResource(id = string.chrome_app_label),
-                                fontFamily = FontFamily(Font(R.font.inter)),
+                                text = stringResource(R.string.chrome_app_label),
                                 fontSize = 16.sp,
                                 fontWeight = FontWeight.Bold
                             )
                         }
                         Spacer(modifier = Modifier.height(10.dp))
                         Text(
-                            text = stringResource(string.icon_dimension_label),
+                            text = stringResource(R.string.icon_dimension_label),
                             fontSize = 16.sp,
-                            fontFamily = FontFamily(Font(R.font.inter)),
-                            fontWeight = FontWeight.Normal,
-                            modifier = Modifier
-                                .fillMaxWidth()
+                            modifier = Modifier.fillMaxWidth()
                         )
                     }
                 }
-                if (showDimensionsDialog.value) {
-                    AlertDialog(
-                        onDismissRequest = { showDimensionsDialog.value = false },
-                        confirmButton = {
-                            TextButton(onClick = {
-                                showDimensionsDialog.value = false
-                                selectedItem.value = MenuItem.Home
-                            }) {
-                                Text(
-                                    text = stringResource(string.close_label).uppercase(),
-                                    fontFamily = FontFamily(Font(R.font.inter))
-                                )
-                            }
-                        },
-                        title = {
-                            Text(
-                                text = stringResource(string.chrome_app_label),
-                                fontSize = 18.sp,
-                                fontFamily = FontFamily(Font(R.font.inter)),
-                                fontWeight = FontWeight.Bold
-                            )
-                        },
-                        text = {
-                            Box(
-                                modifier = Modifier
-                                    .padding(10.dp),
-                                contentAlignment = Alignment.Center
-                            ) {
-                                Image(
-                                    painter = painterResource(id = drawable.ch),
-                                    contentDescription = null,
-                                    modifier = Modifier.size(100.dp)
-                                )
-                                Spacer(modifier = Modifier.width(16.dp))
-                            }
-                        }
-                    )
-                }
-                Button(
-                    colors = ButtonDefaults.buttonColors(
-                        containerColor = MaterialTheme.colorScheme.surfaceVariant,
-                        contentColor = MaterialTheme.colorScheme.onSurfaceVariant
-                    ),
-                    shape = RoundedCornerShape(16.dp),
-                    onClick = {
-                        navController.navigate(
-                            route = MenuItem.WhyLeIcons.title.lowercase().trim()
-                        )
-                    },
+                DashboardButton(
+                    onClick = onWhyLettersClick,
                     contentPadding = PaddingValues(16.dp),
                     modifier = Modifier
                         .weight(1f)
                         .fillMaxHeight()
                 ) {
-                    Column(modifier = Modifier) {
+                    Column {
                         Row(
                             modifier = Modifier.fillMaxWidth(),
                             horizontalArrangement = Arrangement.spacedBy(10.dp),
                             verticalAlignment = Alignment.CenterVertically
                         ) {
                             Text(
-                                text = stringResource(string.custom_icons_count),
+                                text = stringResource(R.string.custom_icons_count),
                                 fontSize = 30.sp,
-                                fontWeight = FontWeight.Bold,
-                                fontFamily = FontFamily(Font(R.font.inter)),
-                                textAlign = TextAlign.Center,
-                                modifier = Modifier
+                                fontWeight = FontWeight.Bold
                             )
-                            Text(
-                                text = stringResource(id = string.icons_label),
-                                fontFamily = FontFamily(Font(R.font.inter)),
-                                fontSize = 18.sp,
-                            )
+                            Text(text = stringResource(R.string.icons_label), fontSize = 18.sp)
                         }
                         Spacer(modifier = Modifier.height(12.dp))
                         Text(
-                            text = stringResource(string.why_icons_label),
-                            style = TextStyle(textDecoration = TextDecoration.Underline),
+                            text = stringResource(R.string.why_icons_label),
+                            textDecoration = TextDecoration.Underline,
                             fontSize = 18.sp,
-                            fontFamily = FontFamily(Font(R.font.inter)),
-                            fontWeight = FontWeight.Normal,
                             modifier = Modifier.fillMaxWidth()
                         )
                     }
-
                 }
             }
             Spacer(modifier = Modifier.height(16.dp))
-            Button(
-                colors = ButtonDefaults.buttonColors(
-                    containerColor = MaterialTheme.colorScheme.surfaceVariant,
-                    contentColor = MaterialTheme.colorScheme.onSurfaceVariant
-                ),
-                shape = RoundedCornerShape(16.dp),
-                onClick = {
-                    navController.navigate(route = MenuItem.IconRequest.title.trim().lowercase())
-                },
+            DashboardButton(
+                onClick = onReportMissingClick,
                 contentPadding = PaddingValues(vertical = 16.dp),
                 modifier = Modifier.fillMaxWidth()
             ) {
-                Icon(painter = painterResource(id = drawable.ic_report), contentDescription = null)
+                Icon(painter = painterResource(id = R.drawable.ic_report), contentDescription = null)
                 Spacer(modifier = Modifier.width(8.dp))
                 Text(
-                    text = stringResource(string.report_missing_label),
-                    fontFamily = FontFamily(Font(R.font.inter)),
+                    text = stringResource(R.string.report_missing_label),
                     fontSize = 16.sp,
                     fontWeight = FontWeight.Bold
                 )
@@ -347,88 +173,23 @@ fun Dashboard(
                     containerColor = Color.Transparent,
                     contentColor = MaterialTheme.colorScheme.onSurfaceVariant
                 ),
-                shape = RoundedCornerShape(16.dp),
-                onClick = {
-                    context.openPlayStoreDevPage()
-                },
+                shape = CardShape,
+                onClick = { context.openPlayStoreDevPage() },
                 contentPadding = PaddingValues(vertical = 16.dp),
                 modifier = Modifier.fillMaxWidth()
             ) {
                 Text(
-                    style = TextStyle(textDecoration = TextDecoration.Underline),
-                    text = stringResource(string.digital_minimalism),
-                    fontFamily = FontFamily(Font(R.font.inter)),
-                    fontSize = 16.sp,
+                    text = stringResource(R.string.digital_minimalism),
+                    textDecoration = TextDecoration.Underline,
+                    fontSize = 16.sp
                 )
             }
+            // Keeps the last items scrollable above the floating apply button.
             Spacer(modifier = Modifier.height(100.dp))
-            if (showApplyDialog.value) {
-                AlertDialog(
-                    onDismissRequest = { showApplyDialog.value = false },
-                    confirmButton = {
-                        TextButton(onClick = {
-                            showApplyDialog.value = false
-                        }) {
-                            Text(
-                                text = stringResource(string.close_label).uppercase(),
-                                fontFamily = FontFamily(Font(R.font.inter))
-                            )
-                        }
-                    },
-                    title = {
-                        Text(
-                            text = stringResource(string.applying_icons_label),
-                            fontSize = 18.sp,
-                            fontWeight = FontWeight.Bold,
-                            fontFamily = FontFamily(Font(R.font.inter))
-                        )
-                    },
-                    text = {
-                        Column(
-                            modifier = Modifier
-                                .padding(10.dp)
-                        ) {
-                            ApplyInstruction(
-                                step = "1",
-                                instruction = stringResource(string.apply_step_one)
-                            )
-                            Spacer(modifier = Modifier.height(10.dp))
-                            ApplyInstruction(
-                                step = "2",
-                                instruction = stringResource(string.apply_step_two)
-                            )
-                            Spacer(modifier = Modifier.height(10.dp))
-                            ApplyInstruction(
-                                step = "3",
-                                instruction = stringResource(string.apply_step_three)
-                            )
-                            Spacer(modifier = Modifier.height(10.dp))
-                            ApplyInstruction(
-                                step = "4",
-                                instruction = stringResource(string.apply_step_four)
-                            )
-                            Spacer(modifier = Modifier.height(10.dp))
-                            ApplyInstruction(
-                                step = "5",
-                                instruction = stringResource(string.apply_step_five)
-                            )
-                            Spacer(modifier = Modifier.height(20.dp))
-                            Text(
-
-                                text = stringResource(string.apply_note),
-                                fontFamily = FontFamily(Font(R.font.inter))
-                            )
-
-                        }
-                    }
-                )
-            }
         }
 
         Button(
-            onClick = {
-                applyIcons(context, showApplyDialog)
-            },
+            onClick = onApplyIcons,
             contentPadding = PaddingValues(16.dp),
             modifier = Modifier
                 .fillMaxWidth()
@@ -438,39 +199,153 @@ fun Dashboard(
             Icon(imageVector = Icons.Default.Done, contentDescription = null)
             Spacer(modifier = Modifier.width(16.dp))
             Text(
-                text = stringResource(string.apply_label),
+                text = stringResource(R.string.apply_label),
                 fontSize = 20.sp,
-                fontWeight = FontWeight.Bold,
-                fontFamily = FontFamily(Font(R.font.inter))
+                fontWeight = FontWeight.Bold
             )
         }
     }
 
+    if (showChromeIconDialog) {
+        ChromeIconDialog(onDismiss = { showChromeIconDialog = false })
+    }
 }
 
 @Composable
-private fun ApplyInstruction(step: String, instruction: String) {
-    Row(
-        horizontalArrangement = Arrangement.spacedBy(10.dp),
-    ) {
-        Box(
+private fun HeaderCard(onRateClick: () -> Unit, onShareClick: () -> Unit) {
+    Card(modifier = Modifier.fillMaxWidth(), shape = CardShape) {
+        Column(
             modifier = Modifier
-                .size(24.dp)
-                .background(
-                    color = MaterialTheme.colorScheme.secondary,
-                    shape = CircleShape
-                ),
-            contentAlignment = Alignment.Center
+                .fillMaxWidth()
+                .background(MaterialTheme.colorScheme.surface)
+                .padding(vertical = 20.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.spacedBy(20.dp)
         ) {
-            Text(
-                text = step,
-                fontFamily = FontFamily(Font(R.font.inter)),
-                color = MaterialTheme.colorScheme.onSecondary
-            )
+            SampleIconRows.forEach { row ->
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceAround
+                ) {
+                    row.forEach { letters -> LetterIcon(letters = letters, shape = CardShape) }
+                }
+            }
         }
+        Spacer(modifier = Modifier.height(10.dp))
         Text(
-            text = instruction,
-            fontFamily = FontFamily(Font(R.font.inter)),
+            text = stringResource(R.string.app_name),
+            fontSize = 22.sp,
+            fontWeight = FontWeight.Bold,
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 16.dp)
         )
+        Spacer(modifier = Modifier.height(10.dp))
+        Text(
+            text = stringResource(R.string.app_description),
+            fontSize = 15.sp,
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 16.dp)
+        )
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 16.dp, vertical = 8.dp),
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Row(
+                modifier = Modifier
+                    .padding(vertical = 10.dp)
+                    .clickable(onClick = onRateClick),
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(10.dp)
+            ) {
+                Icon(painter = painterResource(id = R.drawable.ic_star), contentDescription = null)
+                Text(
+                    text = stringResource(R.string.rate_review_label),
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.Bold
+                )
+            }
+            IconButton(onClick = onShareClick) {
+                Icon(
+                    imageVector = Icons.Default.Share,
+                    contentDescription = stringResource(R.string.cd_share)
+                )
+            }
+        }
+    }
+}
+
+@Composable
+private fun DashboardButton(
+    onClick: () -> Unit,
+    contentPadding: PaddingValues,
+    modifier: Modifier = Modifier,
+    content: @Composable RowScope.() -> Unit,
+) {
+    Button(
+        onClick = onClick,
+        colors = ButtonDefaults.buttonColors(
+            containerColor = MaterialTheme.colorScheme.surfaceVariant,
+            contentColor = MaterialTheme.colorScheme.onSurfaceVariant
+        ),
+        shape = CardShape,
+        contentPadding = contentPadding,
+        modifier = modifier,
+        content = content
+    )
+}
+
+@Composable
+private fun ChromeIconDialog(onDismiss: () -> Unit) {
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        confirmButton = {
+            TextButton(onClick = onDismiss) {
+                Text(text = stringResource(R.string.close_label).uppercase())
+            }
+        },
+        title = {
+            Text(
+                text = stringResource(R.string.chrome_app_label),
+                fontSize = 18.sp,
+                fontWeight = FontWeight.Bold
+            )
+        },
+        text = {
+            Box(modifier = Modifier.padding(10.dp), contentAlignment = Alignment.Center) {
+                Image(
+                    painter = painterResource(id = R.drawable.ch),
+                    contentDescription = null,
+                    modifier = Modifier.size(100.dp)
+                )
+            }
+        }
+    )
+}
+
+@Composable
+private fun LetterIcon(letters: String, shape: Shape, modifier: Modifier = Modifier) {
+    Box(
+        modifier = modifier
+            .size(60.dp)
+            .clip(shape)
+            .background(color = Color(0xFF212121)),
+        contentAlignment = Alignment.Center
+    ) {
+        Text(text = letters, color = Color.White, fontSize = 24.sp)
+    }
+}
+
+@Preview(showBackground = true, showSystemUi = true)
+@Composable
+private fun DashboardPreview() {
+    LeIconPackTheme(useDarkTheme = true) {
+        Surface {
+            Dashboard(onApplyIcons = {}, onWhyLettersClick = {}, onReportMissingClick = {})
+        }
     }
 }

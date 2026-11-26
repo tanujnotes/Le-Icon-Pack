@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <iconback img1="iconback" />
-    <iconmask img1="iconmask" />
     <scale factor="1" />
     <item
         component=":LAUNCHER_ACTION_APP_DRAWER"
@@ -2128,7 +2126,7 @@
     <!-- amaze_file_manager -->
     <item
         component="ComponentInfo{com.amaze.filemanager/com.amaze.filemanager.activities.MainActivity}"
-        drawable="amaze_file_manager" />
+        drawable="am" />
 
     <!-- es_file_explorer -->
     <item
@@ -2616,7 +2614,7 @@
     <!---gallery-->
     <item
         component=":GALLERY"
-        drawable="gallery" />
+        drawable="ga" />
     <item
         component="ComponentInfo{com.simplemobiletools.gallery.pro/com.simplemobiletools.gallery.pro.activities.SplashActivity.Grey_black}"
         drawable="ga" />
@@ -3071,7 +3069,7 @@
         drawable="or" />
     <item
         component="ComponentInfo{com.google.android.apps.wallpaper/com.google.android.apps.wallpaper.picker.CategoryPickerActivity}"
-        drawable="g_wallpapers" />
+        drawable="wa" />
     <item
         component="ComponentInfo{com.vanced.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity}"
         drawable="or" />
@@ -3695,7 +3693,7 @@
         component="ComponentInfo{com.android.vending.billing.InAppBillingService.COIN/com.android.vending.billing.InAppBillingService.COIN.MainActivityOriginal}"
         drawable="lp" />
     <item
-        component="ComponentInfocom.android.vending.billing.InAppBillingService.COIN/com.android.vending.billing.InAppBillingService.COIN.MainActivity-5}"
+        component="ComponentInfo{com.android.vending.billing.InAppBillingService.COIN/com.android.vending.billing.InAppBillingService.COIN.MainActivity-5}"
         drawable="lp" />
     <item
         component="ComponentInfo{com.lge.music/com.lge.music.MusicBrowserActivity}"
@@ -5348,68 +5346,68 @@
         drawable="st" />
     <item
         component="ComponentInfo{com.android.stk/com.android.stk.StkLauncherActivity2Default}"
-        drawable="stwawawawzwpbwwewh" />
+        drawable="tk" />
     <item
         component="ComponentInfo{com.android.stk/com.android.stk.StkLauncherActivity3}"
-        drawable="stwawawawzwpbwwewh" />
+        drawable="tk" />
     <item
         component="ComponentInfo{com.android.stk/com.android.stk.StkLauncherActivityCOMM}"
-        drawable="stwawawawzwpbwwewh" />
+        drawable="tk" />
     <item
         component="ComponentInfo{com.android.stk/com.android.stk.StkLauncherActivityDefault}"
-        drawable="stwawawawzwpbwwewh" />
+        drawable="tk" />
     <item
         component="ComponentInfo{com.android.stk/com.android.stk.StkLauncherActivitySingle}"
-        drawable="stwawawawzwpbwwewh" />
+        drawable="tk" />
 
     <item
         component="ComponentInfo{com.android.stk/com.android.stk.StkMainActivity}"
-        drawable="stwawawawzwpbwwewh" />
+        drawable="tk" />
     <item
         component="ComponentInfo{com.android.stk/com.android.stk.StkMenuActivity2}"
-        drawable="stwawawawzwpbwwewh" />
+        drawable="tk" />
     <item
         component="ComponentInfo{com.android.stk/com.android.stk.SubStkLauncherActivity}"
-        drawable="stwawawawzwpbwwewh" />
+        drawable="tk" />
     <item
         component="ComponentInfo{com.android.stk/com.android.stk.StkLauncherActivityI}"
-        drawable="stwawawawzwpbwwewh" />
+        drawable="tk" />
     <item
         component="ComponentInfo{com.android.stk/com.android.stk.StkLauncherActivityII}"
-        drawable="stwawawawzwpbwwewh" />
+        drawable="tk" />
     <item
         component="ComponentInfo{com.android.stk/com.android.stk.StkRootLauncherActivity}"
-        drawable="stwawawawzwpbwwewh" />
+        drawable="tk" />
     <item
         component="ComponentInfo{com.android.stk/com.android.stk.StkLauncherDSActivity}"
-        drawable="stwawawawzwpbwwewh" />
+        drawable="tk" />
     <item
         component="ComponentInfo{com.android.stk/com.android.stk.PrimaryStkMain}"
-        drawable="stwawawawzwpbwwewh" />
+        drawable="tk" />
     <item
         component="ComponentInfo{com.android.stk/com.android.stk.SecondaryStkMain}"
-        drawable="stwawawawzwpbwwewh" />
+        drawable="tk" />
     <item
         component="ComponentInfo{com.android.stk/com.android.stk.UtkExLauncherActivity}"
-        drawable="stwawawawzwpbwwewh" />
+        drawable="tk" />
     <item
         component="ComponentInfo{com.android.stkII/com.android.stkII.StkIILauncherActivity}"
-        drawable="stwawawawzwpbwwewh" />
+        drawable="tk" />
     <item
         component="ComponentInfo{com.android.usat/com.android.usat.StkLauncherActivity}"
-        drawable="stwawawawzwpbwwewh" />
+        drawable="tk" />
     <item
         component="ComponentInfo{com.huaqin.simtoolkit/com.huaqin.simtoolkit.MainActivity}"
-        drawable="stwawawawzwpbwwewh" />
+        drawable="tk" />
     <item
         component="ComponentInfo{com.huawei.android.StkLauncher/com.huawei.android.StkLauncher.StkLauncher}"
-        drawable="stwawawawzwpbwwewh" />
+        drawable="tk" />
     <item
         component="ComponentInfo{com.sec.android.app.latin.launcher.stk2/com.sec.android.app.latin.launcher.stk2.Launcher}"
-        drawable="stwawawawzwpbwwewh" />
+        drawable="tk" />
     <item
         component="ComponentInfo{com.sec.android.launcher/com.sec.android.launcher.SIMtoolkit}"
-        drawable="stwawawawzwpbwwewh" />
+        drawable="tk" />
     <item
         component="ComponentInfo{com.sniperhg.stoolbox/com.sniperhg.stoolbox.MainActivity}"
         drawable="st" />
@@ -6086,16 +6084,16 @@
         drawable="wa" />
     <item
         component="ComponentInfo{com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.WalletRootActivity}"
-        drawable="le-icon" />
+        drawable="wa" />
     <item
         component="ComponentInfo{com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.entrypoint.WalletRootActivity}"
-        drawable="le-icon" />
+        drawable="wa" />
     <item
         component="ComponentInfo{com.fourupdates.googlewallet/com.fourupdates.googlewallet.WalletActivity}"
-        drawable="le-icon" />
+        drawable="wa" />
     <item
         component="ComponentInfo{app.netapex.org.getgooglewallet/app.netapex.org.getgooglewallet.GoogleWalletActivity}"
-        drawable="le-icon" />
+        drawable="wa" />
 
     <!--walli-->
     <item
@@ -7497,9 +7495,6 @@
         drawable="lo" />
 
     <!--Note to Self-->
-    <item
-        component="ComponentInfo{com.makenotetoself/com.makenotetoself.MainActivity}"
-        drawable="Ns" />
 
     <!--Office-->
     <item
@@ -7985,7 +7980,7 @@
     <!--Domino-->
     <item
         component="ComponentInfo{com.higgs.domino/com.pokercity.lobby.lobby}"
-        drawable="do" />
+        drawable="_do" />
 
     <!--CapCut-->
     <item
@@ -9925,7 +9920,7 @@
     <!--Domestika-->
     <item
         component="ComponentInfo{org.domestika/org.domestika.splash.presentation.activities.SplashActivity}"
-        drawable="do" />
+        drawable="_do" />
 
     <!--Cuándo SUBO-->
     <item
@@ -11510,7 +11505,7 @@
 
     <!--Bible Coloring-->
     <item
-        component="ComponentInfo{holy.bible.biblegame.bibleverse.color.by.number.colorbynumber.paint.pixel.art/com.meevii.ui.activity.SplashNewActivity }"
+        component="ComponentInfo{holy.bible.biblegame.bibleverse.color.by.number.colorbynumber.paint.pixel.art/com.meevii.ui.activity.SplashNewActivity}"
         drawable="bc" />
 
     <!--FaceYoga-->
@@ -11626,7 +11621,7 @@
     <!--Doodle-->
     <item
         component="ComponentInfo{xyz.zedler.patrick.doodle/xyz.zedler.patrick.doodle.activity.LauncherActivity}"
-        drawable="do" />
+        drawable="_do" />
 
     <!--Yoga-->
     <item
@@ -11774,9 +11769,6 @@
         drawable="sm" />
 
     <!--Options page d'accueil-->
-    <item
-        component="ComponentInfo{com.ss.squarehome2/com.ss.squarehome2.MyPreferencesActivity}"
-        drawable="0p" />
 
     <!--Top Speed-->
     <item
@@ -12994,7 +12986,7 @@
     <!--4 Pics 1 Word-->
     <item
         component="ComponentInfo{de.lotum.whatsinthefoto.us/de.lotum.whatsinthefoto.fx.MainActivity}"
-        drawable="ooopiooo" />
+        drawable="wh" />
 
     <!--TimeZo-->
     <item
@@ -13482,9 +13474,6 @@
         drawable="as" />
 
     <!--Novelah-->
-    <item
-        component="ComponentInfo{com.novel.novelah/com.novelah.page.splash.SplashActivity}"
-        drawable="n" />
 
     <!--myIM3-->
     <item
@@ -13944,7 +13933,7 @@
     <!--Komoot-->
     <item
         component="ComponentInfo{de.komoot.android/de.komoot.android.ui.inspiration.InspirationActivity}"
-        drawable="kko" />
+        drawable="ko" />
 
     <!--Rossmann-->
     <item
@@ -14395,7 +14384,7 @@
     <!--Doodle-->
     <item
         component="ComponentInfo{xyz.zedler.patrick.doodle/xyz.zedler.patrick.doodle.activity.LauncherActivity}"
-        drawable="do" />
+        drawable="_do" />
 
     <!--AR Doodle-->
     <item
@@ -14763,9 +14752,6 @@
         drawable="ze" />
 
     <!--7Fon-->
-    <item
-        component="ComponentInfo{oled.wall7Fon/ru.wall7Fon.ui.activities.SplashActivty}"
-        drawable="fon" />
 
     <!--Waking Up-->
     <item
@@ -15406,7 +15392,7 @@
     <!--iFACE-->
     <item
         component="ComponentInfo{com.magic.vstyle/com.magic.vstyle.MainActivity}"
-        drawable="if" />
+        drawable="_if" />
 
     <!--BeautyPlusMe-->
     <item
@@ -17276,7 +17262,7 @@
     <!--Dove-->
     <item
         component="ComponentInfo{com.jndapp.dove.iconpack/com.jndapp.dove.iconpack.MainActivity}"
-        drawable="do" />
+        drawable="_do" />
 
     <!--Ghost-->
     <item
