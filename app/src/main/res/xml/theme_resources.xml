@@ -1991,7 +1991,7 @@
     <!-- amaze_file_manager -->
     <AppIcon
         component="ComponentInfo{com.amaze.filemanager/com.amaze.filemanager.activities.MainActivity}"
-        image="amaze_file_manager" />
+        image="am" />
 
     <!-- es_file_explorer -->
     <AppIcon
@@ -2470,7 +2470,7 @@
     <!---gallery-->
     <AppIcon
         component=":GALLERY"
-        image="gallery" />
+        image="ga" />
     <AppIcon
         component="ComponentInfo{com.simplemobiletools.gallery.pro/com.simplemobiletools.gallery.pro.activities.SplashActivity.Grey_black}"
         image="ga" />
@@ -2899,7 +2899,7 @@
         image="or" />
     <AppIcon
         component="ComponentInfo{com.google.android.apps.wallpaper/com.google.android.apps.wallpaper.picker.CategoryPickerActivity}"
-        image="g_wallpapers" />
+        image="wa" />
     <AppIcon
         component="ComponentInfo{com.vanced.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity}"
         image="or" />
@@ -3461,7 +3461,7 @@
         component="ComponentInfo{com.android.vending.billing.InAppBillingService.COIN/com.android.vending.billing.InAppBillingService.COIN.MainActivityOriginal}"
         image="lp" />
     <AppIcon
-        component="ComponentInfocom.android.vending.billing.InAppBillingService.COIN/com.android.vending.billing.InAppBillingService.COIN.MainActivity-5}"
+        component="ComponentInfo{com.android.vending.billing.InAppBillingService.COIN/com.android.vending.billing.InAppBillingService.COIN.MainActivity-5}"
         image="lp" />
     <AppIcon
         component="ComponentInfo{com.lge.music/com.lge.music.MusicBrowserActivity}"
@@ -5027,68 +5027,68 @@
         image="st" />
     <AppIcon
         component="ComponentInfo{com.android.stk/com.android.stk.StkLauncherActivity2Default}"
-        image="stwawawawzwpbwwewh" />
+        image="tk" />
     <AppIcon
         component="ComponentInfo{com.android.stk/com.android.stk.StkLauncherActivity3}"
-        image="stwawawawzwpbwwewh" />
+        image="tk" />
     <AppIcon
         component="ComponentInfo{com.android.stk/com.android.stk.StkLauncherActivityCOMM}"
-        image="stwawawawzwpbwwewh" />
+        image="tk" />
     <AppIcon
         component="ComponentInfo{com.android.stk/com.android.stk.StkLauncherActivityDefault}"
-        image="stwawawawzwpbwwewh" />
+        image="tk" />
     <AppIcon
         component="ComponentInfo{com.android.stk/com.android.stk.StkLauncherActivitySingle}"
-        image="stwawawawzwpbwwewh" />
+        image="tk" />
 
     <AppIcon
         component="ComponentInfo{com.android.stk/com.android.stk.StkMainActivity}"
-        image="stwawawawzwpbwwewh" />
+        image="tk" />
     <AppIcon
         component="ComponentInfo{com.android.stk/com.android.stk.StkMenuActivity2}"
-        image="stwawawawzwpbwwewh" />
+        image="tk" />
     <AppIcon
         component="ComponentInfo{com.android.stk/com.android.stk.SubStkLauncherActivity}"
-        image="stwawawawzwpbwwewh" />
+        image="tk" />
     <AppIcon
         component="ComponentInfo{com.android.stk/com.android.stk.StkLauncherActivityI}"
-        image="stwawawawzwpbwwewh" />
+        image="tk" />
     <AppIcon
         component="ComponentInfo{com.android.stk/com.android.stk.StkLauncherActivityII}"
-        image="stwawawawzwpbwwewh" />
+        image="tk" />
     <AppIcon
         component="ComponentInfo{com.android.stk/com.android.stk.StkRootLauncherActivity}"
-        image="stwawawawzwpbwwewh" />
+        image="tk" />
     <AppIcon
         component="ComponentInfo{com.android.stk/com.android.stk.StkLauncherDSActivity}"
-        image="stwawawawzwpbwwewh" />
+        image="tk" />
     <AppIcon
         component="ComponentInfo{com.android.stk/com.android.stk.PrimaryStkMain}"
-        image="stwawawawzwpbwwewh" />
+        image="tk" />
     <AppIcon
         component="ComponentInfo{com.android.stk/com.android.stk.SecondaryStkMain}"
-        image="stwawawawzwpbwwewh" />
+        image="tk" />
     <AppIcon
         component="ComponentInfo{com.android.stk/com.android.stk.UtkExLauncherActivity}"
-        image="stwawawawzwpbwwewh" />
+        image="tk" />
     <AppIcon
         component="ComponentInfo{com.android.stkII/com.android.stkII.StkIILauncherActivity}"
-        image="stwawawawzwpbwwewh" />
+        image="tk" />
     <AppIcon
         component="ComponentInfo{com.android.usat/com.android.usat.StkLauncherActivity}"
-        image="stwawawawzwpbwwewh" />
+        image="tk" />
     <AppIcon
         component="ComponentInfo{com.huaqin.simtoolkit/com.huaqin.simtoolkit.MainActivity}"
-        image="stwawawawzwpbwwewh" />
+        image="tk" />
     <AppIcon
         component="ComponentInfo{com.huawei.android.StkLauncher/com.huawei.android.StkLauncher.StkLauncher}"
-        image="stwawawawzwpbwwewh" />
+        image="tk" />
     <AppIcon
         component="ComponentInfo{com.sec.android.app.latin.launcher.stk2/com.sec.android.app.latin.launcher.stk2.Launcher}"
-        image="stwawawawzwpbwwewh" />
+        image="tk" />
     <AppIcon
         component="ComponentInfo{com.sec.android.launcher/com.sec.android.launcher.SIMtoolkit}"
-        image="stwawawawzwpbwwewh" />
+        image="tk" />
     <AppIcon
         component="ComponentInfo{com.sniperhg.stoolbox/com.sniperhg.stoolbox.MainActivity}"
         image="st" />
@@ -5514,28 +5514,28 @@
     <!---twitter-->
     <AppIcon
         component="ComponentInfo{org.chromium.webapk.abb86223c0f42c4f2/org.chromium.webapk.shell_apk.MainActivity}"
-        image="xt" />
+        image="tw" />
     <AppIcon
         component="ComponentInfo{com.twitter.android/com.twitter.android.StartActivity}"
-        image="xt" />
+        image="tw" />
     <AppIcon
         component="ComponentInfo{org.chromium.webapk.ad390ea703ab950bd_v2/org.chromium.webapk.shell_apk.h2o.H2OOpaqueMainActivity}"
-        image="xt" />
+        image="tw" />
     <AppIcon
         component="ComponentInfo{org.chromium.webapk.a7b392fd2cee70007_v2/org.chromium.webapk.shell_apk.h2o.H2OOpaqueMainActivity}"
-        image="xt" />
+        image="tw" />
     <AppIcon
         component="ComponentInfo{org.chromium.webapk.ace0b15a6ce931426/org.chromium.webapk.shell_apk.h2o.H2OOpaqueMainActivity}"
-        image="xt" />
+        image="tw" />
     <AppIcon
         component="ComponentInfo{org.chromium.webapk.a09f0e199f3f8829c/org.chromium.webapk.shell_apk.h2o.H2OOpaqueMainActivity}"
-        image="xt" />
+        image="tw" />
     <AppIcon
         component="ComponentInfo{com.htc.htctwitter/com.htc.htctwitter.TwidroidSplash}"
-        image="xt" />
+        image="tw" />
     <AppIcon
         component="ComponentInfo{com.twitter.android/com.twitter.android.LoginActivity}"
-        image="xt" />
+        image="tw" />
 
     <AppIcon
         component="ComponentInfo{com.twitter.android.lite/com.twitter.android.lite.TwitterLiteActivity}"
@@ -5543,7 +5543,7 @@
 
     <AppIcon
         component="ComponentInfo{twimate.tweetdownloader.savetwittergif.twittervideodownloader/polaris.downloader.twitter.ui.activity.MainActivity}"
-        image="xd" />
+        image="tw" />
 
     <!--truecaller-->
     <AppIcon
@@ -5737,16 +5737,16 @@
         image="wa" />
     <AppIcon
         component="ComponentInfo{com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.WalletRootActivity}"
-        image="le-icon" />
+        image="wa" />
     <AppIcon
         component="ComponentInfo{com.google.android.apps.walletnfcrel/com.google.android.apps.wallet.entrypoint.WalletRootActivity}"
-        image="le-icon" />
+        image="wa" />
     <AppIcon
         component="ComponentInfo{com.fourupdates.googlewallet/com.fourupdates.googlewallet.WalletActivity}"
-        image="le-icon" />
+        image="wa" />
     <AppIcon
         component="ComponentInfo{app.netapex.org.getgooglewallet/app.netapex.org.getgooglewallet.GoogleWalletActivity}"
-        image="le-icon" />
+        image="wa" />
 
     <!--walli-->
     <AppIcon
@@ -7556,7 +7556,7 @@
     <!--Domino-->
     <AppIcon
         component="ComponentInfo{com.higgs.domino/com.pokercity.lobby.lobby}"
-        image="do" />
+        image="_do" />
 
     <!--CapCut-->
     <AppIcon
@@ -9276,7 +9276,7 @@
     <!--Domestika-->
     <AppIcon
         component="ComponentInfo{org.domestika/org.domestika.splash.presentation.activities.SplashActivity}"
-        image="do" />
+        image="_do" />
 
     <!--Cuándo SUBO-->
     <AppIcon
@@ -10952,7 +10952,7 @@
     <!--Doodle-->
     <AppIcon
         component="ComponentInfo{xyz.zedler.patrick.doodle/xyz.zedler.patrick.doodle.activity.LauncherActivity}"
-        image="do" />
+        image="_do" />
 
     <!--Yoga-->
     <AppIcon
@@ -11962,7 +11962,7 @@
     <!--4 Pics 1 Word-->
     <AppIcon
         component="ComponentInfo{de.lotum.whatsinthefoto.us/de.lotum.whatsinthefoto.fx.MainActivity}"
-        image="ooopiooo" />
+        image="wh" />
 
     <!--TimeZo-->
     <AppIcon
@@ -12667,7 +12667,7 @@
     <!--Komoot-->
     <AppIcon
         component="ComponentInfo{de.komoot.android/de.komoot.android.ui.inspiration.InspirationActivity}"
-        image="kko" />
+        image="ko" />
 
     <!--Rossmann-->
     <AppIcon
@@ -13182,7 +13182,7 @@
     <!--iFACE-->
     <AppIcon
         component="ComponentInfo{com.magic.vstyle/com.magic.vstyle.MainActivity}"
-        image="if" />
+        image="_if" />
 
     <!--BeautyPlusMe-->
     <AppIcon
@@ -14887,7 +14887,7 @@
     <!--Dove-->
     <AppIcon
         component="ComponentInfo{com.jndapp.dove.iconpack/com.jndapp.dove.iconpack.MainActivity}"
-        image="do" />
+        image="_do" />
 
     <!--Ghost-->
     <AppIcon
@@ -16324,7 +16324,7 @@
     <!--[DocVault]-->
     <AppIcon
         component="ComponentInfo{com.os.docvault/com.coloros.oppodocvault.views.ftu.ui.FTUWelcomeActivity}"
-        image="do" />
+        image="_do" />
 
     <!--[Community]-->
     <AppIcon
@@ -16904,7 +16904,7 @@
     <!--[Dolby Atmos]-->
     <AppIcon
         component="ComponentInfo{com.dolby.daxappui2/com.dolby.daxappui2.SplashScreenActivity}"
-        image="do" />
+        image="_do" />
 
     <!--[Edunext]-->
     <AppIcon
@@ -17199,7 +17199,7 @@
     <!--[Můj vlak]-->
     <AppIcon
         component="ComponentInfo{cz.cd.mujvlak.an/com.circlegate.cd.app.activity.MainActivity}"
-        image="mů" />
+        image="mu" />
 
     <!--[Clubcard Tesco]-->
     <AppIcon

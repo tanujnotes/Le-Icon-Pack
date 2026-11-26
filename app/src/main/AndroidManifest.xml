@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-   <queries>
+    <queries>
+        <!-- Installed apps, to find the ones without an icon in this pack. -->
         <intent>
-            <action android:name="android.intent.action.MAIN"/>
-            <category android:name="android.intent.category.LAUNCHER"/>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+        <!-- The default launcher, to apply the icon pack in it directly. -->
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.HOME" />
         </intent>
     </queries>
 
@@ -16,12 +21,10 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.LeIconPack"
-        tools:targetApi="31">
+        android:theme="@style/Theme.LeIconPack">
         <activity
             android:name=".MainActivity"
-            android:exported="true"
-            android:theme="@style/Theme.LeIconPack">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -122,15 +125,14 @@
 
             <!--Turbo Launcher Custom Icon Picker -->
             <intent-filter>
-            <action android:name="com.phonemetra.turbo.launcher.icons.ACTION_PICK_ICON" />
-            <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="com.phonemetra.turbo.launcher.icons.ACTION_PICK_ICON" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
 
             <!--Random launchers-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <action android:name="org.adw.launcher.THEMES"/>
-                <action android:name="obi.bbase.ahome.THEME"/>
                 <action android:name="com.rogro.GDE.THEME.1"/>
                 <action android:name="com.android.dxtop.launch.THEME"/>
                 <action android:name="com.zeroteam.zerolauncher.theme"/>
@@ -154,21 +156,6 @@
                 <category android:name="com.daeva112.manager.THEME" />
             </intent-filter>
 
-            <intent-filter>
-                <action android:name="com.gau.go.launcherex.theme" />
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.THEME_SCENE" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-
-            <intent-filter>
-                <category android:name="android.intent.category.INFO" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
         </activity>
     </application>
 

@@ -1,32 +1,29 @@
 package com.tanujnotes.leiconpack.ui
 
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.MutableState
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.tanujnotes.leiconpack.util.MenuItem
 
 @Composable
 fun NavGraph(
     navController: NavHostController,
     viewModel: MainViewModel,
-    showApplyDialog: MutableState<Boolean>,
-    selectedItem: MutableState<MenuItem>
+    onApplyIcons: () -> Unit,
 ) {
-    NavHost(
-        navController = navController,
-        startDestination = MenuItem.Home.title.lowercase().trim()){
-
-        composable(route = MenuItem.Home.title.lowercase().trim()){
-            Dashboard(navController = navController, viewModel = viewModel, selectedItem, showApplyDialog = showApplyDialog)
+    NavHost(navController = navController, startDestination = Destination.Home.route) {
+        composable(route = Destination.Home.route) {
+            Dashboard(
+                onApplyIcons = onApplyIcons,
+                onWhyLettersClick = { navController.navigate(Destination.WhyLetters.route) },
+                onReportMissingClick = { navController.navigate(Destination.MissingIcons.route) }
+            )
         }
-        composable(route = MenuItem.WhyLeIcons.title.lowercase().trim()){
+        composable(route = Destination.WhyLetters.route) {
             WhyLeIconPack()
         }
-        composable(route = MenuItem.IconRequest.title.lowercase().trim()){
-            MissingIcons(viewModel = viewModel, navController = navController)
+        composable(route = Destination.MissingIcons.route) {
+            MissingIcons(viewModel = viewModel)
         }
     }
-
 }
