@@ -41,9 +41,8 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.Shape
+import androidx.compose.ui.graphics.luminance
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -58,8 +57,11 @@ import com.tanujnotes.leiconpack.util.openPlayStore
 import com.tanujnotes.leiconpack.util.openPlayStoreDevPage
 import com.tanujnotes.leiconpack.util.openShareIntent
 
-/** Sample icons shown in the header card, two rows of four. */
-private val SampleIconRows = listOf("Aa", "Ab", "Bb", "Ba", "Ca", "Cb", "Da", "Db").chunked(4)
+/** Sample icons from the pack shown in the header card, two rows of four. */
+private val SampleIconRows = listOf(
+    R.drawable.aa, R.drawable.ab, R.drawable.bb, R.drawable.ba,
+    R.drawable.ca, R.drawable.cb, R.drawable.da, R.drawable.db,
+).chunked(4)
 
 private val CardShape = RoundedCornerShape(16.dp)
 
@@ -217,7 +219,14 @@ private fun HeaderCard(onRateClick: () -> Unit, onShareClick: () -> Unit) {
         Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .background(MaterialTheme.colorScheme.surface)
+                // The pack's light (day) icons would vanish on the light theme's near-white surface.
+                .background(
+                    if (MaterialTheme.colorScheme.surface.luminance() > 0.5f) {
+                        MaterialTheme.colorScheme.surfaceVariant
+                    } else {
+                        MaterialTheme.colorScheme.surface
+                    }
+                )
                 .padding(vertical = 20.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.spacedBy(20.dp)
@@ -227,7 +236,14 @@ private fun HeaderCard(onRateClick: () -> Unit, onShareClick: () -> Unit) {
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceAround
                 ) {
-                    row.forEach { letters -> LetterIcon(letters = letters, shape = CardShape) }
+                    row.forEach { icon ->
+                        // The real pack icons, so they switch between day and night like the pack.
+                        Image(
+                            painter = painterResource(id = icon),
+                            contentDescription = null,
+                            modifier = Modifier.size(60.dp)
+                        )
+                    }
                 }
             }
         }
@@ -325,19 +341,6 @@ private fun ChromeIconDialog(onDismiss: () -> Unit) {
             }
         }
     )
-}
-
-@Composable
-private fun LetterIcon(letters: String, shape: Shape, modifier: Modifier = Modifier) {
-    Box(
-        modifier = modifier
-            .size(60.dp)
-            .clip(shape)
-            .background(color = Color(0xFF212121)),
-        contentAlignment = Alignment.Center
-    ) {
-        Text(text = letters, color = Color.White, fontSize = 24.sp)
-    }
 }
 
 @Preview(showBackground = true, showSystemUi = true)

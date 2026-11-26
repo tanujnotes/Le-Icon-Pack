@@ -27,6 +27,12 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.LeIconPack">
+        <!-- Icons have day and night versions (drawable-night-nodpi); tells launchers to
+             reload them when dark mode changes. -->
+        <meta-data
+            android:name="org.icontheme.CHANGES_WITH_DARK_MODE"
+            android:value="true" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

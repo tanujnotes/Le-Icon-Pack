@@ -74,6 +74,16 @@ class IconPackResourcesTest {
     }
 
     @Test
+    fun everyIconHasDayAndNightVersions() {
+        fun names(dir: String) = main.resolve("res/$dir").listFiles()!!
+            .map { it.nameWithoutExtension }.toSet()
+        val day = names("drawable-nodpi")
+        val night = names("drawable-night-nodpi")
+        assertTrue("Icons without a night version: ${day - night}", (day - night).isEmpty())
+        assertTrue("Icons without a day version: ${night - day}", (night - day).isEmpty())
+    }
+
+    @Test
     fun componentsAreWellFormed() {
         val components = attributeValues("res/xml/appfilter.xml", "item", "component") +
                 attributeValues("res/xml/theme_resources.xml", "AppIcon", "component")
