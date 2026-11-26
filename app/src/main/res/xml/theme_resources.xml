@@ -16579,7 +16579,7 @@
     <!--[Play Console]-->
     <AppIcon
         component="ComponentInfo{com.google.android.apps.playconsole/com.google.android.apps.play.console.mobile.MainActivity}"
-        image="pl" />
+        image="pc" />
 
     <!--[PayZapp]-->
     <AppIcon
@@ -21467,5 +21467,110 @@
     <AppIcon
         component="ComponentInfo{sansunsen3.imagesearcher/sansunsen3.imagesearcher.activity.MainActivity}"
         image="is" />
+
+    <!--Oasis-->
+    <AppIcon
+        component="ComponentInfo{ai.oasis/ai.oasis.MainActivity}"
+        image="oa" />
+
+    <!--Ojournal-->
+    <AppIcon
+        component="ComponentInfo{app.ojournal/app.ofitapp.MainActivity}"
+        image="oj" />
+
+    <!--Okeyboard-->
+    <AppIcon
+        component="ComponentInfo{app.okeyboard/app.okeyboard.SettingsActivity}"
+        image="ok" />
+
+    <!--LD Icons-->
+    <AppIcon
+        component="ComponentInfo{com.akbon.myld/com.akbon.myld.MainActivity}"
+        image="ld" />
+
+    <!--Beeper-->
+    <AppIcon
+        component="ComponentInfo{com.beeper.android/com.beeper.chat.booper.MainActivity_Default}"
+        image="be" />
+
+    <!--DuckDuckGo-->
+    <AppIcon
+        component="ComponentInfo{com.duckduckgo.mobile.android/com.duckduckgo.app.launch.LauncherBlue}"
+        image="du" />
+
+    <!--Ramniwas Bajaj English High School-->
+    <AppIcon
+        component="ComponentInfo{com.edusoft_rbhs.edusoft_rbhs_app/com.edusoft_rbhs.edusoft_rbhs_app.MainActivity}"
+        image="rb" />
+
+    <!--Fender Tune-->
+    <AppIcon
+        component="ComponentInfo{com.fender.tuner/com.fender.tuner.ui.MainActivity}"
+        image="ft" />
+
+    <!--Simply Minimal Icons-->
+    <AppIcon
+        component="ComponentInfo{com.italiano.simplyminimal/com.italiano.simplyminimal.MainActivity}"
+        image="sm" />
+
+    <!--Equate-->
+    <AppIcon
+        component="ComponentInfo{com.llamacorp.equate/com.llamacorp.equate.view.CalcActivity}"
+        image="eq" />
+
+    <!--Noise Explorer Hub-->
+    <AppIcon
+        component="ComponentInfo{com.noise.explorer/com.xiaoxun.xun.activitys.NewWelcomeActivity}"
+        image="ne" />
+
+    <!--Pen Tasks-->
+    <AppIcon
+        component="ComponentInfo{com.pentasks/com.pentasks.MainActivity}"
+        image="pt" />
+
+    <!--LanDrop-->
+    <AppIcon
+        component="ComponentInfo{dev.landrop.mobile/dev.landrop.mobile.MainActivity}"
+        image="ld" />
+
+    <!--IPS Exporter-->
+    <AppIcon
+        component="ComponentInfo{ginlemon.iconpackstudio.exporter/ginlemon.iconpackstudio.exporter.MainActivity}"
+        image="ie" />
+
+    <!--Swiggy-->
+    <AppIcon
+        component="ComponentInfo{in.swiggy.android/in.swiggy.android.HomeIcon}"
+        image="sw" />
+
+    <!--Thunderbird-->
+    <AppIcon
+        component="ComponentInfo{net.thunderbird.android/com.fsck.k9.activity.MessageList}"
+        image="th" />
+
+    <!--Messages-->
+    <AppIcon
+        component="ComponentInfo{org.fossify.messages/org.fossify.messages.activities.SplashActivity.Green}"
+        image="me" />
+
+    <!--Seerah-->
+    <AppIcon
+        component="ComponentInfo{org.gtaf.seerah/org.gtaf.seerah.MainActivity}"
+        image="se" />
+
+    <!--LocalSend-->
+    <AppIcon
+        component="ComponentInfo{org.localsend.localsend_app/org.localsend.localsend_app.MainActivity}"
+        image="ls" />
+
+    <!--Tasks & Notes-->
+    <AppIcon
+        component="ComponentInfo{org.myklos.inote/org.myklos.inote.NoteList}"
+        image="tn" />
+
+    <!--Etar-->
+    <AppIcon
+        component="ComponentInfo{ws.xsoh.etar/com.android.calendar.AllInOneActivity}"
+        image="et" />
 
 </Theme>
