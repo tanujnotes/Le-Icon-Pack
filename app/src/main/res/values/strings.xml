@@ -11,7 +11,8 @@
     <string name="why_icons_label">Why letters?</string>
     <string name="report_missing_label">Report missing icons</string>
     <string name="rate_review_label">Rate &amp; review</string>
-    <string name="digital_minimalism">Powered by Digital Minimalism</string>
+    <!-- HTML: <u> underlines the name. -->
+    <string name="digital_minimalism"><![CDATA[Powered by <u>Digital Minimalism</u>]]></string>
     <string name="apply_label">Apply icon pack</string>
     <string name="cd_share">Share</string>
     <string name="cd_github">GitHub</string>

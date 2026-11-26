@@ -29,6 +29,8 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.text.AnnotatedString
+import androidx.compose.ui.text.fromHtml
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -74,8 +76,9 @@ fun HomeScreen(
         },
         bottomBar = {
             BottomBar {
+                PrimaryButton(text = stringResource(R.string.apply_label), onClick = onApplyClick)
                 Text(
-                    text = stringResource(R.string.digital_minimalism),
+                    text = AnnotatedString.fromHtml(stringResource(R.string.digital_minimalism)),
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                     textAlign = TextAlign.Center,
@@ -85,7 +88,6 @@ fun HomeScreen(
                         .heightIn(min = 44.dp)
                         .wrapContentHeight()
                 )
-                PrimaryButton(text = stringResource(R.string.apply_label), onClick = onApplyClick)
             }
         }
     ) {
