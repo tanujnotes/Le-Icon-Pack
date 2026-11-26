@@ -5,12 +5,16 @@ plugins {
 
 android {
     namespace 'com.tanujnotes.leiconpack'
-    compileSdk 37
+    compileSdk {
+        version = release(37) {
+            it.minorApiLevel = 2
+        }
+    }
 
     defaultConfig {
         applicationId "com.tanujnotes.leiconpack"
         minSdk 26
-        targetSdk 34
+        targetSdk 37
         versionCode 11
         versionName "v1.0.3"
 
