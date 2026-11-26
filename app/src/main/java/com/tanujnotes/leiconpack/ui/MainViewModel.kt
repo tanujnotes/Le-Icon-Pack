@@ -1,13 +1,19 @@
 package com.tanujnotes.leiconpack.ui
 
 import android.app.Application
+import android.content.BroadcastReceiver
+import android.content.Context
+import android.content.Intent
+import android.content.IntentFilter
 import android.os.Build
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
+import androidx.core.content.ContextCompat
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.tanujnotes.leiconpack.model.AppInfo
+import com.tanujnotes.leiconpack.util.ACTION_REPORT_APP_CHOSEN
 import com.tanujnotes.leiconpack.util.PrefUtil
 import com.tanujnotes.leiconpack.util.findAppsWithoutIcons
 import kotlinx.coroutines.Dispatchers
@@ -40,6 +46,26 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     val hasSelection: Boolean
         get() = missingIconApps.any { it.checked }
 
+    // A report counts as sent once the user picks an email app, not when the chooser opens.
+    private val reportAppChosenReceiver = object : BroadcastReceiver() {
+        override fun onReceive(context: Context, intent: Intent) {
+            onReportSent()
+        }
+    }
+
+    init {
+        ContextCompat.registerReceiver(
+            application,
+            reportAppChosenReceiver,
+            IntentFilter(ACTION_REPORT_APP_CHOSEN),
+            ContextCompat.RECEIVER_NOT_EXPORTED
+        )
+    }
+
+    override fun onCleared() {
+        getApplication<Application>().unregisterReceiver(reportAppChosenReceiver)
+    }
+
     /** Scans installed apps again, so newly installed apps show up and every app is selected. */
     fun loadMissingIconApps() {
         if (isLoading) return
@@ -66,7 +92,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         }
     }
 
-    fun onReportSent() {
+    private fun onReportSent() {
         missingIconApps = missingIconApps.map { it.copy(checked = false) }
         reviewPromptPending = true
     }

@@ -111,10 +111,9 @@ fun LeIconPackApp(viewModel: MainViewModel = viewModel()) {
                     FloatingActionButton(onClick = {
                         when {
                             !viewModel.hasSelection -> context.showToast(R.string.select_apps_to_report)
-                            context.sendMissingIconReport(viewModel.buildMissingIconReport()) ->
-                                viewModel.onReportSent()
-
-                            else -> context.showToast(R.string.no_email_app)
+                            // The ViewModel hears when an email app is picked from the chooser.
+                            !context.sendMissingIconReport(viewModel.buildMissingIconReport()) ->
+                                context.showToast(R.string.no_email_app)
                         }
                     }) {
                         Icon(

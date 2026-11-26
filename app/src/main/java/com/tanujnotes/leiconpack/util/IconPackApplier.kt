@@ -23,6 +23,8 @@ private object LauncherPackages {
     const val TOTAL = "com.ss.launcher2"
     const val GOOGLE_PIXEL = "com.google.android.apps.nexuslauncher"
     const val LYNX = "org.n277.lynxlauncher"
+    const val SUPERNOVA = "com.supernova.launcher"
+    const val SUPERNOVA_DEBUG = "com.supernova.launcher.debug"
 }
 
 /**
@@ -92,6 +94,12 @@ fun Context.applyIconPack(): Boolean {
         LauncherPackages.LYNX -> Intent("org.n277.lynxlauncher.SET_THEME")
             .setPackage(launcher)
             .putExtra("package", iconPack)
+
+        // Supernova asks the user to confirm, then returns to its home screen.
+        LauncherPackages.SUPERNOVA,
+        LauncherPackages.SUPERNOVA_DEBUG -> Intent("com.supernova.launcher.APPLY_ICON_THEME")
+            .setPackage(launcher)
+            .putExtra("com.supernova.launcher.extra.ICON_THEME_PACKAGE", iconPack)
 
         else -> return false
     }
