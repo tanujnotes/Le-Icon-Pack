@@ -30,6 +30,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.text.AnnotatedString
+import androidx.compose.ui.text.SpanStyle
+import androidx.compose.ui.text.TextLinkStyles
+import androidx.compose.ui.text.fromHtml
+import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.unit.dp
 import com.tanujnotes.leiconpack.R
 
@@ -163,5 +168,25 @@ fun InsetDivider() {
         modifier = Modifier.padding(horizontal = ScreenPadding),
         thickness = 1.dp,
         color = MaterialTheme.colorScheme.outlineVariant
+    )
+}
+
+/** How day and night icons behave, with Supernova linked to its GitHub page. */
+@Composable
+fun DayNightNote(modifier: Modifier = Modifier) {
+    val color = MaterialTheme.colorScheme.onSurfaceVariant
+    Text(
+        text = AnnotatedString.fromHtml(
+            htmlString = stringResource(R.string.day_night_note),
+            linkStyles = TextLinkStyles(
+                style = SpanStyle(
+                    color = MaterialTheme.colorScheme.onSurface,
+                    textDecoration = TextDecoration.Underline
+                )
+            )
+        ),
+        style = MaterialTheme.typography.bodyMedium,
+        color = color,
+        modifier = modifier
     )
 }

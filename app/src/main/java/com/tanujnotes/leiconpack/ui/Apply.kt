@@ -67,10 +67,7 @@ fun ApplyScreen(onBack: () -> Unit) {
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                 modifier = Modifier.padding(start = ScreenPadding, top = 28.dp, end = ScreenPadding)
             )
-            Text(
-                text = stringResource(R.string.day_night_note),
-                style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            DayNightNote(
                 modifier = Modifier.padding(
                     start = ScreenPadding,
                     top = 12.dp,
