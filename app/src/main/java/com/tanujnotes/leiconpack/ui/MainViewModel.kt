@@ -1,157 +1,114 @@
 package com.tanujnotes.leiconpack.ui
 
-import android.annotation.SuppressLint
-import android.content.ComponentName
+import android.app.Application
+import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import android.content.pm.ActivityInfo
-import android.content.pm.PackageManager
+import android.content.IntentFilter
 import android.os.Build
-import androidx.compose.runtime.mutableStateListOf
+import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
-import androidx.lifecycle.ViewModel
+import androidx.compose.runtime.setValue
+import androidx.core.content.ContextCompat
+import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.tanujnotes.leiconpack.model.AppInfo
-import com.tanujnotes.leiconpack.model.Feature
-import com.tanujnotes.leiconpack.util.MenuItem
+import com.tanujnotes.leiconpack.util.ACTION_REPORT_APP_CHOSEN
 import com.tanujnotes.leiconpack.util.PrefUtil
+import com.tanujnotes.leiconpack.util.findAppsWithoutIcons
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.flow.*
+import kotlinx.coroutines.flow.SharingStarted
+import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import org.w3c.dom.Element
-import org.w3c.dom.Node
-import javax.xml.parsers.DocumentBuilderFactory
 
-@Suppress("DEPRECATION")
-class MainViewModel : ViewModel() {
+class MainViewModel(application: Application) : AndroidViewModel(application) {
 
-    val lettersList = mutableStateListOf("Aa", "Ab", "Bb", "Ba", "Ca", "Cb", "Da", "Db")
+    private val prefs = PrefUtil(application)
 
-    val drawerItems = listOf(MenuItem.Home, MenuItem.Apply, MenuItem.WhyLeIcons)
+    // Starts as true so the review prompt is never shown before the stored value is known.
+    private val isReviewed = prefs.isReviewed
+        .stateIn(viewModelScope, SharingStarted.Eagerly, initialValue = true)
 
-    val appFeatures = listOf(
-        Feature(
-            feature = "Reduced screen time",
-            desc = "Focus on the task at hand by minimizing distractions on your home screen"
-        ),
-        Feature(
-            feature = "Huge number of icons",
-            desc = "Quickly apply icons to almost every app in your device with ease"
-        ),
-        Feature(
-            feature = "Consistent design",
-            desc = "Identify apps and find the one you need without having to decipher different icon styles."
-        ),
-        Feature(
-            feature = "Reduced cognitive load",
-            desc = "Easily understand icons and reduce the cognitive load required to navigate your home screen."
-        ),
-    )
+    /** Installed apps without an icon in this pack. Every app starts out selected for the report. */
+    var missingIconApps by mutableStateOf<List<AppInfo>>(emptyList())
+        private set
 
-    private val _isLoading = MutableStateFlow(true)
-    val isLoading = _isLoading.asStateFlow()
-    var missingIconApps = mutableStateListOf<AppInfo>()
-    val showReviewDialog = mutableStateOf(false)
-    val showRateDialogOnResume = mutableStateOf(false)
+    var isLoading by mutableStateOf(false)
+        private set
 
-    @SuppressLint("ResourceType")
-    suspend fun appFilterComponentNames(context: Context): MutableList<String> {
-        val appFilterString = context.assets.open("appfilter.xml")
-        val documentBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder()
-        val document = withContext(Dispatchers.IO) {
-            documentBuilder.parse(appFilterString)
+    var showReviewDialog by mutableStateOf(false)
+        private set
+
+    /** Set when the user leaves to send a report, so we can ask for a review when they come back. */
+    private var reviewPromptPending = false
+
+    val hasSelection: Boolean
+        get() = missingIconApps.any { it.checked }
+
+    // A report counts as sent once the user picks an email app, not when the chooser opens.
+    private val reportAppChosenReceiver = object : BroadcastReceiver() {
+        override fun onReceive(context: Context, intent: Intent) {
+            onReportSent()
         }
-        val nodeList = document.getElementsByTagName("item")
-        val appFilterComponentNames = mutableListOf<String>()
-        for (index in 0 until nodeList.length) {
-            val node = nodeList.item(0)
-            if (node.nodeType == Node.ELEMENT_NODE) {
-                val element = nodeList.item(index) as Element
-                val componentName = element.attributes.getNamedItem("component").nodeValue
-                if (!componentName.contains(":")) {
-                    appFilterComponentNames.add(componentName)
-                }
-            }
-        }
-        return appFilterComponentNames
     }
 
-    fun getMissingApps(context: Context) {
+    init {
+        ContextCompat.registerReceiver(
+            application,
+            reportAppChosenReceiver,
+            IntentFilter(ACTION_REPORT_APP_CHOSEN),
+            ContextCompat.RECEIVER_NOT_EXPORTED
+        )
+    }
+
+    override fun onCleared() {
+        getApplication<Application>().unregisterReceiver(reportAppChosenReceiver)
+    }
+
+    /** Scans installed apps again, so newly installed apps show up and every app is selected. */
+    fun loadMissingIconApps() {
+        if (isLoading) return
+        isLoading = true
         viewModelScope.launch {
-            if (missingIconApps.isEmpty()) {
-                val missingApps = mutableListOf<AppInfo>()
-                for (appActivityInfo in activityInfos(context)) {
-                    val componentName =
-                        ComponentName(appActivityInfo.packageName, appActivityInfo.name)
-                    if (!appFilterComponentNames(context).contains(componentName.toString())) {
-                        missingApps.add(
-                            AppInfo(
-                                appActivityInfo.loadIcon(context.packageManager),
-                                appActivityInfo.loadLabel(context.packageManager).toString(),
-                                componentName.flattenToString()
-                            )
-                        )
-                    }
-                }
-
-                missingIconApps.addAll(missingApps)
-                if (missingIconApps.size == missingApps.size) {
-                    _isLoading.value = false
-                }
-
+            missingIconApps = withContext(Dispatchers.Default) {
+                getApplication<Application>().findAppsWithoutIcons()
             }
+            isLoading = false
         }
     }
 
-    private fun activityInfos(context: Context): MutableList<ActivityInfo> {
-        val launchAbleApps: MutableList<ActivityInfo> = mutableListOf()
-        val intent = Intent(Intent.ACTION_MAIN, null)
-        intent.addCategory(Intent.CATEGORY_LAUNCHER)
-
-        val packageManager = context.packageManager
-        val activities = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            packageManager.queryIntentActivities(
-                intent,
-                PackageManager.ResolveInfoFlags.of(PackageManager.MATCH_ALL.toLong())
-            )
-        } else {
-            packageManager.queryIntentActivities(intent, PackageManager.MATCH_ALL)
-        }
-
-        for (resolveInfo in activities) {
-            launchAbleApps.add(resolveInfo.activityInfo)
-        }
-        return launchAbleApps
-    }
-
-    fun updateSelection(appList: MutableList<AppInfo>, index: Int, selected: Boolean) {
-        appList[index] = appList[index].copy(checked = selected)
-    }
-
-    fun selectAll(appList: MutableList<AppInfo>, selected: Boolean) {
-        for (index in 0 until appList.size) {
-            appList[index] = appList[index].copy(checked = selected)
+    fun setChecked(componentName: String, checked: Boolean) {
+        missingIconApps = missingIconApps.map {
+            if (it.componentName == componentName) it.copy(checked = checked) else it
         }
     }
 
-    fun resetSelection() {
-        for (i in 0 until missingIconApps.size) {
-            missingIconApps[i] = missingIconApps[i].copy(checked = false)
+    fun buildMissingIconReport(): String = buildString {
+        append("Manufacturer : ${Build.MANUFACTURER.uppercase()}\n")
+        append("Model: ${Build.MODEL.uppercase()}\n\n")
+        missingIconApps.filter { it.checked }.forEach { app ->
+            append("Name: ${app.appName}\n ComponentInfo: ${app.componentName}\n\n")
         }
     }
 
-    fun getPrefDatastore(context: Context) = PrefUtil(context)
-
-    fun setIsReviewShown(prefDatastore: PrefUtil) = viewModelScope.launch {
-        prefDatastore.setIsReviewed()
+    private fun onReportSent() {
+        missingIconApps = missingIconApps.map { it.copy(checked = false) }
+        reviewPromptPending = true
     }
 
-    /*  fun onCircleShapeIconsSelected() {
-          rectangularIconsShape.value = false
-      }
-      fun onRectangularShapeIconsSelected() {
-          rectangularIconsShape.value = true
-      }*/
+    fun onResume() {
+        if (!reviewPromptPending) return
+        reviewPromptPending = false
+        if (!isReviewed.value) showReviewDialog = true
+    }
 
+    fun onRateClicked() {
+        showReviewDialog = false
+        viewModelScope.launch { prefs.setIsReviewed() }
+    }
+
+    fun dismissReviewDialog() {
+        showReviewDialog = false
+    }
 }

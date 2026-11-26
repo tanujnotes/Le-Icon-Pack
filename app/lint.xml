@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="UnusedResources">
+        <!-- Icon pack resources are looked up by name by launchers, not referenced from code. -->
+        <ignore path="src/main/res/drawable-nodpi" />
+        <ignore path="src/main/res/xml" />
+        <ignore path="src/main/res/values/bool.xml" />
+        <ignore path="src/main/res/values/iconpack.xml" />
+    </issue>
+</lint>

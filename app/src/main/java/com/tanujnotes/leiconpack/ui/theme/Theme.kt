@@ -5,8 +5,6 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.SideEffect
-import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
 
 private val LightColors = lightColorScheme(
@@ -79,24 +77,7 @@ fun LeIconPackTheme(
     useDarkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {
-    val colors = if (!useDarkTheme) {
-        LightColors
-    } else {
-        DarkColors
-    }
-    val systemUiController = rememberSystemUiController()
-    SideEffect {
-        systemUiController.apply {
-            setNavigationBarColor(
-                color = colors.surface
-            )
-            setStatusBarColor(
-                color = colors.primary
-            )
-        }
-
-    }
-
+    val colors = if (useDarkTheme) DarkColors else LightColors
     MaterialTheme(
         colorScheme = colors,
         typography = Typography,
