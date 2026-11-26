@@ -77,6 +77,76 @@ def iconPackAssets = tasks.register('copyIconPackXmlToAssets', CopyIconPackXmlTo
     )
 }
 
+/**
+ * Icons come in a night version (drawable-night-nodpi: #212121 tile, white letters) and a day
+ * version (drawable-nodpi: #F5F5F5 tile, #212121 letters). New icons are drawn in the night style
+ * and dropped into drawable-nodpi; `./gradlew makeDayIcons` then moves each icon that has no night
+ * version yet into drawable-night-nodpi and writes its day version in its place. Every pixel is a
+ * blend of the tile and letter colors, so remapping that blend keeps the letters' anti-aliasing.
+ */
+abstract class MakeDayIcons extends DefaultTask {
+    private static final int NIGHT_TILE = 0x21, NIGHT_LETTER = 0xFF
+    private static final int DAY_TILE = 0xF5, DAY_LETTER = 0x21
+
+    @Internal
+    abstract DirectoryProperty getResDir()
+
+    @TaskAction
+    void run() {
+        File dayDir = resDir.get().dir('drawable-nodpi').asFile
+        File nightDir = resDir.get().dir('drawable-night-nodpi').asFile
+        nightDir.mkdirs()
+        Set<String> nightNames = (nightDir.list() ?: new String[0]) as Set
+        def pending = (dayDir.listFiles() ?: new File[0])
+                .findAll { it.name.endsWith('.png') && !nightNames.contains(it.name) }
+                .sort { it.name }
+        int made = 0
+        pending.each { File icon ->
+            def night = javax.imageio.ImageIO.read(icon)
+            if (!isGrey(night)) {
+                logger.warn("makeDayIcons: skipped ${icon.name}, it isn't a grey Letters icon")
+                return
+            }
+            File nightFile = new File(nightDir, icon.name)
+            java.nio.file.Files.copy(icon.toPath(), nightFile.toPath())
+            javax.imageio.ImageIO.write(toDay(night), 'png', icon)
+            made++
+        }
+        logger.lifecycle("makeDayIcons: made day versions of $made icon(s)")
+    }
+
+    static boolean isGrey(java.awt.image.BufferedImage image) {
+        for (int y = 0; y < image.height; y++) {
+            for (int x = 0; x < image.width; x++) {
+                int argb = image.getRGB(x, y)
+                if ((argb >>> 24) == 0) continue
+                int r = (argb >> 16) & 0xFF, g = (argb >> 8) & 0xFF, b = argb & 0xFF
+                if (r != g || g != b) return false
+            }
+        }
+        return true
+    }
+
+    static java.awt.image.BufferedImage toDay(java.awt.image.BufferedImage night) {
+        def day = new java.awt.image.BufferedImage(night.width, night.height, java.awt.image.BufferedImage.TYPE_INT_ARGB)
+        for (int y = 0; y < night.height; y++) {
+            for (int x = 0; x < night.width; x++) {
+                int argb = night.getRGB(x, y)
+                double t = Math.min(Math.max(((argb >> 16) & 0xFF) - NIGHT_TILE, 0) / (double) (NIGHT_LETTER - NIGHT_TILE), 1d)
+                int c = (int) Math.round(DAY_TILE + (DAY_LETTER - DAY_TILE) * t)
+                day.setRGB(x, y, ((argb >>> 24) << 24) | (c << 16) | (c << 8) | c)
+            }
+        }
+        return day
+    }
+}
+
+tasks.register('makeDayIcons', MakeDayIcons) {
+    group = 'icon pack'
+    description = 'Moves new icons to drawable-night-nodpi and writes their day versions to drawable-nodpi'
+    resDir = layout.projectDirectory.dir('src/main/res')
+}
+
 // IconPackResourcesTest reads the icon pack XML and drawables straight from disk, so tell Gradle
 // about them: otherwise a change to appfilter.xml alone leaves the test task UP-TO-DATE.
 tasks.withType(Test).configureEach {
