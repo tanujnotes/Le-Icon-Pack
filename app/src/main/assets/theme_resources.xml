@@ -14207,10 +14207,10 @@
         component="ComponentInfo{com.xiaomi.glgm/com.mig.play.Icon0}"
         image="gc" />
 
-    <!--Лучшие игры-->
+    <!--Top games (Лучшие игры)-->
     <AppIcon
         component="ComponentInfo{com.xiaomi.glgm/com.xiaomi.glgm.home.ui.category}"
-        image="li" />
+        image="tg" />
 
     <!--Алиса AI-->
     <AppIcon
@@ -15202,10 +15202,10 @@
         component="ComponentInfo{com.motorola.securityhub/com.motorola.securityhub.ui.view.MainActivity}"
         image="ms" />
 
-    <!--Clima-->
+    <!--Weather (Clima)-->
     <AppIcon
         component="ComponentInfo{com.motorola.timeweatherwidget/com.motorola.commandcenter.MainActivity}"
-        image="cl" />
+        image="we" />
 
     <!--Xuper-->
     <AppIcon
@@ -15586,5 +15586,760 @@
     <AppIcon
         component="ComponentInfo{com.xiaomi.glgm.gp/com.mig.play.Icon0}"
         image="gc" />
+
+    <!--Jewel Block Puzzle-->
+    <AppIcon
+        component="ComponentInfo{com.mintgames.schuman.ablock/com.google.firebase.MessagingUnityPlayerActivity}"
+        image="jb" />
+
+    <!--BroChill-->
+    <AppIcon
+        component="ComponentInfo{app.com.brochill/app.com.brochill.splashScreen.SplashScreenNewActivity}"
+        image="bc" />
+
+    <!--Strike Ops-->
+    <AppIcon
+        component="ComponentInfo{com.ta.strike.ops/com.unity3d.player.UnityPlayerActivity}"
+        image="so" />
+
+    <!--Tamil Ringtones-->
+    <AppIcon
+        component="ComponentInfo{com.tamilringtone.ringtoneapp.tamil.love.tamilbgm.instrumentalring/com.tamilringtone.ringtoneapp.tamil.love.tamilbgm.instrumentalring.MainActivity}"
+        image="tr" />
+
+    <!--ShareChat-->
+    <AppIcon
+        component="ComponentInfo{in.mohalla.sharechat/in.mohalla.sharechat.EvaActivityDefault}"
+        image="sc" />
+
+    <!--Gallery-->
+    <AppIcon
+        component="ComponentInfo{photo.gallery.photoeditor.photo.album/com.ijoysoft.gallery.activity.WelcomeActivity}"
+        image="ga" />
+
+    <!--BLucky Mega 777-->
+    <AppIcon
+        component="ComponentInfo{BLucky.jilmptec.wrencrt/game.script.StartActivity}"
+        image="bm" />
+
+    <!--NetMirror-->
+    <AppIcon
+        component="ComponentInfo{app.netmirror.netmirrornew/app.netmirror.netmirrornew.MainActivity}"
+        image="nm" />
+
+    <!--Grand Piano-->
+    <AppIcon
+        component="ComponentInfo{app.pg.grandpiano/app.pg.grandpiano.ActivityMain}"
+        image="gp" />
+
+    <!--FingerDice-->
+    <AppIcon
+        component="ComponentInfo{com.ToolsCompany.FingerPicker/com.ToolsCompany.FingerPicker.ui.activity.LoadingActivity}"
+        image="fd" />
+
+    <!--Adobe Express-->
+    <AppIcon
+        component="ComponentInfo{com.adobe.spark.post/com.adobe.express.app.view.RoutingActivity}"
+        image="ae" />
+
+    <!--Floating Lyrics-->
+    <AppIcon
+        component="ComponentInfo{com.ai.lyrics.floating/com.ai.lyrics.floating.MainActivity}"
+        image="fl" />
+
+    <!--Cynohub-->
+    <AppIcon
+        component="ComponentInfo{com.cynohub.app.com/com.cynohub.app.com.MainActivity}"
+        image="cy" />
+
+    <!--Gesture-->
+    <AppIcon
+        component="ComponentInfo{com.dp.gesture/com.dp.gesture.InitActivity}"
+        image="ge" />
+
+    <!--Tongits Offline-->
+    <AppIcon
+        component="ComponentInfo{com.emagssob.tongits/org.cocos2dx.cpp.AppActivity}"
+        image="to" />
+
+    <!--FreeReels-->
+    <AppIcon
+        component="ComponentInfo{com.freereels.app/com.dramawave.app.splash.SplashActivity}"
+        image="fr" />
+
+    <!--Indian Wedding Makeup Game-->
+    <AppIcon
+        component="ComponentInfo{com.gameiavo.wedding.makeup.fashion.stylist/org.cocos2dx.cpp.AppActivity}"
+        image="iw" />
+
+    <!--Call of Duty-->
+    <AppIcon
+        component="ComponentInfo{com.garena.game.codm/com.tencent.tmgp.cod.CODMPrivatePermissionActivity}"
+        image="cd" />
+
+    <!--Google Ads-->
+    <AppIcon
+        component="ComponentInfo{com.google.android.apps.adwords/com.google.android.apps.adwords.InitialLoadingActivity}"
+        image="ga" />
+
+    <!--Phone-->
+    <AppIcon
+        component="ComponentInfo{com.hb.dialer.free/com.hb.dialer.ui.PhoneActivity}"
+        image="ph" />
+
+    <!--Themely-->
+    <AppIcon
+        component="ComponentInfo{com.icons.widgets.control.center.pink.black.themely/com.iconchanger.shortcut.app.splash.activity.SplashActivity}"
+        image="th" />
+
+    <!--Neon Red Heartbeat-->
+    <AppIcon
+        component="ComponentInfo{com.ikeyboard.theme.neon.red.heartbeat/com.qisi.ui.entry.EntryActivity}"
+        image="nr" />
+
+    <!--Pink RGB Heart-->
+    <AppIcon
+        component="ComponentInfo{com.ikeyboard.theme.pink.rgb.heart/com.qisi.ui.entry.EntryActivity}"
+        image="pr" />
+
+    <!--Kaspersky-->
+    <AppIcon
+        component="ComponentInfo{com.kms.free/com.kms.free.PermissionsActivityLauncher}"
+        image="ka" />
+
+    <!--A+ Big Font-->
+    <AppIcon
+        component="ComponentInfo{com.lambdafont.bigfont/com.lambdafont.bigfont.activities.SplashActivity}"
+        image="bf" />
+
+    <!--Hello You-->
+    <AppIcon
+        component="ComponentInfo{com.motorola.ccc.notification/com.motorola.engageapp.ui.HelloYouActivity}"
+        image="hy" />
+
+    <!--Moto-->
+    <AppIcon
+        component="ComponentInfo{com.motorola.moto/com.motorola.assist.LauncherActivity}"
+        image="mo" />
+
+    <!--Family Space-->
+    <AppIcon
+        component="ComponentInfo{com.motorola.spaces/com.motorola.spaces.presentation.LauncherActivity}"
+        image="fs" />
+
+    <!--LOKTV-->
+    <AppIcon
+        component="ComponentInfo{com.novan.morpha/com.novan.morpha.module_home.HomeActivityNew}"
+        image="lo" />
+
+    <!--Tom Gold Run-->
+    <AppIcon
+        component="ComponentInfo{com.outfit7.talkingtomgoldrun/com.outfit7.felis.SplashActivityChangeableIcon}"
+        image="tg" />
+
+    <!--SIA-All In One-->
+    <AppIcon
+        component="ComponentInfo{com.sia.learn/com.sia.learn.MainActivity}"
+        image="si" />
+
+    <!--maxim-->
+    <AppIcon
+        component="ComponentInfo{com.taxsee.taxsee/com.taxsee.taxsee.ui.activities.SplashScreen}"
+        image="ma" />
+
+    <!--ThemePro-->
+    <AppIcon
+        component="ComponentInfo{com.themekit.lite.widgets.themes/com.live.wallpaper.theme.background.launcher.free.activity.StartActivity}"
+        image="tp" />
+
+    <!--CineJugaad-->
+    <AppIcon
+        component="ComponentInfo{com.universe.cinejugaadinb/com.gxgx.daqiandy.ui.splash.SplashActivity}"
+        image="cj" />
+
+    <!--Viki-->
+    <AppIcon
+        component="ComponentInfo{com.viki.android/com.viki.android.ui.splash.SplashActivity}"
+        image="vi" />
+
+    <!--Weezer-->
+    <AppIcon
+        component="ComponentInfo{com.weezer.newplayer.song/music.tzh.zzyy.weezer.ui.acti.MaimiSplash}"
+        image="we" />
+
+    <!--WH KIT-->
+    <AppIcon
+        component="ComponentInfo{com.whatsrecover.hidelastseen.unseenblueticks/com.whatsrecover.hidelastseen.unseenblueticks.activities.SplashActivity}"
+        image="wk" />
+
+    <!--WidgetKit-->
+    <AppIcon
+        component="ComponentInfo{com.widgetkit.widget.theme.wallpaper.icon.sceen.scape/com.live.wallpaper.theme.background.launcher.free.activity.StartActivity}"
+        image="wk" />
+
+    <!--Яндекс Пэй (Yandex Pay)-->
+    <AppIcon
+        component="ComponentInfo{com.yandex.bank/com.yb.screens.MainActivityDefault}"
+        image="yp" />
+
+    <!--Pure Tuber-->
+    <AppIcon
+        component="ComponentInfo{free.tube.premium.advanced.tuber/free.tube.premium.advanced.tuber.main.MainActivity}"
+        image="pt" />
+
+    <!--Matrix Launcher-->
+    <AppIcon
+        component="ComponentInfo{magicfastlauncher.matrixlauncher/magicfastlauncher.matrixlauncher.ui.SettingsActivity}"
+        image="ml" />
+
+    <!--InCollage - Collage Maker-->
+    <AppIcon
+        component="ComponentInfo{photocollage.photoeditor.collagemaker/com.camerasideas.collagemaker.activity.DummyActivity}"
+        image="ic" />
+
+    <!--Карты (Yandex Maps)-->
+    <AppIcon
+        component="ComponentInfo{ru.yandex.yandexmaps/ru.yandex.yandexmaps.SplashScreen}"
+        image="ma" />
+
+    <!--microG Settings (Настройки microG)-->
+    <AppIcon
+        component="ComponentInfo{app.revanced.android.gms/org.microg.gms.ui.SettingsActivity}"
+        image="mi" />
+
+    <!--YouTube ReVanced-->
+    <AppIcon
+        component="ComponentInfo{app.revanced.android.youtube/app.revanced.android.youtube.revanced_original_1}"
+        image="yt" />
+
+    <!--RVX Music-->
+    <AppIcon
+        component="ComponentInfo{app.rvx.android.apps.youtube.music/com.google.android.apps.youtube.music.activities.MusicActivity}"
+        image="rm" />
+
+    <!--BSD Brawl-->
+    <AppIcon
+        component="ComponentInfo{bsd.suitcase.release/com.supercell.brawlstars.ClassicIcon}"
+        image="bb" />
+
+    <!--PlantsVsZombiesRH-->
+    <AppIcon
+        component="ComponentInfo{com.LanPiaoPiao.PlantsVsZombiesRH/com.unity3d.player.UnityPlayerActivity}"
+        image="pz" />
+
+    <!--AnTuTu Benchmark-->
+    <AppIcon
+        component="ComponentInfo{com.antutu.ABenchMark/com.android.module.app.ui.start.ABenchMarkStart}"
+        image="ab" />
+
+    <!--Crab War-->
+    <AppIcon
+        component="ComponentInfo{com.appxplore.crabwar/com.unity3d.player.UnityPlayerActivity}"
+        image="cw" />
+
+    <!--System UI Tuner-->
+    <AppIcon
+        component="ComponentInfo{com.bryancandi.android.uituner/com.bryancandi.android.uituner.MainActivity}"
+        image="su" />
+
+    <!--Princess-->
+    <AppIcon
+        component="ComponentInfo{com.carnival.gxi.princesscruises/com.carnival.gxi.princesscruises.MainActivity}"
+        image="pr" />
+
+    <!--DeepSeek-->
+    <AppIcon
+        component="ComponentInfo{com.deepseek.chat/com.deepseek.chat.MainActivity}"
+        image="ds" />
+
+    <!--Finnair-->
+    <AppIcon
+        component="ComponentInfo{com.finnair/com.finnair.ui.splash.SplashActivity}"
+        image="fi" />
+
+    <!--Geode-->
+    <AppIcon
+        component="ComponentInfo{com.geode.launcher/com.geode.launcher.MainActivity}"
+        image="ge" />
+
+    <!--GitHub-->
+    <AppIcon
+        component="ComponentInfo{com.github.android/com.github.android.main.MainActivity}"
+        image="gi" />
+
+    <!--Authenticator-->
+    <AppIcon
+        component="ComponentInfo{com.google.android.apps.authenticator2/com.google.android.apps.authenticator2.main.MainActivity}"
+        image="au" />
+
+    <!--HeyMelody-->
+    <AppIcon
+        component="ComponentInfo{com.heytap.headset/com.heytap.headset.component.startup.StartupActivity}"
+        image="hm" />
+
+    <!--imo Lite-->
+    <AppIcon
+        component="ComponentInfo{com.imo.android.imoimlite/com.imo.android.imoim.activities.Home}"
+        image="im" />
+
+    <!--Sound Meter (Шумомер)-->
+    <AppIcon
+        component="ComponentInfo{com.ktwapps.soundmeter/com.ktwapps.soundmeter.MainActivity}"
+        image="sm" />
+
+    <!--Lidl Plus-->
+    <AppIcon
+        component="ComponentInfo{com.lidl.eci.lidlplus/es.lidlplus.i18n.StandardLauncher}"
+        image="lp" />
+
+    <!--X-plore-->
+    <AppIcon
+        component="ComponentInfo{com.lonelycatgames.Xplore/com.lonelycatgames.Xplore.Browser}"
+        image="xp" />
+
+    <!--Frequency Generator-->
+    <AppIcon
+        component="ComponentInfo{com.luxdelux.frequencygenerator/com.luxdelux.frequencygenerator.activity.LauncherActivity}"
+        image="fg" />
+
+    <!--Awake-->
+    <AppIcon
+        component="ComponentInfo{com.mk.awake/com.mk.awake.ui.app.screens.main.MainActivity}"
+        image="aw" />
+
+    <!--My Galaxy-->
+    <AppIcon
+        component="ComponentInfo{com.mygalaxy/com.mygalaxy.SplashScreenActivity}"
+        image="my" />
+
+    <!--Nordnet-->
+    <AppIcon
+        component="ComponentInfo{com.nordnet/com.nordnet.MainActivityDark}"
+        image="no" />
+
+    <!--Composer (Композитор)-->
+    <AppIcon
+        component="ComponentInfo{com.nothing.glyph.composer/com.nothing.glyph.composer.ui.MainActivity}"
+        image="co" />
+
+    <!--Balatro-->
+    <AppIcon
+        component="ComponentInfo{com.playstack.balatro.android/org.love2d.android.PlatformActivity}"
+        image="ba" />
+
+    <!--MT Capsule-->
+    <AppIcon
+        component="ComponentInfo{com.pryshedko.mtisland/com.pryshedko.mtisland.MyMainActivity}"
+        image="mc" />
+
+    <!--AyuGram-->
+    <AppIcon
+        component="ComponentInfo{com.radolyn.ayugram/com.exteragram.messenger.DefaultIcon}"
+        image="ay" />
+
+    <!--Routine Tracker-->
+    <AppIcon
+        component="ComponentInfo{com.rendox.routinetracker/com.rendox.routinetracker.app.MainActivity}"
+        image="rt" />
+
+    <!--ReVanced Manager Plus-->
+    <AppIcon
+        component="ComponentInfo{com.revanced.net.revancedmanager/com.revanced.net.revancedmanager.MainActivity}"
+        image="rm" />
+
+    <!--R-kantis-->
+    <AppIcon
+        component="ComponentInfo{com.rkioski.loyaltyapp/com.liquidbarcodes.mobile_app_reference.MainActivity}"
+        image="rk" />
+
+    <!--Samsung Wallet-->
+    <AppIcon
+        component="ComponentInfo{com.samsung.android.spaymini/com.samsung.android.spay.ui.SpayMainActivity}"
+        image="sw" />
+
+    <!--Samsung Shop-->
+    <AppIcon
+        component="ComponentInfo{com.samsung.ecomm.global.in/com.samsung.ecomm.global.shop_app.MainActivity}"
+        image="ss" />
+
+    <!--Scandit Demo-->
+    <AppIcon
+        component="ComponentInfo{com.scandit.demoapp/com.scandit.demoapp.splash.SplashActivity}"
+        image="sd" />
+
+    <!--Tori-->
+    <AppIcon
+        component="ComponentInfo{com.schibsted.iberica.tori/com.schibsted.nmp.NmpActivity}"
+        image="to" />
+
+    <!--All Diseases (Все заболевания)-->
+    <AppIcon
+        component="ComponentInfo{com.ufo.disease/ufo.com.disease.SplashActivity}"
+        image="ad" />
+
+    <!--Mi Fitness-->
+    <AppIcon
+        component="ComponentInfo{com.xiaomi.wearable/com.xiaomi.fitness.login.SplashActivity}"
+        image="mf" />
+
+    <!--pid lítačka-->
+    <AppIcon
+        component="ComponentInfo{cz.dpp.praguepublictransport/cz.dpp.praguepublictransport.activities.GuideActivity}"
+        image="pl" />
+
+    <!--Charge Meter-->
+    <AppIcon
+        component="ComponentInfo{dev.km.android.chargemeter/dev.km.android.chargemeter.Activities.MainActivity}"
+        image="cm" />
+
+    <!--My DNA-->
+    <AppIcon
+        component="ComponentInfo{fi.dna.omadna/fi.dna.selfservice.MainActivity}"
+        image="md" />
+
+    <!--Finnkino-->
+    <AppIcon
+        component="ComponentInfo{fi.finnkino/ee.apollocinema.presentation.lokalise.LokaliseActivity}"
+        image="fi" />
+
+    <!--Hesburger-->
+    <AppIcon
+        component="ComponentInfo{fi.hesburger.app/fi.hesburger.app.ui.activity.MainActivity}"
+        image="he" />
+
+    <!--OmaPosti-->
+    <AppIcon
+        component="ComponentInfo{fi.itella.posti.android/com.posti.arrow.ui.LaunchActivity}"
+        image="op" />
+
+    <!--Nuorisopassi-->
+    <AppIcon
+        component="ComponentInfo{fi.nuorisopassi/fi.nuorisopassi.MainActivity}"
+        image="nu" />
+
+    <!--OP-mobile-->
+    <AppIcon
+        component="ComponentInfo{fi.op.android.opmobiili/fi.op.android.opmobiili.common.mainui.MainActivity}"
+        image="om" />
+
+    <!--OmaPirha-->
+    <AppIcon
+        component="ComponentInfo{fi.pirha.digitalhealth/fi.mehilainen.digitalhealth.features.onboarding2.ui.Onboarding2Activity}"
+        image="op" />
+
+    <!--Burger King-->
+    <AppIcon
+        component="ComponentInfo{fi.restel.bk.android/fi.restel.foodandevents.MainActivity}"
+        image="bk" />
+
+    <!--VR Matkalla-->
+    <AppIcon
+        component="ComponentInfo{fi.vr.mobile.app/fi.vr.app.MainActivity}"
+        image="vm" />
+
+    <!--WFC-->
+    <AppIcon
+        component="ComponentInfo{fi.wisegym.wfc/fi.wisegym.wfc.MainActivity}"
+        image="wf" />
+
+    <!--ElevenReader-->
+    <AppIcon
+        component="ComponentInfo{io.elevenlabs.readerapp/io.elevenlabs.readerapp.MainActivity}"
+        image="er" />
+
+    <!--Bluetooth File Transfer-->
+    <AppIcon
+        component="ComponentInfo{it.medieval.blueftp/it.medieval.blueftp.AMain}"
+        image="bf" />
+
+    <!--ibisPaint X-->
+    <AppIcon
+        component="ComponentInfo{jp.ne.ibis.ibispaintx.app/jp.ne.ibis.ibispaintx.app.InitializeCheckActivity}"
+        image="ib" />
+
+    <!--Sound Analyzer Basic-->
+    <AppIcon
+        component="ComponentInfo{jp.nokubi.nobapp.soundanalyzer.free/jp.nokubi.nobapp.soundanalyzer.MainActivity}"
+        image="sa" />
+
+    <!--Nysse Mobiili-->
+    <AppIcon
+        component="ComponentInfo{nysse.fi.mobiili/waltti.com.mobiili.MainActivity}"
+        image="nm" />
+
+    <!--My Apps Time-->
+    <AppIcon
+        component="ComponentInfo{org.coober.myappstime/org.coober.myappstime.features.main.MainActivity}"
+        image="ma" />
+
+    <!--Flo-->
+    <AppIcon
+        component="ComponentInfo{org.iggymedia.periodtracker/org.iggymedia.periodtracker.activities.InitialActivity}"
+        image="fl" />
+
+    <!--Survival Manual-->
+    <AppIcon
+        component="ComponentInfo{org.ligi.survivalmanual/org.ligi.survivalmanual.ui.MainActivity}"
+        image="sm" />
+
+    <!--Wikipedia (Википедия)-->
+    <AppIcon
+        component="ComponentInfo{org.wikipedia/org.wikipedia.DefaultIcon}"
+        image="wk" />
+
+    <!--Only You Are Here-->
+    <AppIcon
+        component="ComponentInfo{tser.omolgame.free/com.unity3d.player.UnityPlayerActivity}"
+        image="oy" />
+
+    <!--Diia (Дія)-->
+    <AppIcon
+        component="ComponentInfo{ua.gov.diia.app/ua.gov.diia.app.ui.activities.VendorActivity}"
+        image="di" />
+
+    <!--txtpad-->
+    <AppIcon
+        component="ComponentInfo{vladyslavpohrebniakov.txtpad/vladyslavpohrebniakov.txtpad.main.MainActivity}"
+        image="tx" />
+
+    <!--CalcES-->
+    <AppIcon
+        component="ComponentInfo{advanced.scientific.calculator.calc991.plus/advanced.scientific.calculator.calc991.plus.splash.SplashScreenActivity}"
+        image="ca" />
+
+    <!--AI Chat PowerBrain-->
+    <AppIcon
+        component="ComponentInfo{ai.chat.pro.plus.smart.chatbot.ai.writing.tool/ai.chat.pro.plus.smart.chatbot.ai.writing.tool.MainActivity}"
+        image="ac" />
+
+    <!--Moises-->
+    <AppIcon
+        component="ComponentInfo{ai.moises/ai.moises.ui.splashscreen.SplashScreen}"
+        image="mo" />
+
+    <!--MaxEQ Music-->
+    <AppIcon
+        component="ComponentInfo{app.maxeq.equalizer.music.volume.booster.bass.booster.audio.fx/com.maxequalizer.music.bassbooster.other.SplashActivity}"
+        image="mm" />
+
+    <!--Music Player-->
+    <AppIcon
+        component="ComponentInfo{cc.honista.app/com.app.launcher_2}"
+        image="mp" />
+
+    <!--Nothing Desk Clock-->
+    <AppIcon
+        component="ComponentInfo{com.ApexCreator.deskclock/com.ApexCreator.deskclock.MainActivity}"
+        image="nd" />
+
+    <!--HC Injector-->
+    <AppIcon
+        component="ComponentInfo{com.HC.jecTo0r/com.HC.jecTo0r.SplashActivity}"
+        image="hi" />
+
+    <!--FAST-->
+    <AppIcon
+        component="ComponentInfo{com.ZED.zid_app/com.ZED.zid_app.MainActivity}"
+        image="fa" />
+
+    <!--Gamma PPT AI-->
+    <AppIcon
+        component="ComponentInfo{com.aipresentationmaker.beautifulppt/com.andromo.MainActivity}"
+        image="gp" />
+
+    <!--boAt Wearables-->
+    <AppIcon
+        component="ComponentInfo{com.boAt.wristgear/com.boAt.wristgear.view.ui.SplashActivity}"
+        image="bw" />
+
+    <!--BeeTV-->
+    <AppIcon
+        component="ComponentInfo{com.bweather.forecast/com.bweather.forecast.SplashActivity}"
+        image="bt" />
+
+    <!--Kids mode-->
+    <AppIcon
+        component="ComponentInfo{com.coloros.childrenspace/com.coloros.childrenspace.view.ChildrenShortCutActivity}"
+        image="km" />
+
+    <!--Music-->
+    <AppIcon
+        component="ComponentInfo{com.cyanchill.missingcore.music/com.cyanchill.missingcore.music.MainActivity}"
+        image="mu" />
+
+    <!--Dashreels-->
+    <AppIcon
+        component="ComponentInfo{com.dashtoon.video.reels/com.dashtoon.video.reels.MainActivity}"
+        image="da" />
+
+    <!--edjing Mix-->
+    <AppIcon
+        component="ComponentInfo{com.edjing.edjingdjturntable/com.edjing.edjingdjturntable.activities.PlatineActivity}"
+        image="ej" />
+
+    <!--Ana Vodafone-->
+    <AppIcon
+        component="ComponentInfo{com.emeint.android.myservices/com.emeint.android.myservices.ui.screens.splash.DefaultLauncher}"
+        image="av" />
+
+    <!--FamApp-->
+    <AppIcon
+        component="ComponentInfo{com.fampay.in/com.fampay.in.app_icon_alias.AppIconsAlias.DefaultIconAlias}"
+        image="fa" />
+
+    <!--myFawry-->
+    <AppIcon
+        component="ComponentInfo{com.fawry.myfawry/com.emeint.android.mwallet2.view.StartupActivity}"
+        image="mf" />
+
+    <!--SimpMusic-->
+    <AppIcon
+        component="ComponentInfo{com.free.block.musicum/com.mordo.musicum.MainActivity}"
+        image="sm" />
+
+    <!--Genius-->
+    <AppIcon
+        component="ComponentInfo{com.genius.android/com.genius.android.flow.main.MainActivity}"
+        image="ge" />
+
+    <!--GPay Business-->
+    <AppIcon
+        component="ComponentInfo{com.google.android.apps.nbu.paisa.merchant/com.google.nbu.paisa.flutter.manzana.app.LauncherActivity}"
+        image="gb" />
+
+    <!--Noting-->
+    <AppIcon
+        component="ComponentInfo{com.hearthborn.studios.notingnotes/com.hearthborn.studios.notingnotes.AuthorizationActivity}"
+        image="no" />
+
+    <!--Ludo King-->
+    <AppIcon
+        component="ComponentInfo{com.ludo.king/com.unity3d.player.FoldablePlayerActivity}"
+        image="lk" />
+
+    <!--Rope Hero Vice Town-->
+    <AppIcon
+        component="ComponentInfo{com.mgc.RopeHero.ViceTown/com.unity3d.player.UnityPlayerActivity}"
+        image="rh" />
+
+    <!--Copilot-->
+    <AppIcon
+        component="ComponentInfo{com.microsoft.copilot/com.microsoft.copilotn.MainActivity}"
+        image="co" />
+
+    <!--Moba Legends: 5v5!-->
+    <AppIcon
+        component="ComponentInfo{com.mobiin.gp/com.moba.unityplugin.MobaGameMainActivityWithExtractor}"
+        image="ml" />
+
+    <!--Kimi-->
+    <AppIcon
+        component="ComponentInfo{com.moonshot.kimichat/com.moonshot.kimichat.MainActivity}"
+        image="ki" />
+
+    <!--KineMaster-->
+    <AppIcon
+        component="ComponentInfo{com.nexstreaming.app.kinemasterfree/com.kinemaster.app.screen.splash.SplashActivity}"
+        image="km" />
+
+    <!--noon-->
+    <AppIcon
+        component="ComponentInfo{com.noon.buyerapp/com.noon.buyerapp.MainActivity}"
+        image="no" />
+
+    <!--Nothing Icons-->
+    <AppIcon
+        component="ComponentInfo{com.nothing.icon.free/com.nothing.icon.free.MainActivity}"
+        image="ni" />
+
+    <!--Captions-->
+    <AppIcon
+        component="ComponentInfo{com.pixsterstudio.captions/com.pixsterstudio.captions.LauncherDefault}"
+        image="ca" />
+
+    <!--Bear Player-->
+    <AppIcon
+        component="ComponentInfo{com.player.bear/com.player.bear.ui.SplashActivity}"
+        image="bp" />
+
+    <!--SUBR-->
+    <AppIcon
+        component="ComponentInfo{com.pro.game.FreeSurvivalUnknownBattle/com.unity3d.player.UnityPlayerActivity}"
+        image="su" />
+
+    <!--AI Copy-->
+    <AppIcon
+        component="ComponentInfo{com.sagamill.copyai/com.wsc.ai.SplashActivity}"
+        image="ac" />
+
+    <!--SPIN 101-->
+    <AppIcon
+        component="ComponentInfo{com.spin.sozo.games/org.cocos2dx.javascript.AppActivity}"
+        image="sp" />
+
+    <!--StarMaker-->
+    <AppIcon
+        component="ComponentInfo{com.starmakerinteractive.starmaker/com.ushowmedia.starmaker.splash.SplashActivity}"
+        image="st" />
+
+    <!--talabat-->
+    <AppIcon
+        component="ComponentInfo{com.talabat/com.talabat.FlutterLandingScreen}"
+        image="ta" />
+
+    <!--TapTap-->
+    <AppIcon
+        component="ComponentInfo{com.taptap.global/com.play.taptap.ui.SplashAct}"
+        image="ta" />
+
+    <!--An Elmwood Trail-->
+    <AppIcon
+        component="ComponentInfo{com.techyonic.textbasedrpg/com.techyonic.textbasedrpg.MainActivity}"
+        image="et" />
+
+    <!--Zen Player-->
+    <AppIcon
+        component="ComponentInfo{com.vdocipher.zenplayer/com.vdocipher.zenplayer.AboutActivity}"
+        image="zp" />
+
+    <!--VidHD Downloader-->
+    <AppIcon
+        component="ComponentInfo{com.vidhd.videodownloader.videoplayer/com.vidhd.videodownloader.videoplayer.ui.activity.SplashActivity}"
+        image="vd" />
+
+    <!--Wallbyte-->
+    <AppIcon
+        component="ComponentInfo{com.wallbyte.wallpapers/com.wallbyte.wallpapers.main.SplashAPIActivity}"
+        image="wa" />
+
+    <!--botim-->
+    <AppIcon
+        component="ComponentInfo{im.thebot.messenger/im.thebot.SplashActivity}"
+        image="bo" />
+
+    <!--Pop Tiles - Music Piano-->
+    <AppIcon
+        component="ComponentInfo{music.piano.tiles.magic.tiles.challenge.free/com.unity3d.player.UnityPlayerActivity}"
+        image="pt" />
+
+    <!--OpenChat-->
+    <AppIcon
+        component="ComponentInfo{open.chat.gpt.aichat.bot.free.app/open.chat.gpt.aichat.bot.free.app.page.splash.LauncherActivity}"
+        image="oc" />
+
+    <!--Gesture Lock Screen-->
+    <AppIcon
+        component="ComponentInfo{qlocker.gesture/qlocker.app.AppActivity}"
+        image="gl" />
+
+    <!--ImageSearchMan-->
+    <AppIcon
+        component="ComponentInfo{sansunsen3.imagesearcher/sansunsen3.imagesearcher.activity.MainActivity}"
+        image="is" />
+
+    <!--Viral-->
+    <AppIcon
+        component="ComponentInfo{vintage.icon.pack.ddt/vintage.icon.pack.ddt.MainActivity}"
+        image="vi" />
 
 </Theme>
