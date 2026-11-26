@@ -7193,7 +7193,7 @@
     <!--12% Club-->
     <item
         component="ComponentInfo{com.twelve.club/com.twelve.club.appUseCases.common.SplashActivity}"
-        drawable="cl" />
+        drawable="_12" />
 
     <!--Vanced Manager-->
     <item
@@ -11124,7 +11124,7 @@
     <!--1SE-->
     <item
         component="ComponentInfo{co.onese.android/co.onese.android.onboarding.SplashActivity}"
-        drawable="se" />
+        drawable="_1s" />
 
     <!--ZOX.-->
     <item
@@ -11419,7 +11419,7 @@
 <!--7Fon-->
     <item
         component="ComponentInfo{oled.wall7Fon/ru.wall7Fon.ui.activities.SplashActivty}"
-        drawable="fo" />
+        drawable="_7f" />
 
 <!--Collage Maker - GridArt-->
     <item
@@ -11919,7 +11919,7 @@
     <!--9GAG-->
     <item
         component="ComponentInfo{com.ninegag.android.app/com.ninegag.android.app.ui.home.HomeActivity}"
-        drawable="ga" />
+        drawable="_9g" />
 
 <!--Zen Mode-->
     <item
@@ -12034,7 +12034,7 @@
     <!--4 Pics 1 Word-->
     <item
         component="ComponentInfo{de.lotum.whatsinthefoto.us/de.lotum.whatsinthefoto.fx.MainActivity}"
-        drawable="wh" />
+        drawable="_4p" />
 
     <!--TimeZo-->
     <item
@@ -13194,7 +13194,7 @@
     <!--2GIS-->
     <item
         component="ComponentInfo{ru.dublgis.dgismobile/ru.dublgis.dgismobile.GrymMobileActivity}"
-        drawable="gi" />
+        drawable="_2g" />
 
     <!--Pixelify GPhotos-->
     <item
@@ -14194,7 +14194,7 @@
     <!--5 Colors-->
     <item
         component="ComponentInfo{de.entwicklerx.fivecolors/de.entwicklerx.fivecolors.MainActivity}"
-        drawable="co" />
+        drawable="_5c" />
 
     <!--Morse code-->
     <item
@@ -14519,7 +14519,7 @@
     <!--2 3 4 Player Games-->
     <item
         component="ComponentInfo{com.ction.playergames/com.ction.playergames.RunnerActivity}"
-        drawable="pg" />
+        drawable="_23" />
 
     <!--Free Basics-->
     <item
@@ -14619,7 +14619,7 @@
     <!--3D Calculator-->
     <item
         component="ComponentInfo{org.geogebra.android.g3d/org.geogebra.android.privatelibrary.splashscreen.SplashScreenActivity}"
-        drawable="ca" />
+        drawable="_3d" />
 
     <!--inDrive-->
     <item
@@ -14634,7 +14634,7 @@
     <!--1.1.1.1-->
     <item
         component="ComponentInfo{com.cloudflare.onedotonedotonedotone/com.cloudflare.app.presentation.main.SplashActivity}"
-        drawable="od" />
+        drawable="_11" />
 
     <!--exteraGram-->
     <item
@@ -15954,7 +15954,7 @@
     <!--112 Suomi-->
     <item
         component="ComponentInfo{fi.digia.suomi112/fi.digia.suomi112.MainActivity}"
-        drawable="su" />
+        drawable="_11" />
 
     <!--FMI Weather-->
     <item
@@ -16809,7 +16809,7 @@
     <!--112 India-->
     <item
         component="ComponentInfo{in.cdac.ners.psa.mobile.android.national/in.cdac.ners.psa.mobile.android.national.MainActivity}"
-        drawable="in" />
+        drawable="_11" />
 
     <!--Film Simulator-->
     <item
@@ -17439,7 +17439,7 @@
     <!--4Party-->
     <item
         component="ComponentInfo{com.soulla.android/com.soulla.android.ui.activity.SplashActivity}"
-        drawable="pa" />
+        drawable="_4p" />
 
     <!--streaknest-->
     <item
@@ -17644,7 +17644,7 @@
     <!--1Weather-->
     <item
         component="ComponentInfo{com.handmark.expressweather/com.oneweather.app.MainActivity}"
-        drawable="we" />
+        drawable="_1w" />
 
     <!--Recorder-->
     <item
