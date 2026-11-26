@@ -65,9 +65,15 @@ fun ApplyScreen(onBack: () -> Unit) {
                 text = stringResource(R.string.apply_note),
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
+                modifier = Modifier.padding(start = ScreenPadding, top = 28.dp, end = ScreenPadding)
+            )
+            Text(
+                text = stringResource(R.string.day_night_note),
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
                 modifier = Modifier.padding(
                     start = ScreenPadding,
-                    top = 28.dp,
+                    top = 12.dp,
                     end = ScreenPadding,
                     bottom = 16.dp
                 )
