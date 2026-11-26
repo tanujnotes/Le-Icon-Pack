@@ -22128,4 +22128,54 @@
         component="ComponentInfo{ws.xsoh.etar/com.android.calendar.AllInOneActivity}"
         image="et" />
 
+    <!--Supernova-->
+    <AppIcon
+        component="ComponentInfo{com.supernova.launcher/com.supernova.launcher.LauncherActivity}"
+        image="su" />
+    <AppIcon
+        component="ComponentInfo{com.supernova.launcher.debug/com.supernova.launcher.LauncherActivity}"
+        image="su" />
+
+    <!--Supernova Settings-->
+    <AppIcon
+        component="ComponentInfo{com.supernova.launcher/com.supernova.launcher.SettingsLauncherAlias}"
+        image="ss" />
+    <AppIcon
+        component="ComponentInfo{com.supernova.launcher.debug/com.supernova.launcher.SettingsLauncherAlias}"
+        image="ss" />
+
+    <!--Leaks (LeakCanary in Supernova debug)-->
+    <AppIcon
+        component="ComponentInfo{com.supernova.launcher.debug/leakcanary.internal.activity.LeakLauncherActivity}"
+        image="lk" />
+
+    <!--Ogesture-->
+    <AppIcon
+        component="ComponentInfo{com.ogesture/com.ogesture.MainActivity}"
+        image="og" />
+    <AppIcon
+        component="ComponentInfo{com.ogesture.debug/com.ogesture.MainActivity}"
+        image="og" />
+
+    <!--Ofit-->
+    <AppIcon
+        component="ComponentInfo{com.ofitapp/com.ofitapp.MainActivity}"
+        image="of" />
+    <AppIcon
+        component="ComponentInfo{com.ofitapp.debug/com.ofitapp.MainActivity}"
+        image="of" />
+
+    <!--Pentastic (debug)-->
+    <AppIcon
+        component="ComponentInfo{app.pentastic.debug/app.pentastic.MainActivity}"
+        image="pe" />
+
+    <!--SMS Safe-->
+    <AppIcon
+        component="ComponentInfo{smssafe.app/smssafe.app.activities.SplashActivity.Green}"
+        image="sm" />
+    <AppIcon
+        component="ComponentInfo{smssafe.app.debug/smssafe.app.activities.SplashActivity.Green}"
+        image="sm" />
+
 </Theme>
