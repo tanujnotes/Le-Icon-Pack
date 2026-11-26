@@ -7,7 +7,7 @@
     <string name="app_description">A minimal icon pack that replaces colorful app icons with plain letters, to help you reduce your screen time.</string>
     <string name="home_icon_caption">3k+ icons · 200 × 200 px</string>
     <!-- HTML: the link is turned into a tappable link by DayNightNote. -->
-    <string name="day_night_note"><![CDATA[Icons are light in light mode and dark in dark mode. Some launchers, like <a href="https://github.com/tanujnotes/Supernova">Supernova</a>, keep the look you applied them in, so switch your phone to the mode you want before applying.]]></string>
+    <string name="day_night_note"><![CDATA[Icons are light in light mode and dark in dark mode. In launchers like <a href="https://github.com/tanujnotes/Supernova">Supernova</a>, they switch with the launcher\'s theme. Some other launchers keep the look you applied them in, so switch your phone to the mode you want before applying.]]></string>
     <string name="why_icons_label">Why letters?</string>
     <string name="report_missing_label">Report missing icons</string>
     <string name="rate_review_label">Rate &amp; review</string>
