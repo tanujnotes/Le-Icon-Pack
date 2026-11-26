@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Matches the Compose background, so the window behind it never flashes another color. -->
+    <color name="window_background">#F4F4F2</color>
+</resources>

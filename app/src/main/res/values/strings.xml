@@ -1,59 +1,56 @@
 <resources>
     <string name="app_name">Letters Icon Pack</string>
-    <string name="app_description">Minimal icon pack to help you reduce your screen time by replacing colorful app icons.</string>
-
-    <!-- Navigation -->
-    <string name="menu_home">Home</string>
-    <string name="menu_apply">Apply</string>
-    <string name="missing_icons_title">Missing Icons</string>
-    <string name="why_icons_label">Why Letters?</string>
-    <string name="cd_open_menu">Open menu</string>
-    <string name="cd_navigate_up">Navigate up</string>
+    <string name="cd_navigate_up">Back</string>
 
     <!-- Home -->
-    <string name="chrome_app_label">Chrome</string>
-    <string name="icon_dimension_label">200 x 200 pixels icon dimension</string>
-    <string name="icons_label">Icons</string>
-    <string name="custom_icons_count">3k+</string>
-    <string name="apply_label">Apply Letters Icon Pack</string>
-    <string name="report_missing_label">Report Missing Icons</string>
+    <string name="home_title">Letters</string>
+    <string name="app_description">A minimal icon pack that replaces colorful app icons with plain letters, to help you reduce your screen time.</string>
+    <string name="home_icon_caption">3k+ icons · 200 × 200 px</string>
+    <string name="why_icons_label">Why letters?</string>
+    <string name="report_missing_label">Report missing icons</string>
+    <string name="rate_review_label">Rate &amp; review</string>
     <string name="digital_minimalism">Powered by Digital Minimalism</string>
-    <string name="rate_review_label"><![CDATA[Rate & Review]]></string>
+    <string name="apply_label">Apply icon pack</string>
     <string name="cd_share">Share</string>
-    <string name="close_label">close</string>
     <string name="share_chooser_title">Choose App</string>
     <string name="share_message">Check out this minimal icon pack. Totally free! %1$s</string>
     <string name="no_app_to_open_link">No app found to open this link</string>
 
-    <!-- Applying the icon pack -->
-    <string name="applying_icons_label">Applying Letters Icon Pack</string>
-    <string name="apply_step_one">Open your preferred launcher app and go to the home screen</string>
-    <string name="apply_step_two">Open launcher settings or options</string>
-    <string name="apply_step_three">Look for \"Icon Pack\" or \"Themes\" option and tap on it</string>
-    <string name="apply_step_four">Select \"Letters Icon Pack\" from icon pack list displayed to apply</string>
-    <string name="apply_step_five">Click \"Apply\" or \"Save\" to confirm selection if not yet applied</string>
-    <string name="apply_note">Note: The specified steps above may vary depending on the different launchers.</string>
+    <!-- Applying the icon pack by hand -->
+    <string name="apply_title">Apply in your launcher</string>
+    <string name="apply_description">Your launcher can\'t apply it automatically. These five steps do it by hand.</string>
+    <string name="apply_step_one">Open your launcher and go to the home screen</string>
+    <string name="apply_step_two">Open the launcher\'s settings or options</string>
+    <string name="apply_step_three">Look for “Icon pack” or “Themes” and tap it</string>
+    <string name="apply_step_four">Select “Letters Icon Pack” from the list</string>
+    <string name="apply_step_five">Tap “Apply” or “Save” if it asks you to confirm</string>
+    <string name="apply_note">The steps vary a little from one launcher to another.</string>
+    <string name="apply_done">Done</string>
 
-    <!-- Why Letters -->
+    <!-- Why letters -->
     <string name="feature_screen_time_title">Reduced screen time</string>
-    <string name="feature_screen_time_desc">Focus on the task at hand by minimizing distractions on your home screen</string>
+    <string name="feature_screen_time_desc">Focus on the task at hand by minimizing distractions on your home screen.</string>
     <string name="feature_icon_count_title">Huge number of icons</string>
-    <string name="feature_icon_count_desc">Quickly apply icons to almost every app in your device with ease</string>
+    <string name="feature_icon_count_desc">Quickly apply icons to almost every app on your device with ease.</string>
     <string name="feature_consistent_title">Consistent design</string>
     <string name="feature_consistent_desc">Identify apps and find the one you need without having to decipher different icon styles.</string>
     <string name="feature_cognitive_load_title">Reduced cognitive load</string>
     <string name="feature_cognitive_load_desc">Easily understand icons and reduce the cognitive load required to navigate your home screen.</string>
 
     <!-- Missing icons report -->
-    <string name="cd_send_report">Send report</string>
-    <string name="select_apps_to_report">Please select some apps to report</string>
+    <string name="missing_icons_title">Missing icons</string>
+    <string name="missing_icons_description">These apps don\'t have a letter icon yet. Choose the ones to report.</string>
+    <string name="missing_icons_selected">%1$d of %2$d selected</string>
+    <string name="select_all">Select all</string>
+    <string name="report_selected">Report selected</string>
+    <string name="no_missing_icons">Every app on this phone already has a letter icon.</string>
     <string name="no_email_app">No email app found</string>
     <string name="report_email_subject">Missing Icon Report</string>
     <string name="report_email_chooser_title">Choose email app</string>
 
     <!-- Review prompt -->
-    <string name="rate_now">Rate Now</string>
-    <string name="no_thanks">Maybe Later</string>
+    <string name="rate_now">Rate now</string>
+    <string name="no_thanks">Maybe later</string>
     <string name="rate_this_app">Liking Letters?</string>
     <string name="rate_review_message"><![CDATA[A 5-star rating always makes us developers happy. Thank you! 😊]]></string>
 </resources>

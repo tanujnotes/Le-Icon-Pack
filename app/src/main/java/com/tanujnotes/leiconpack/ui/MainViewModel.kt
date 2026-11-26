@@ -84,6 +84,10 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         }
     }
 
+    fun setAllChecked(checked: Boolean) {
+        missingIconApps = missingIconApps.map { it.copy(checked = checked) }
+    }
+
     fun buildMissingIconReport(): String = buildString {
         append("Manufacturer : ${Build.MANUFACTURER.uppercase()}\n")
         append("Model: ${Build.MODEL.uppercase()}\n\n")
