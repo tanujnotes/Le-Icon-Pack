@@ -77,6 +77,13 @@ def iconPackAssets = tasks.register('copyIconPackXmlToAssets', CopyIconPackXmlTo
     )
 }
 
+// IconPackResourcesTest reads the icon pack XML and drawables straight from disk, so tell Gradle
+// about them: otherwise a change to appfilter.xml alone leaves the test task UP-TO-DATE.
+tasks.withType(Test).configureEach {
+    inputs.dir('src/main/res').withPathSensitivity(PathSensitivity.RELATIVE)
+    inputs.dir('src/main/assets').withPathSensitivity(PathSensitivity.RELATIVE)
+}
+
 androidComponents {
     onVariants(selector().all()) { variant ->
         variant.sources.assets?.addGeneratedSourceDirectory(iconPackAssets) { it.outputDir }
