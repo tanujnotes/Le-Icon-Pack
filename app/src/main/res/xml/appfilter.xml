@@ -18919,7 +18919,7 @@
     <!--4K Wallpapers-->
     <item
         component="ComponentInfo{hd.uhd.wallpapers.best.quality/hd.uhd.wallpapers.best.quality.activities.SplashScreenNew}"
-        drawable="wa" />
+        drawable="_4k" />
 
     <!--Argent-->
     <item

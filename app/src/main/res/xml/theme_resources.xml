@@ -7141,7 +7141,7 @@
     <!--12% Club-->
     <AppIcon
         component="ComponentInfo{com.twelve.club/com.twelve.club.appUseCases.common.SplashActivity}"
-        image="cl" />
+        image="_12" />
 
     <!--Vanced Manager-->
     <AppIcon
@@ -7901,12 +7901,12 @@
     <!-- 1 2 3 4 Player Games -->
     <AppIcon
         component="ComponentInfo{com.JindoBlu.FourPlayers/com.unity3d.player.UnityPlayerActivity}"
-        image="fp" />
+        image="_12" />
 
     <!-- 2 Player Games -->
     <AppIcon
         component="ComponentInfo{com.JindoBlu.TwoPlayerGamesChallenge/com.unity3d.player.UnityPlayerActivity}"
-        image="tp" />
+        image="_2p" />
 
     <!-- Aliucord -->
     <AppIcon
@@ -8121,7 +8121,7 @@
     <!-- 7-Eleven -->
     <AppIcon
         component="ComponentInfo{com.sei.android/com.sei.android.controllers.activity.SplashActivity}"
-        image="el" />
+        image="_7e" />
 
     <!-- Menchie's -->
     <AppIcon
@@ -8396,7 +8396,7 @@
 <!-- 1Weather -->
     <AppIcon
         component="ComponentInfo{com.handmark.expressweather/com.handmark.expressweather.ui.activities.MainActivity}"
-        image="we" />
+        image="_1w" />
 
     <!-- MySites -->
     <AppIcon
@@ -11052,7 +11052,7 @@
     <!--1SE-->
     <AppIcon
         component="ComponentInfo{co.onese.android/co.onese.android.onboarding.SplashActivity}"
-        image="se" />
+        image="_1s" />
 
     <!--ZOX.-->
     <AppIcon
@@ -11347,7 +11347,7 @@
 <!--7Fon-->
     <AppIcon
         component="ComponentInfo{oled.wall7Fon/ru.wall7Fon.ui.activities.SplashActivty}"
-        image="fo" />
+        image="_7f" />
 
 <!--Collage Maker - GridArt-->
     <AppIcon
@@ -11847,7 +11847,7 @@
     <!--9GAG-->
     <AppIcon
         component="ComponentInfo{com.ninegag.android.app/com.ninegag.android.app.ui.home.HomeActivity}"
-        image="ga" />
+        image="_9g" />
 
 <!--Zen Mode-->
     <AppIcon
@@ -11962,7 +11962,7 @@
     <!--4 Pics 1 Word-->
     <AppIcon
         component="ComponentInfo{de.lotum.whatsinthefoto.us/de.lotum.whatsinthefoto.fx.MainActivity}"
-        image="wh" />
+        image="_4p" />
 
     <!--TimeZo-->
     <AppIcon
@@ -13122,7 +13122,7 @@
     <!--2GIS-->
     <AppIcon
         component="ComponentInfo{ru.dublgis.dgismobile/ru.dublgis.dgismobile.GrymMobileActivity}"
-        image="gi" />
+        image="_2g" />
 
     <!--Pixelify GPhotos-->
     <AppIcon
@@ -14122,7 +14122,7 @@
     <!--5 Colors-->
     <AppIcon
         component="ComponentInfo{de.entwicklerx.fivecolors/de.entwicklerx.fivecolors.MainActivity}"
-        image="co" />
+        image="_5c" />
 
     <!--Morse code-->
     <AppIcon
@@ -14447,7 +14447,7 @@
     <!--2 3 4 Player Games-->
     <AppIcon
         component="ComponentInfo{com.ction.playergames/com.ction.playergames.RunnerActivity}"
-        image="pg" />
+        image="_23" />
 
     <!--Free Basics-->
     <AppIcon
@@ -14547,7 +14547,7 @@
     <!--3D Calculator-->
     <AppIcon
         component="ComponentInfo{org.geogebra.android.g3d/org.geogebra.android.privatelibrary.splashscreen.SplashScreenActivity}"
-        image="ca" />
+        image="_3d" />
 
     <!--inDrive-->
     <AppIcon
@@ -14562,7 +14562,7 @@
     <!--1.1.1.1-->
     <AppIcon
         component="ComponentInfo{com.cloudflare.onedotonedotonedotone/com.cloudflare.app.presentation.main.SplashActivity}"
-        image="od" />
+        image="_11" />
 
     <!--exteraGram-->
     <AppIcon
@@ -17579,7 +17579,7 @@
     <!-- 1Weather -->
     <AppIcon
         component="ComponentInfo{com.handmark.expressweather/com.oneweather.app.MainActivity}"
-        image="we" />
+        image="_1w" />
 
     <!-- HWANG IN-YEOP HD Wallpaper -->
     <AppIcon
@@ -18277,12 +18277,12 @@
     <!-- 4K Wallpapers -->
     <AppIcon
         component="ComponentInfo{hd.wallpaper.live.parallax/hd.wallpaper.live.parallax.Activity.SplashActivity}"
-        image="kw" />
+        image="_4k" />
 
     <!-- 4K Wallpapers -->
     <AppIcon
         component="ComponentInfo{live.wallpaper.background.ringtonemaker/live.wallpaper.background.ringtonemaker.ui.SplashActivity}"
-        image="kw" />
+        image="_4k" />
 
     <!-- Calculator -->
     <AppIcon
@@ -18622,7 +18622,7 @@
     <!-- 23andMe -->
     <AppIcon
         component="ComponentInfo{com.twentythreeandme.app/com.twentythreeandme.app.nux.NuxIntroductionActivity}"
-        image="tw" />
+        image="_23" />
 
     <!-- Tabs -->
     <AppIcon
@@ -19206,7 +19206,7 @@
     <!--112 Suomi-->
     <AppIcon
         component="ComponentInfo{fi.digia.suomi112/fi.digia.suomi112.MainActivity}"
-        image="su" />
+        image="_11" />
 
     <!--FMI Weather-->
     <AppIcon
@@ -20011,7 +20011,7 @@
     <!--112 India-->
     <AppIcon
         component="ComponentInfo{in.cdac.ners.psa.mobile.android.national/in.cdac.ners.psa.mobile.android.national.MainActivity}"
-        image="in" />
+        image="_11" />
 
     <!--Film Simulator-->
     <AppIcon
@@ -20546,7 +20546,7 @@
     <!--4Party-->
     <AppIcon
         component="ComponentInfo{com.soulla.android/com.soulla.android.ui.activity.SplashActivity}"
-        image="pa" />
+        image="_4p" />
 
     <!--streaknest-->
     <AppIcon
@@ -21961,7 +21961,7 @@
     <!--4K Wallpapers-->
     <AppIcon
         component="ComponentInfo{hd.uhd.wallpapers.best.quality/hd.uhd.wallpapers.best.quality.activities.SplashScreenNew}"
-        image="wa" />
+        image="_4k" />
 
     <!--Argent-->
     <AppIcon
